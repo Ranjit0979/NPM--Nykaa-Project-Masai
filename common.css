@@ -1,0 +1,157 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 2000px;
+}
+#navbar{
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: -72px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#uppernav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#uppernav>div{
+    margin: auto;
+}
+#nykaa_logo_outer{
+    /* border: 1px solid red; */
+    display: flex;
+    /* width: 10%; */
+
+}
+#nykaa_logo{
+   margin-right: -155px;
+}
+#nykaa_logo>img{
+    width: 40%;
+    /* margin-right: -10px; */
+    margin-top: 5px;
+    /* border: 1px solid teal; */
+}
+#nykaa_logo_outer>:nth-child(2){
+    font-size: 11px;
+    margin-top: 8px;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+    /* color: #3e3f51; */
+}
+#nykaa_network{
+    border: 1px solid red;
+    height: 40px;
+    width: 100px;
+}
+#account{
+    border: 1px solid red;
+    height: 40px;
+    width: 100px;   
+}
+hr{
+    border: 1px solid #f3f4f5;
+}
+body{
+  background-color: #f3f4f5;
+}
+a{
+    text-decoration: none;
+    /* color: #3e3f51; */
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+    /* line-height: 20px; */
+    font-weight: 600;
+}
+#lowernav{
+    margin-top: -10px;
+    /* position: sticky;
+    top: 0px; */
+}
+#lowernav>div{
+    display: flex;
+    width: 60%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-left: 12.7%;
+    /* margin-left: 172px; */
+}
+#lowernav>div>p{
+    margin-right: 12%;
+    /* font-size: 40px; */
+}
+#container{
+   display: flex;
+   border: 1px solid teal;
+   width: 80%;
+   margin: auto;
+
+   
+}
+#questions{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    width: 70%;
+    border: 1px solid red;
+    /* margin: auto; */
+    margin-right: 35px;
+    /* margin-left: 60px; */
+}
+.images_section{
+   width: 20px;
+   height: 20px;
+   border: 1px solid red;
+}
+#top_div_of_questions_top{
+    display: flex;
+}
+#lower_div_of_questions_top{
+    display: flex;
+}
+#category_div{
+    /* background-color: white; */
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(10,1fr);
+    gap:2px;
+    /* width: 20%; */
+}
+#category_div>div{
+    background-color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.spn{
+    /* border: 1px solid blue; */
+    margin-right: -20px;
+}
+#category{
+    border: 1px solid green;
+    width: 25%;
+    position: fixed;
+    /* top: 200px; */
+}
+.options{
+    /* border: 1px solid blue; */
+}
+.arrow{
+    /* border: 1px solid blue; */
+    margin-top: 5px;
+}
+*{
+    font-family: sans-serif;
+}
+
+
+   
+
+
