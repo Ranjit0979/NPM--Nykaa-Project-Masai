@@ -226,6 +226,13 @@ var giftdata=[
       btn.style.fontWeight="600";
       btn.style.cursor="pointer";
       btn.style.border="none";
+
+      btn.addEventListener("click",function(){
+          localStorage.setItem("pic",json.stringify(el.image));
+          localStorage.setItem("heading",JSON.stringify(el.heading));
+          window.location.href="sendgiftcard.html";
+      })
+
       descriptionbox.append(heading,topic,quote);
       outerdescription.append(descriptionbox,btn);
       box.append(imagebox,outerdescription);
