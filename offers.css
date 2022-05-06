@@ -66,14 +66,39 @@ h3{
     width: 55%; 
     margin: auto;
     
-    
+      
 }
+.container{
+    display: flex;
+    width: 100%;
+}
+.fa-angle-left{
+    font-size: 40px;
+    position: relative;
+    top: 180px;
+    left: -20px;
+    color: grey;
+}
+.fa-angle-right{
+    font-size: 40px;
+    position: relative;
+    top: 180px;
+    left: 20px;
+    color: grey;
+
+}
+
+
+
+
+
 
 .row{
     width: 100%;
     display: flex;
     margin-bottom: 100px;
-    overflow-x: auto;    
+    overflow-x: auto;   
+    scroll-behavior: smooth; 
 }
 /* .row::-webkit-scrollbar{
     width: 1;
