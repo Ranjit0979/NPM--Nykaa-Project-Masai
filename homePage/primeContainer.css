@@ -1,0 +1,251 @@
+#PrimeContainer {
+  width: 100%;
+  background-color: grey;
+}
+/* =============  */
+#               
+ {
+  background-color: rgb(133, 76, 7);
+}
+#billBoardImageIn {
+  width: 80%;
+  background-color: yellow;
+  height: 100%;
+  margin: auto;
+}
+#billBoardImageIn > img {
+  width: 100%;
+}
+/* =============  */
+.topSlider {
+  height: 80px;
+  background-color: white;
+}
+.topSliderIn {
+  width: 80%;
+  height: 100%;
+  background-color: skyblue;
+  margin: auto;
+}
+/* =============  */
+#bigBrandOfferHead {
+  background-color: blueviolet;
+}
+#bigBrandOfferHeadIn {
+  width: 50%;
+  height: 100%;
+  background-color: lightgreen;
+  margin: auto;
+}
+#bigBrandOfferHeadIn > img {
+  /* height: 100%; */
+  width: 100%;
+}
+/* =============  */
+.biggrid {
+  background-color: antiquewhite;
+}
+.bigGridIn {
+  width: 80%;
+  height: 100%;
+  background-color: aquamarine;
+  margin: auto;
+}
+/* =============  */
+#bankOfferSlider {
+  height: 80px;
+  background-color: white;
+}
+#bankOfferSliderIn {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background-color: bisque;
+}
+/* =============  */
+#seasonDealHead {
+  background-color: blueviolet;
+}
+#seasonDealHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: lightgreen;
+  margin: auto;
+}
+#seasonDealHeadIn > img {
+  width: 100%;
+}
+/* =============  */
+/* =============  */
+.luxKitsHead {
+  background-color: blueviolet;
+}
+.luxKitsHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: #aadee9;
+  margin: auto;
+}
+#luxKitsHeadIn > img {
+  width: 100%;
+}
+#luxKitsBottomIn > img {
+  width: 100%;
+}
+.luxKitsSlider {
+  background-color: #aadee9;
+}
+.luxKitsSliderIn {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background-color: #09869f;
+}
+.luxKitsBottom {
+  background-color: #aadee9;
+}
+.luxKitsBottomIn {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background-color: #0899b6;
+}
+/* =============  */
+#amagingDiscountHead {
+  background-color: blueviolet;
+}
+#amagingDiscountHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: lightgreen;
+  margin: auto;
+}
+#amagingDiscountHeadIn > img {
+  width: 100%;
+}
+#superSavingsHeadIn > img {
+  width: 100%;
+}
+#bestOfferHeadOneIn > img {
+  width: 100%;
+}
+#bestOfferHeadTwoIn > img {
+  width: 100%;
+}
+#influencerFavHeadIn > img {
+  width: 100%;
+}
+#onlyAtNykaaIn > img {
+  width: 100%;
+}
+#storeAvalBottomIn > img {
+  width: 100%;
+}
+#exclusiveCouponHeadIn > img {
+  width: 100%;
+}
+
+/* ================  */
+#superSavingBottom {
+  height: 200px;
+}
+#influencerBottom {
+  height: 200px;
+  background-color: orange;
+}
+#onlyAtNykaaSlider {
+  height: 150px;
+}
+#stellerStealDealHead {
+  background-color: blueviolet;
+}
+#stellerStealDealHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: lightgreen;
+  margin: auto;
+}
+#stellerStealDealHeadIn > img {
+  width: 100%;
+}
+#newAtNykaaHeadIn > img {
+  width: 100%;
+}
+#storeAvaiableHeadIn > img {
+  width: 100%;
+}
+#newAtNykaaSlider {
+  background-color: #ffffcc;
+  height: 200px;
+}
+#houseOfNykaaHead {
+  background-color: white;
+}
+#houseOfNykaaHeadIn > img {
+  width: 100%;
+}
+#houseOfNykaaBottom {
+  background-color: #fbcccc;
+}
+#houseOfNykaaBottomIn{
+    width: 60%;
+    border: 10px solid #fbcccc;
+}
+#houseOfNykaaBottomIn>.bigGridBox{
+    background-color: #fbcccc;
+    border: 10px solid #fbcccc;
+}
+#houseOfNykaaBottomIn>img{
+    width: 100%;
+}
+#sopBeyondBeautyHead {
+  background-color: blueviolet;
+}
+#sopBeyondBeautyHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: lightgreen;
+  margin: auto;
+}
+#sopBeyondBeautyHeadIn > img {
+  width: 100%;
+}
+/* #shopBeyoundbeautiEnd{
+    
+} */
+#shopBeyondBeautiBottomIn{
+    text-align: center;
+}
+#shopBeyoundbeautiEndIn {
+  width: 80%;
+  margin: auto;
+}
+#shopBeyoundbeautiEndIn > img {
+  width: 100%;
+}
+#crazyDealsHead {
+  background-color: blueviolet;
+}
+#crazyDealsHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: lightgreen;
+  margin: auto;
+}
+#crazyDealsHeadIn > img {
+  width: 100%;
+}
+
+#bottomBillBoardImageIn{
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+#bottomBillBoardImageIn>img{
+    width: 100%;
+    border: 25px solid #F3F3F3;
+}
+#bottomBillBoardImage{
+    background-color: #F3F3F3;
+    height: 390px;
+}

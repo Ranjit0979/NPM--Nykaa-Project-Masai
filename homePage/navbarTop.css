@@ -1,0 +1,117 @@
+body {
+  margin: 0%;
+}
+
+/* // sticky nav ----------------------- */
+#navbarHome {
+  width: 100%;
+  margin: 0%;
+  margin-top: 0%;
+  height: 80px;
+  position: sticky;
+  top: 0px;
+}
+/* nav one sticky---------------------- */
+#navOne {
+  height: 40%;
+  background-color: orange;
+}
+#navOneIn {
+  width: 90%;
+  height: 100%;
+  background-color: aqua;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#navOneTopUpdate {
+  width: 40%;
+  background-color: rgb(31, 33, 33);
+}
+#navTwoTopUpdate {
+  width: 10%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navTwoTopUpdate > :nth-child(n) {
+  height: 70%;
+  width: 40%;
+  background-color: rgb(31, 33, 33);
+}
+#navTwoTopUpdate > :nth-child(2) {
+  width: 10%;
+}
+/* nav one sticky---------------------- */
+
+/* nav two sticky---------------------- */
+#navTwo {
+  height: 60%;
+  width: 100%;
+  background-color: white;
+}
+#navTwoIn {
+  height: 100%;
+  width: 80%;
+  background-color: blueviolet;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navTwoIn > :nth-child(n) {
+  height: 30%;
+  width: 7%;
+  background-color: bisque;
+}
+#navTwoIn > :nth-child(7) {
+  width: 18%;
+}
+#navTwoIn > :nth-child(9) {
+  width: 4%;
+}
+
+/* nav two sticky---------------------- */
+/* // sticky nav end----------------------- */
+
+/* navThird ------------------------------ */
+#navThreeHide {
+  background-color: bisque;
+  height: 50px;
+}
+#navThreeHideIn {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  background-color: brown;
+  border: 5px solid brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#regularNavThree {
+  display: flex;
+  justify-content: space-around;
+  background-color: wheat;
+  width: 86%;
+  height: 30%;
+}
+#regularNavThree > :nth-child(n) {
+  height: 100%;
+  width: 7.5%;
+  background-color: white;
+}
+
+#saleNavThree {
+  height: 30%;
+  width: 8%;
+  background-color: wheat;
+}
+#saleNavThree > div {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  background-color: white;
+}
+/* navThird ------------------------------ */
