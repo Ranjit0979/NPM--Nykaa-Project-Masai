@@ -228,8 +228,14 @@ var giftdata=[
       btn.style.border="none";
 
       btn.addEventListener("click",function(){
-          localStorage.setItem("pic",json.stringify(el.image));
-          localStorage.setItem("heading",JSON.stringify(el.heading));
+         var picdata={
+                       pic:el.image
+                     };
+          localStorage.setItem("pic",JSON.stringify(picdata));
+         var headingdata={
+                            heading:el.heading
+                         };
+          localStorage.setItem("heading",JSON.stringify(headingdata));
           window.location.href="sendgiftcard.html";
       })
 
