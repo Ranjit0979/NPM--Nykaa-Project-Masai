@@ -49,7 +49,7 @@ function display(data){
         off.innerText = ele.off;
 
         card.append(image,off);
-        console.log(card);
+        // console.log(card);
 
         document.querySelector(".brandcontainer").append(card)
     })
@@ -112,10 +112,10 @@ function categories_display(data){
         // off.innerText = ele.off;
 
         card.append(image);
-        console.log(card);
+        // console.log(card);
 
         document.querySelector("#categories").append(card)
-        console.log(card);
+        // console.log(card);
     })
 }
 
@@ -127,14 +127,19 @@ categories_display(categories)
 // Top
 var left = document.querySelector('.fa-angle-left')
 left.addEventListener('click',function(event){
-    var imgages = document.querySelector('#top');
-    imgages.scrollBy(-1700,0)
+    var images = document.querySelector('#top');
+    images.scrollBy(-1700,0)
 })
 
 var right = document.querySelector('.fa-angle-right')
 right.addEventListener('click',function(event){
-    var imgages = document.querySelector('#top');
-    imgages.scrollBy(1700,0)
+    var images = document.querySelector('#top');
+    images.scrollBy(1700,0)
+    // images.scrollWidth()
+    // images.scrollIntoView()
+    // images.scrollLeft+=100;
+
+    
 })
 
 
@@ -142,28 +147,28 @@ right.addEventListener('click',function(event){
 
 var left = document.querySelector('.skinconcern>.fa-angle-left')
 left.addEventListener('click',function(event){
-    var imgages = document.querySelector('.concern_card');
-    imgages.scrollBy(-1700,0)
+    var images = document.querySelector('.concern_card');
+    images.scrollBy(-1700,0)
 })
 
 var right = document.querySelector('.skinconcern>.fa-angle-right')
 right.addEventListener('click',function(event){
-    var imgages = document.querySelector('.concern_card');
-    imgages.scrollBy(1700,0)
+    var images = document.querySelector('.concern_card');
+    images.scrollBy(1700,0)
 })
 
 
 ///////LUXE INDULGENCES
 var left = document.querySelector('.luxe>.fa-angle-left')
 left.addEventListener('click',function(event){
-    var imgages = document.querySelector('.luxe_card');
-    imgages.scrollBy(-1700,0)
+    var images = document.querySelector('.luxe_card');
+    images.scrollBy(-1700,0)
 })
 
 var right = document.querySelector('.luxe>.fa-angle-right')
 right.addEventListener('click',function(event){
-    var imgages = document.querySelector('.luxe_card');
-    imgages.scrollBy(1700,0)
+    var images = document.querySelector('.luxe_card');
+    images.scrollBy(1700,0)
 })
 
 
@@ -171,12 +176,14 @@ right.addEventListener('click',function(event){
 ///////////only at nykaa
 var left = document.querySelector('.atnykaa>.fa-angle-left')
 left.addEventListener('click',function(event){
-    var imgages = document.querySelector('.atnykaa>div');
-    imgages.scrollBy(-1700,0)
+    var images = document.querySelector('.atnykaa>div');
+    images.scrollBy(-1700,0)
 })
 
 var right = document.querySelector('.atnykaa>.fa-angle-right')
 right.addEventListener('click',function(event){
-    var imgages = document.querySelector('.atnykaa>div');
-    imgages.scrollBy(1700,0)
+    var images = document.querySelector('.atnykaa>div');
+    // images.scrollBy(1700,0)
+    // images.scroll(10000,110)
+    images.scrollLeft +=2000;
 })

@@ -59,10 +59,10 @@
 
     <div class="topbrandoffers">
         
-        <div class="container">
+        <div class="container container1">
             <!-- makeup -->
             <i class="fa-solid fa-angle-left"></i>
-            <div class="row">                      
+            <div class="row row1">                      
                 <div class="card">  <!--MakeuP--> 
                     <img src="https://images-static.nykaa.com/uploads/2d8c54f8-2ccb-489f-a081-7173cb0a8968.jpg" alt="makeup">
                     <p>Min 30% Off</p>
@@ -113,11 +113,11 @@
             <i class="fa-solid fa-angle-right"></i>
         </div>
 
-        <div class="container">
+        <div class="container container2">
             <!-- Skin -->
             
             <i class="fa-solid fa-angle-left"></i>
-            <div class="row">
+            <div class="row row2">
                 <div class="card">
                     <img src="https://images-static.nykaa.com/uploads/ed9e5351-e3ed-4a1c-88ec-7beea064b916.jpg" alt="skin">
                     <p>Min 30% Off</p>
@@ -170,10 +170,10 @@
 
         </div>        
         
-        <div class="container">
+        <div class="container container3">
             
             <i class="fa-solid fa-angle-left"></i>
-            <div class="row">
+            <div class="row row3">
                 <div class="card">
                     <img src="https://images-static.nykaa.com/uploads/e895b912-b577-41a3-a199-67a3cc7fa2bc.jpg" alt="Hair">
                     <p>Up To 30% Off</p>
@@ -229,12 +229,12 @@
 
         </div>
         
-        <div class="container">
+        <div class="container container4">
 
             <!-- Personal care -->
             
             <i class="fa-solid fa-angle-left"></i>
-            <div class="row"> 
+            <div class="row row4"> 
                 <div class="card"> <!-- Personal care -->
                     <img src="https://images-static.nykaa.com/uploads/c1e32d1a-d129-42eb-b4b3-555159cf2233.jpg" alt="Personal care">
                     <p>Min 30% Off</p>
@@ -296,11 +296,11 @@
 
         </div>
         
-        <div class="container">
+        <div class="container container5">
         <!-- Appliances -->
             <i class="fa-solid fa-angle-left"></i>
 
-            <div class="row">
+            <div class="row row5">
                 <div class="card"> <!--Appliances-->
                     <img src="https://images-static.nykaa.com/uploads/8f8433d5-9684-4a7a-9a02-b0e2501b5a8a.jpg" alt="Appliances">
                     <p>Up To 50% Off</p>
@@ -362,10 +362,10 @@
 
         </div>
         
-        <div class="container"> <!-- Health and wellness -->
+        <div class="container container6"> <!-- Health and wellness -->
             <i class="fa-solid fa-angle-left"></i>
 
-            <div class="row">
+            <div class="row row6">
                 <div class="card"> <!--Health-->
                     <img src="https://images-static.nykaa.com/uploads/13c3db30-1333-4b50-95d4-9d79a5776211.jpg" alt="Health">
                     <p>Min 40% Off</p>  
@@ -455,5 +455,102 @@
     
 </body>
 </html>
-<script src="/path/to/flickity.pkgd.min.js"></script>
+
+<script>
+    // Row1
+    var right = document.querySelector('.fa-angle-right');
+    right.addEventListener('click',function(event){
+        var images = document.querySelector('.row1');
+        images.scrollBy(400,0)
+
+    })
+    
+    var left = document.querySelector('.fa-angle-left');
+    left.addEventListener('click',function(event){
+        var images = document.querySelector('.row1');
+        images.scrollBy(-400,0)
+
+    })
+
+    // row2
+    var right = document.querySelector('.row2+.fa-angle-right');
+    right.addEventListener('click',function(event){
+        var images = document.querySelector('.row2');
+        images.scrollBy(400,0)
+
+    })
+    
+    var left = document.querySelector('.container2>.fa-angle-left');
+    left.addEventListener('click',function(event){
+        var images = document.querySelector('.container2>.row2');
+        images.scrollBy(-400,0)
+
+    })
+
+    // Row3
+    var right = document.querySelector('.container3>.fa-angle-right');
+    right.addEventListener('click',function(event){
+        var images = document.querySelector('.container>.row3');
+        images.scrollBy(400,0)
+
+    })
+    
+    var left = document.querySelector('.container3>.fa-angle-left');
+    left.addEventListener('click',function(event){
+        var images = document.querySelector('.container3>.row3');
+        images.scrollBy(-400,0)
+
+    })
+
+
+    // Row4
+    var right = document.querySelector('.container4>.fa-angle-right');
+    right.addEventListener('click',function(event){
+        var images = document.querySelector('.container4>.row4');
+        images.scrollBy(400,0)
+
+    })
+    
+    var left = document.querySelector('.container4>.fa-angle-left');
+    left.addEventListener('click',function(event){
+        var images = document.querySelector('.container4>.row4');
+        images.scrollBy(-400,0)
+
+    })
+
+
+    // Row5
+    var right = document.querySelector('.container5>.fa-angle-right');
+    right.addEventListener('click',function(event){
+        var images = document.querySelector('.container5>.row5');
+        images.scrollBy(400,0)
+
+    })
+    
+    var left = document.querySelector('.container5>.fa-angle-left');
+    left.addEventListener('click',function(event){
+        var images = document.querySelector('.container5>.row5');
+        images.scrollBy(-400,0)
+
+    })
+
+    // Row6
+    var right = document.querySelector('.container6>.fa-angle-right');
+    right.addEventListener('click',function(event){
+        var images = document.querySelector('.container6>.row6');
+        images.scrollBy(400,0)
+
+    })
+    
+    var left = document.querySelector('.container6>.fa-angle-left');
+    left.addEventListener('click',function(event){
+        var images = document.querySelector('.container6>.row6');
+        images.scrollBy(-400,0)
+
+    })
+
+
+
+   
+</script>
 

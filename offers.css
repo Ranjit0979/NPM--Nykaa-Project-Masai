@@ -100,9 +100,9 @@ h3{
     overflow-x: auto;   
     scroll-behavior: smooth; 
 }
-/* .row::-webkit-scrollbar{
-    width: 1;
-} */
+.row::-webkit-scrollbar{
+    width: 0;
+}
 
 
 
