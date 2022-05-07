@@ -5,7 +5,7 @@ body{
     background-color: #f3f3f3;
     margin: 0%;
     padding: 0%;
-    /* height: 2000px; */
+    height: 1000px;
 
 }
 #navbar{
@@ -85,7 +85,7 @@ a{
     top: 111px;
 }
 #middle{
-    width: 35%;
+    width: 37%;
     background-color: white;
     padding: 18px;
     padding-top: 0px;
@@ -103,7 +103,7 @@ a{
     width: 95%;
     padding: 10px;
     font-size: 16px;
-    font-weight: 500;
+    /* font-weight: 500; */
     /* border: 1px solid red; */
 }
 #insidemiddle>form>div>p{
@@ -112,11 +112,8 @@ a{
     margin-top: 15px;
     /* font-size: 19px; */
 }
-#msgboxdiv{
-    border-bottom: white;
-}
 .middledivs{
-    border-bottom: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(235, 235, 235);
 }
 .chote_akshar_div{
     font-size: 12px;
@@ -125,7 +122,7 @@ a{
 .bade_akshar_div{
     font-size: 19px;
 }
-#insidemiddle>form>#confirmationdiv{
+#middle>#insidemiddle>form>#confirmationdiv{
     /* border: 1px solid red; */
     margin-top: -20px;
     margin-bottom: 10px;
@@ -160,13 +157,10 @@ button{
     font-weight: bold;
     font-size: 16px;
 }
-#msgboxdiv{
-    /* border: 1px solid red; */
-}
 #msgbox{
     width: 96.6%;
     height: 100%;
-    border: 1px solid rgb(197, 197, 197);
+    border: 1px solid rgb(235, 235, 235);
     color: rgb(59, 59, 59);
     font-size: 16px;
     padding-left: 10px;
@@ -174,7 +168,7 @@ button{
 }
 #right{
     /* border: 1px solid teal; */
-    width: 32%;
+    width: 30%;
 
 }
 #right_top{
@@ -231,7 +225,7 @@ button{
 
 #TandC{
     /* border: 1px solid red; */
-    width: 32%;
+    width: 34%;
     margin: auto;
     margin-left: 428px;
 
@@ -239,7 +233,22 @@ button{
 #TandC>p{
     margin-bottom: -5px;
 }
-
-
+#quote{
+    font-size: 14px;
+    color: grey;
+}
+#middle>#insidemiddle>form>#confirmationdiv>p{
+    color: grey;
+}
+#paisainputdiv{
+    display: flex;
+    /* border: 1px solid red; */
+}
+#paisainputdiv>div{
+    /* border: 1px solid blue; */
+    margin-top: 10px;
+    color: grey;
+    /* margin-right: -5px; */
+}
 
 

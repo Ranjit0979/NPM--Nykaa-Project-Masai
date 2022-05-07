@@ -44,19 +44,22 @@
                      <input type="text" placeholder="Recepient's Phone Or Email" required="required">
                     </div>
                     <div id="msgboxdiv">
-                        <textarea id="msgbox" cols="30" rows="5" maxlength="500" placeholder="Message" required="required"></textarea>
+                        <textarea id="msgbox" cols="30" rows="4" maxlength="500" placeholder="Message" required="required"></textarea>
                     </div>
                     <div class="bade_akshar_div">
                         <p>How much do you like to gift?</p>
                     </div>
-                    <div class="middledivs">
-                        <input type="number" placeholder="Enter Amount(Max.10000)" required="required">
+                    <div class="middledivs" id="paisainputdiv">
+                        <div>
+                            <span>₹</span>
+                        </div>
+                        <input id="moneyfilling" type="number" placeholder="Enter Amount(Max.10000)" required="required" min="250" max="10000">
                     </div>
                     <div id="paisadiv">
-                        <div>$250</div>
-                        <div>$500</div>
-                        <div>$1000</div>
-                        <div>$2000</div>
+                        <div><span>₹</span><span id="money1">250</span></div>
+                        <div><span>₹</span><span id="money2">500</span></div>
+                        <div><span>₹</span><span id="money3">1000</span></div>
+                        <div><span>₹</span><span id="money4">2000</span></div>
                     </div>
                     <div class="middledivs">
                         <input type="text" placeholder="From" required="required">
@@ -91,7 +94,7 @@
                                     <span id="from">Sender's Name</span>
                                 </div>
                                 <div id="quotediv">
-                                    <p></p>
+                                    <p id="quote"></p>
                                 </div>
                                 <div id="pindiv">
                                     <p id="paisa">$</p>

@@ -254,42 +254,43 @@ var giftdata=[
                 topic:"Wish you a very happy marrried life"
              }
           }
-          else if(el.topic=="Classic" )
+          else if(el.topic=="Classic" || el.topic== "Quirky")
           {
              var topicdata={
-                topic:"A Joyful Eid includes a Shopping Spree!"
+                topic:"Here's a little something to make your day!"
              }
           }
-          else if(el.topic=="Eid")
+          else if(el.topic=="For Him" || el.topic=="For Her")
           {
              var topicdata={
-                topic:"A Joyful Eid includes a Shopping Spree!"
+                topic:"All the hugs and gifts you want!"
              }
           }
-          else if(el.topic=="Eid")
+          else if(el.topic=="Birthday")
           {
              var topicdata={
-                topic:"A Joyful Eid includes a Shopping Spree!"
+                topic:"Wishing you the happiest birthday ever!"
              }
           }
-          else if(el.topic=="Eid")
+          else if(el.topic=="Someone Special")
           {
              var topicdata={
-                topic:"A Joyful Eid includes a Shopping Spree!"
+                topic:"Thanks for being there always!"
              }
           }
-          else if(el.topic=="Eid")
+          else if(el.topic=="Anniversary" || el.topic=="I Love You")
           {
              var topicdata={
-                topic:"A Joyful Eid includes a Shopping Spree!"
+                topic:"I love you to the moon and back!"
              }
           }
-          else if(el.topic=="Eid")
+          else if(el.topic=="Congratulations")
           {
              var topicdata={
-                topic:"A Joyful Eid includes a Shopping Spree!"
+                topic:"Many Many congratulations! Wish you all the success you deserve"
              }
           }
+          localStorage.setItem("topic",JSON.stringify(topicdata));
           window.location.href="sendgiftcard.html";
       })
 
