@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
     background-color: #F7F7F7;
+    scroll-behavior: smooth;
 
 }
 
@@ -10,7 +11,12 @@
     width: 100%;
     overflow-x: scroll;
     display: flex;
+    scroll-behavior: smooth;
 }
+#top::-webkit-scrollbar{
+    width: 0;
+}
+
 #top>img{
     min-width: 100%;
 }
@@ -214,7 +220,12 @@ h1{
 .concern_card{
     display: flex;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
+.concern_card::-webkit-scrollbar{
+    width: 0;
+}
+
 
 .concern_card>img{
     margin: 10px;
@@ -252,6 +263,10 @@ h1{
     display: flex;
     overflow-x: scroll;
 }
+.luxe_card::-webkit-scrollbar{
+    width: 0;
+}
+
 .luxe_card>img{
     margin: 10px;
     width:470px;
@@ -271,6 +286,10 @@ h1{
     overflow-x: scroll;
 
 }
+.atnykaa>div::-webkit-scrollbar{
+    width: 0;
+}
+
 .atnykaa img{
     margin: 10px;
 }

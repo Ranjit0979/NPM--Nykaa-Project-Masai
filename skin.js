@@ -122,4 +122,61 @@ function categories_display(data){
 categories_display(categories)
 
 
-/////////Bestseller
+// scroll
+
+// Top
+var left = document.querySelector('.fa-angle-left')
+left.addEventListener('click',function(event){
+    var imgages = document.querySelector('#top');
+    imgages.scrollBy(-1700,0)
+})
+
+var right = document.querySelector('.fa-angle-right')
+right.addEventListener('click',function(event){
+    var imgages = document.querySelector('#top');
+    imgages.scrollBy(1700,0)
+})
+
+
+////shop by skin concern
+
+var left = document.querySelector('.skinconcern>.fa-angle-left')
+left.addEventListener('click',function(event){
+    var imgages = document.querySelector('.concern_card');
+    imgages.scrollBy(-1700,0)
+})
+
+var right = document.querySelector('.skinconcern>.fa-angle-right')
+right.addEventListener('click',function(event){
+    var imgages = document.querySelector('.concern_card');
+    imgages.scrollBy(1700,0)
+})
+
+
+///////LUXE INDULGENCES
+var left = document.querySelector('.luxe>.fa-angle-left')
+left.addEventListener('click',function(event){
+    var imgages = document.querySelector('.luxe_card');
+    imgages.scrollBy(-1700,0)
+})
+
+var right = document.querySelector('.luxe>.fa-angle-right')
+right.addEventListener('click',function(event){
+    var imgages = document.querySelector('.luxe_card');
+    imgages.scrollBy(1700,0)
+})
+
+
+
+///////////only at nykaa
+var left = document.querySelector('.atnykaa>.fa-angle-left')
+left.addEventListener('click',function(event){
+    var imgages = document.querySelector('.atnykaa>div');
+    imgages.scrollBy(-1700,0)
+})
+
+var right = document.querySelector('.atnykaa>.fa-angle-right')
+right.addEventListener('click',function(event){
+    var imgages = document.querySelector('.atnykaa>div');
+    imgages.scrollBy(1700,0)
+})
