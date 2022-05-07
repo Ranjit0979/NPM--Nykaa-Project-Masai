@@ -236,6 +236,60 @@ var giftdata=[
                             heading:el.heading
                          };
           localStorage.setItem("heading",JSON.stringify(headingdata));
+          if(el.topic=="Mother's Day")
+          {
+             var topicdata={
+                topic:"It can't be easy to be in your shoes,but nobody does it better than you!"
+             }
+          }
+          else if(el.topic=="Eid")
+          {
+             var topicdata={
+                topic:"A Joyful Eid includes a Shopping Spree!"
+             }
+          }
+          else if(el.topic=="Wedding")
+          {
+             var topicdata={
+                topic:"Wish you a very happy marrried life"
+             }
+          }
+          else if(el.topic=="Classic" )
+          {
+             var topicdata={
+                topic:"A Joyful Eid includes a Shopping Spree!"
+             }
+          }
+          else if(el.topic=="Eid")
+          {
+             var topicdata={
+                topic:"A Joyful Eid includes a Shopping Spree!"
+             }
+          }
+          else if(el.topic=="Eid")
+          {
+             var topicdata={
+                topic:"A Joyful Eid includes a Shopping Spree!"
+             }
+          }
+          else if(el.topic=="Eid")
+          {
+             var topicdata={
+                topic:"A Joyful Eid includes a Shopping Spree!"
+             }
+          }
+          else if(el.topic=="Eid")
+          {
+             var topicdata={
+                topic:"A Joyful Eid includes a Shopping Spree!"
+             }
+          }
+          else if(el.topic=="Eid")
+          {
+             var topicdata={
+                topic:"A Joyful Eid includes a Shopping Spree!"
+             }
+          }
           window.location.href="sendgiftcard.html";
       })
 
