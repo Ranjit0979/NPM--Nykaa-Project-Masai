@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nykaa</title>
+    <style>
+        
+      #navbar {
+        /* display: flex; */
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+        align-items: center;
+        border: 1px red solid;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+      }
+
+      #navbar>div{
+        height: 100%;
+        width: 75%;
+        display: flex;
+        margin: auto;
+      }
+      #navbar >div> img {
+        border: 1px green solid;
+        height: 70%;
+        display: block;
+        margin-left: 10%;
+        margin-right: 0px;
+      }
+
+      #user_details {
+        margin: auto;
+        display: grid;
+        width: 50%;
+        grid-template-columns: repeat(3, 30%);
+        /* margin-left: -5px; */
+      }
+      #user_details > div {
+        border-left: 1px gray solid;
+        border-right: 1px gray solid;
+        padding-left: 5px;
+        font-size: 20px;
+      }
+
+      #main{
+        display: flex;
+        justify-content: space-evenly;
+        width: 75%;
+        margin: auto;
+        border: 1px red solid;
+        margin: auto;
+      }
+
+      #container {
+        display: grid;
+        grid-template-columns:52% 43%;
+        width: 65%;
+        justify-content: space-evenly;
+         margin-left: 30%;
+        margin-top: 100px;
+        border: 1px black solid;
+      }
+
+      #container > div {
+        border: 1px green solid;
+      }
+
+      #address {
+        position: fixed;
+        left: 15%;
+        top: 100px;
+        border: 1px brown solid;
+        width: 15%;
+        margin-right: 5%;
+
+      }
+
+      #address > button {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        text-align: left;
+      }
+
+      #shippingAddress {
+        width: auto;
+      }
+
+      #shippingAddress > h3 {
+        height: 50px;
+        border: 1px orange solid;
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+      }
+
+      form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      #form > input {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 10px 0px 10px 0px;
+      }
+
+      #form > .add {
+        height: 100px;
+      }
+
+      #submit_add {
+        margin-top: 10px;
+        background-color: rgb(252, 74, 104);
+        color: white;
+        font-size: 20px;
+      }
+
+      #form > span > button {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      #cartDetails {
+        /* position: relative; */
+        height: 400px;
+      }
+
+      #totalProducts {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px brown solid;
+        /* position: fixed; */
+        /* top: 0px; */
+      }
+
+      #totalProducts > p {
+        font-size: 20px;
+        color: orange;
+      }
+
+      #totalProducts > span > button {
+        color: rgb(230, 72, 98);
+        padding: 5px 10px 5px 5px;
+        font-size: 18px;
+        margin-right: 5px;
+        text-align: center;
+        background-color: transparent;
+        border: 0px;
+      }
+
+      #cartProducts {
+        height: 40%;
+        border: 1px brown solid;
+        display: grid;
+        grid-template-columns: 1, 90%;
+        row-gap: 10px;
+        margin-top: 15px;
+      }
+
+      .card {
+        height: 100px;
+        display: flex;
+        border: 1px darkblue solid;
+      }
+
+      .card > img {
+        height: 100%;
+        /* width: 30%; */
+      }
+
+      .quant_prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        border: 1px violet solid;
+      }
+
+      .prices {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+      }
+
+      #finalPrice {
+        height: 50%;
+        border: 1px brown solid;
+        margin-top: 15px;
+        /* position: sticky; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+     
+      <div>
+        <img src="C:\Users\91866\Downloads\nykaa.png" />
+        <div id="user_details">
+          <div>
+            <h3>1-LOGIN</h3>
+          </div>
+          <div>
+            <h3>2-ADDRESS</h3>
+          </div>
+          <div><h3>3-PAYMENT</h3></div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="main">
+
+      <div id="address">
+        <button id="add_address">New Address</button>
+        <button id="add_address">New Address</button>
+      </div>
+
+    <div id="container">
+
+      <div id="shippingAddress">
+        <h3>New Address</h3>
+        <form id="form">
+          <label>select country</label>
+          <br />
+
+          <input id="country" value="India" />
+          <br />
+          <input placeholder="Name" />
+          <br />
+          <label>Phone Number</label>
+          <br />
+          <input type="number" value="" />
+          <br />
+          <input type="number" placeholder="Postal Code" />
+          <br />
+          <input class="add" placeholder="Address" />
+          <br />
+          <span><button></button>Use this as my default shipping address</span>
+          <br />
+          <input
+            id="submit_add"
+            type="submit"
+            value="SHIP TO THIS ADDRESS  >"
+          />
+        </form>
+      </div>
+      <div id="cartDetails">
+        <div id="totalProducts">
+          <p>total items in your bag</p>
+          <span><button>Edit</button><button>^</button></span>
+        </div>
+        <div id="cartProducts">
+          <div class="card">
+            <img
+              src="https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/6/5/65107430000_1.jpg"
+            />
+            <div class="details">
+              <p>Calvin Klein CK one for Women & Men Eau De Toilette</p>
+              <p>200ml</p>
+              <line></line>
+              <div class="quant_prices">
+                <p class="quantity">Qty:1</p>
+                <div class="prices">
+                  <h5>₹4750</h5>
+                  <h3>₹4513</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="finalPrice"></div>
+      </div>
+    </div>
+    </div>
+     
+  </body>
+</html>
+<script></script>
