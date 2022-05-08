@@ -16,6 +16,7 @@ body{
     position: sticky;
     top: 0px;
     height: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 a{
     text-decoration: none;
@@ -83,12 +84,14 @@ a{
     border-right: 3px solid #fc2779; 
     position: sticky;
     top: 111px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #middle{
     width: 37%;
     background-color: white;
     padding: 18px;
     padding-top: 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     /* padding-right: 10px; */
 }
 #insidemiddle>form>div{
@@ -141,6 +144,7 @@ a{
     padding-left: 18px;
     border: 1px solid rgb(197, 197, 197);
     color: rgb(109, 105, 105);
+    cursor: pointer;
 }
 #insidemiddle>form>#btndiv{
     /* border: 1px solid teal; */
@@ -178,6 +182,7 @@ button{
     color: #fea838;
     font-weight: 600;
     padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #right_bottom{
     padding: 15px;
@@ -210,7 +215,8 @@ button{
 #paisa{
     color: #fc0060;
     font-weight: 600;
-    font-size: 18px;   
+    font-size: 22px;   
+    /* border: 1px solid red; */
 }
 #pindiv{
     text-align: center;

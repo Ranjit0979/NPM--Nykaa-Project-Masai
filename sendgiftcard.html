@@ -38,7 +38,7 @@
                         <p>Who is this for?</p>
                     </div>
                     <div class="middledivs">
-                     <input type="text" placeholder="To" required="required">
+                     <input type="text" placeholder="To"  id="To" required="required">
                     </div>
                     <div class="middledivs">
                      <input type="text" placeholder="Recepient's Phone Or Email" required="required">
@@ -56,13 +56,13 @@
                         <input id="moneyfilling" type="number" placeholder="Enter Amount(Max.10000)" required="required" min="250" max="10000">
                     </div>
                     <div id="paisadiv">
-                        <div><span>₹</span><span id="money1">250</span></div>
-                        <div><span>₹</span><span id="money2">500</span></div>
-                        <div><span>₹</span><span id="money3">1000</span></div>
-                        <div><span>₹</span><span id="money4">2000</span></div>
+                        <div id="insidepaisadiv1"><span>₹</span><span id="money1">250</span></div>
+                        <div id="insidepaisadiv2"><span>₹</span><span id="money2">500</span></div>
+                        <div id="insidepaisadiv3"><span>₹</span><span id="money3">1000</span></div>
+                        <div id="insidepaisadiv4"><span>₹</span><span id="money4">2000</span></div>
                     </div>
                     <div class="middledivs">
-                        <input type="text" placeholder="From" required="required">
+                        <input type="text" placeholder="From" id="From" required="required">
                     </div>
                     <div class="middledivs">
                         <input type="text" placeholder="Your Phone Or Email ID" required="required">
@@ -91,13 +91,15 @@
                                 </div>
                                 <div id="fromdiv">
                                     <span>You have received a gift card from</span>
-                                    <span id="from">Sender's Name</span>
+                                    <span id="Sender">Sender's Name</span>
                                 </div>
                                 <div id="quotediv">
                                     <p id="quote"></p>
                                 </div>
                                 <div id="pindiv">
-                                    <p id="paisa">$</p>
+                                    <div id="paisa">
+                                        <span>₹</span><span id="paisafilling"></span>
+                                    </div>
                                     <p>Gift Card Id: **** **** **** ****</p>
                                     <span>Pin: ****** Expires on:</span>
                                     <span id="expirydate"></span>

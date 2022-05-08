@@ -287,7 +287,13 @@ var giftdata=[
           else if(el.topic=="Congratulations")
           {
              var topicdata={
-                topic:"Many Many congratulations! Wish you all the success you deserve"
+                topic:"Many Many congratulations! Wish you all the success you deserve!"
+             }
+          }
+          else if(el.topic=="Valentines")
+          {
+             var topicdata={
+                topic:"Happy Valentine's Day!"
              }
           }
           localStorage.setItem("topic",JSON.stringify(topicdata));
