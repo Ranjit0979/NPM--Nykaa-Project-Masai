@@ -96,7 +96,7 @@ a{
 }
 #insidemiddle>form>div{
     /* border: 1px solid blue; */
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-weight: 500;
     /* border-bottom: 1px solid rgb(197, 197, 197); */
 }
@@ -150,6 +150,7 @@ a{
     /* border: 1px solid teal; */
     margin-bottom: 3px;
     margin-top: 20px;
+    /* cursor: pointer; */
 }
 button{
     border: none;
@@ -160,6 +161,7 @@ button{
     color: white;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
 #msgbox{
     width: 96.6%;
@@ -256,5 +258,4 @@ button{
     color: grey;
     /* margin-right: -5px; */
 }
-
 

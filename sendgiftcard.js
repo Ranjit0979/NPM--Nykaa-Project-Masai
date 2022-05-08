@@ -87,3 +87,11 @@ document.querySelector("#From").addEventListener("keyup",function(e){
     localStorage.setItem("From",JSON.stringify(e.target.value));
 })
 
+// on clicking proceed to pay 
+document.querySelector("form").addEventListener("submit",onsubmit)
+function onsubmit()
+{
+    event.preventDefault();
+    window.location.href="payment.html";
+}
+
