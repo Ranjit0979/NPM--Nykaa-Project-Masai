@@ -47,7 +47,7 @@ document.querySelector("#insidepaisadiv4").addEventListener("click",function(){
 })
 
 // on typing something in money input 
-// bug here 
+// bug here (archie)
 document.querySelector("#moneyfilling").addEventListener("keyup",function(e){
     // document.querySelector("#moneyfilling").addEventListener("keydown",function(e){
         var bag=e.target.value;
