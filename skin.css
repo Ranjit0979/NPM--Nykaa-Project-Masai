@@ -4,6 +4,7 @@
     font-family: 'Open Sans', sans-serif;
     background-color: #F7F7F7;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 
 }
 
@@ -186,6 +187,7 @@ h1{
 }
 /* ///////////////// */
 #beautyadvisor{
+    width: 100%;
     box-sizing: border-box;
     padding: 30px 15%;
     background-color:#F7F7F7 ;
@@ -193,6 +195,7 @@ h1{
 }
 
 #beautyadvisor>img{
+    width: 100%;
     margin: 20px;
 }
 /* /////////////////////// */
@@ -300,8 +303,13 @@ h1{
 /* //////////////////// */
 
 #tryandbuy{
+    width: 90%;
     text-align: center;
-    margin:50px;
+    margin: auto;
+    /* margin:50px; */
+}
+#tryandbuy>img{
+    width: 100%;
 }
 
 
@@ -317,7 +325,7 @@ h1{
 }
 .budgetbuys>img{
     margin: 10px;
-    width: 100%;
+    width: 25%;
 }
 
 
@@ -329,7 +337,7 @@ h1{
 }
 .buyingguides>img{
     margin: 10px;
-    width: 100%;
+    width:30%;
     height: auto;
 }
 
@@ -345,6 +353,109 @@ h1{
 #trending>img{
     width: 100%;
     margin: 0px;
+}
+
+
+/* Media quries */
+@media all and (min-width:451px) and (max-width:750px){
+    h1{
+        font-size: 18px;
+    }
+
+    #top_container>.fa-angle-left ,#top_container>.fa-angle-right{
+        padding: 20px 25px;
+    }
+    .bestsellers_container{
+        width: 80%;
+    }
+
+    .seller_card p{
+        font-size: 12px;
+    }
+    #price{
+        font-size: 16px;
+    }
+
+    .bestsellerlogo{
+        padding: 1px 2px;
+    }
+    .bestsellerlogo>p{
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .concern_card>img{
+        width: 300px;
+    }
+
+    .luxe_card>img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .atnykaa img{
+        width: 60%;
+    }
+
+    .budgetbuys>img{
+        margin: 10px;
+        width: 25%;
+    }
+}
+
+@media all and (min-width:200px) and (max-width:450px){
+
+    h1{
+        font-size: 16px;
+    }
+    .shopbycategory>h1{
+        font-size: 16px;
+    }
+    .brandcontainer p{
+        font-size: 12px;
+    }
+
+
+    #top_container>.fa-angle-left ,#top_container>.fa-angle-right{
+        padding: 10px 15px;
+    }
+    .bestsellers_container{
+        width: 90%;
+    }
+
+    .seller_card p{
+        font-size: 10px;
+    }
+    #price{
+        font-size: 11px;
+    }
+
+    .bestsellerlogo{
+        padding: 0px;
+    }
+    .bestsellerlogo>p{
+        font-size: 5px;
+        margin: 0px 0px;
+    }
+
+    .concern_card>img{
+        width: 200px;
+    }
+
+    .luxe_card>img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .atnykaa img{
+        width: 50%;
+    }
+
+    .budgetbuys>img{
+        margin: 10px;
+        width: 25%;
+    }
+
 }
 
 
