@@ -43,3 +43,44 @@
 #shopBeyondBeautiBottomIn>:nth-child(8){
     grid-area: 2/4/3/5;
 }
+
+/* // house of nykaa background  */
+#houseOfNykaaBottomIn div{
+    background-color: #fbcccc;
+    border-color: #fbcccc;
+}
+#houseOfNykaaBottomIn div>span{
+    font-size: 1.2rem;
+
+}
+#houseOfNykaaBottomIn div>span+span{
+    font-size: 1rem;
+
+}
+
+#stellerGrid div{
+    background-color: white;
+}
+#stellerGrid{
+    background-color: white;
+}
+#amagingDiscountGridIn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 0px;
+}
+#amagingDiscountGrid{
+    background-color: #AADEE9;
+}
+#seasonDealGrid{
+    background-color: white;
+}
+#seasonDealGrid div{
+    background-color: white;
+}#bigBrandGrid{
+    background-color: white;
+}
+#bigBrandGrid div{
+    background-color: white;
+}

@@ -15,7 +15,31 @@
     <link rel="stylesheet" href="navBottom.css" />
     <link rel="stylesheet" href="primeContainer.css" />
     <link rel="stylesheet" href="../productPage/bigBrand.css" />
-    <style></style>
+    <link rel="stylesheet" href="./navDowngray.css" />
+    <link rel="stylesheet" href="./slider.css" />
+    <link rel="stylesheet" href="./megaDropDown.css" />
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+      /* nav {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(16, 16, 16);
+      }
+      nav > ul {
+        float: left;
+      }
+      nav ul li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      nav > ul > li {
+        float: left;
+      } */
+    </style>
   </head>
   <body>
     <!-- navbar------------------------>
@@ -24,53 +48,70 @@
         <div id="navOne">
           <div id="navOneIn">
             <div id="navOneTopUpdate">
-              <!-- <a href="#"> Nykaa's Summer Super Saver Day Are Live - Shop Now! </a> -->
+              <a href="#">
+                Nykaa's Summer Super Saver Day Are Live - Shop Now!
+              </a>
             </div>
             <div id="navTwoTopUpdate">
               <div id="getApp">
-                <!-- <img src="./image/smartphone.png" alt="smartphone"> -->
-                <!-- <a href="#">Get App</a> -->
+                <!-- <img src="./image/smartphone.png" alt="smartphone" /> -->
+                <a href="#">Get App</a>
               </div>
               <div>|</div>
               <div id="StoreAndEvent">
-                <!-- <a href="#">Store & Events</a> -->
+                <a href="#">Store & Events</a>
+              </div>
+              <div>|</div>
+              <div>
+                <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
+                <a href="#">Gift Card</a>
+              </div>
+              <div>|</div>
+              <div>
+                <!-- <img src="../allProducts/icons/question.png" alt="" /> -->
+                <a href="#">Help</a>
               </div>
             </div>
           </div>
         </div>
         <div id="navTwo">
           <div id="navTwoIn">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="NykaaLogo"></div>
+            <div><a href="#">Catagories</a></div>
+            <div><a href="#">Brands</a></div>
+            <div><a href="#">Nykaa Fashion</a></div>
+            <div><a href="#">Beauty Advice</a></div>
+            <div><a href="#">Nykaa Network</a></div>
+            <div id="searchEngineNav">
+              <img
+                src="/NPM--Nykaa-Project-Masai/allProducts/icons/search.png"
+                alt=""
+              />
+              <input type="text" name="" placeholder="Search on Nykaa" />
+            </div>
+            <div id="userAccount">
+              <img src="../allProducts/icons/user.png" alt="" />
+              <a href="#">Account</a>
+            </div>
+            <div id="shoppingCart">
+              <a href="#">
+                <img src="../allProducts/icons/shopping-bag.png" alt="" />
+              </a>
+              <sup id="cartCount">4</sup>
+            </div>
           </div>
         </div>
       </div>
       <!-- third nav  -->
       <div id="navThreeHide">
         <div id="navThreeHideIn">
-          <div id="regularNavThree">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div id="saleNavThree">
-            <div></div>
-          </div>
+          <nav id="regularNavThree">
+            <!-- <ul id="mainUlInDropDownNav">
+            js script here  -->
+
+            <!-- </ul> -->
+          </nav>
+          <div id="saleNavThree"></div>
         </div>
       </div>
     </header>
@@ -90,6 +131,13 @@
       <div id="topSlider" class="topSlider">
         <div id="topSliderIn" class="topSliderIn">
           <!-- js script  grid-->
+          <div class="button1Slider" id="topSliderBtn1">
+            <span><</span>
+          </div>
+          <div id="imageWindowTopSlider"></div>
+          <div class="button1Slider" id="topSliderBtn2">
+            <span> ></span>
+          </div>
         </div>
       </div>
       <div id="bigBrandOfferHead">
@@ -107,8 +155,15 @@
         </div>
       </div>
       <div id="bankOfferSlider">
-        <div id="bankOfferSliderIn">
-          <!-- js script  -->
+        <div id="bankOfferSliderIn" class="topSliderIn">
+          <!-- js script slider -->
+          <div class="button1Slider" id="bankSliderBtn1">
+            <span><</span>
+          </div>
+          <div id="bankImageWindowTopSlider"></div>
+          <div class="button1Slider" id="bankSliderBtn2">
+            <span> ></span>
+          </div>
         </div>
       </div>
       <div id="seasonDealHead">
@@ -137,6 +192,13 @@
       <div id="luxKitsSlider" class="luxKitsSlider">
         <div id="luxKitsSliderIn" class="luxKitsSliderIn">
           <!-- slider js script goes here  -->
+          <div class="button1Slider" id="luxSliderBtn1">
+            <span><</span>
+          </div>
+          <div id="luxImageWindowTopSlider"></div>
+          <div class="button1Slider" id="luxSliderBtn2">
+            <span> ></span>
+          </div>
         </div>
       </div>
       <div id="luxKitsBottom" class="luxKitsBottom">
@@ -148,18 +210,13 @@
           />
         </div>
       </div>
-      <div id="amagingDiscountHead">
-        <div id="amagingDiscountHeadIn">
+      <div id="bestOfferHeadOne" class="luxKitsHead">
+        <div id="bestOfferHeadOneIn" class="luxKitsHeadIn">
           <!-- image here  -->
           <img
-            src="https://images-static.nykaa.com/uploads/8c294589-89bd-47de-8a9f-00276a07ea45.jpg?tr=w-1200,cm-pad_resize"
+            src="https://images-static.nykaa.com/uploads/0882dac8-531e-4b8e-84dd-9cdabff78eb8.jpg?tr=w-1200,cm-pad_resize"
             alt=""
           />
-        </div>
-      </div>
-      <div id="amagingDiscountGrid" class="biggrid">
-        <div id="amagingDiscountGridIn" class="bigGridIn">
-          <!-- grid js goes here  -->
         </div>
       </div>
       <div id="superSavingsHead" class="luxKitsHead">
@@ -171,18 +228,21 @@
           />
         </div>
       </div>
-      <div id="superSavingBottom" class="luxKitsBottom">
-        <div id="superSavingBottomIn" class="luxKitsBottomIn"></div>
+      <div id="amagingDiscountGrid" class="biggrid">
+        <div id="amagingDiscountGridIn" class="bigGridIn">
+          <!-- grid js goes here  -->
+        </div>
       </div>
-      <div id="bestOfferHeadOne" class="luxKitsHead">
-        <div id="bestOfferHeadOneIn" class="luxKitsHeadIn">
+      <div id="amagingDiscountHead">
+        <div id="amagingDiscountHeadIn">
           <!-- image here  -->
           <img
-            src="https://images-static.nykaa.com/uploads/0882dac8-531e-4b8e-84dd-9cdabff78eb8.jpg?tr=w-1200,cm-pad_resize"
+            src="https://images-static.nykaa.com/uploads/8c294589-89bd-47de-8a9f-00276a07ea45.jpg?tr=w-1200,cm-pad_resize"
             alt=""
           />
         </div>
       </div>
+
       <div id="bestOfferHeadTwo" class="luxKitsHead">
         <div id="bestOfferHeadTwoIn" class="luxKitsHeadIn">
           <!-- image here  -->
@@ -209,6 +269,15 @@
       <div id="influencerBottom" class="luxKitsBottom">
         <div id="influencerBottomIn" class="luxKitsBottomIn">
           <!-- image here  -->
+
+          <!-- js script slider -->
+          <!-- <div class="button1Slider" id="influencerSliderBtn1">
+              <span><</span>
+            </div> -->
+          <div id="influencerImageWindowTopSlider"></div>
+          <!-- <div class="button1Slider" id="influencerSliderBtn2">
+              <span> ></span> -->
+
           <!-- slider here  -->
         </div>
       </div>
@@ -222,7 +291,16 @@
         </div>
       </div>
       <div id="onlyAtNykaaSlider" class="luxKitsBottom">
-        <div id="onlyAtNykaaSliderIn" class="luxKitsBottomIn"></div>
+        <div id="onlyAtNykaaSliderIn" class="luxKitsBottomIn">
+          <!-- slider here  -->
+          <div class="button1Slider" id="onlyAtNykaaSliderBtn1">
+            <span><</span>
+          </div>
+          <div id="onlyAtNykaaWindowTopSlider"></div>
+          <div class="button1Slider" id="onlyAtNykaaSliderBtn2">
+            <span> ></span>
+          </div>
+        </div>
       </div>
       <div id="stellerStealDealHead">
         <div id="stellerStealDealHeadIn">
@@ -250,6 +328,13 @@
       <div id="newAtNykaaSlider" class="luxKitsBottom">
         <div id="newAtNykaaSliderIn" class="luxKitsBottomIn">
           <!-- slider her  -->
+          <div class="button1Slider" id="newAtNykaaSliderBtn1">
+            <span><</span>
+          </div>
+          <div id="newAtNykaaWindowTopSlider"></div>
+          <div class="button1Slider" id="newAtNykaaSliderBtn2">
+            <span> ></span>
+          </div>
         </div>
       </div>
       <div id="storeAvaiableHead" class="luxKitsHead">
@@ -323,9 +408,16 @@
           />
         </div>
       </div>
-      <div id="topSlider" class="topSlider">
-        <div id="topSliderIn" class="topSliderIn">
+      <div id="bottomTopSlider" class="bottomTopSlider">
+        <div id="bottombottomTopSliderIn" class="bottomTopSliderIn">
           <!-- js script  -->
+          <div class="button1Slider" id="bottomTopSliderBtn1">
+            <span><</span>
+          </div>
+          <div id="imagebottomTopSlider"></div>
+          <div class="button1Slider" id="bottomTopSliderBtn2">
+            <span> ></span>
+          </div>
         </div>
       </div>
       <div id="bottomBillBoardImage">
@@ -345,43 +437,105 @@
         <div id="blackNav">
           <!-- grid template used  -->
           <div id="blackNavIn">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+              <div class="imageDiv"><img src="../allProducts/icons/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
+              <div class="imageDiv"><img src="../allProducts/icons/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
+              <div class="imageDiv"><img src="../allProducts/icons/phone.png" alt="">
+                <span>FOR ANY HELP YOU MAY CALL US AT
+                1800-267-4444</span>
+              </div>
+              <div><input type="email" placeholder="Your Email"><button>SEND</button></div>
+              <div class="imageDiv"><img src="../allProducts/icons/heart.png" alt=""></div>
+              <div><span>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</span></div>
           </div>
           <!-- grid template used  -->
         </div>
         <div id="greyNav">
           <div id="greyNavIn">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <!-- js script navDownGrey here  -->
           </div>
         </div>
         <div id="whiteNav">
           <div id="whiteNavIn">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt="">
+              </div>
+              <div>
+                <div>FREE SHIPPING</div>
+                <div></div>
+                <div>On Orders Above ₹499</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt="">
+              </div>
+              <div>
+                <div>Easy Returns</div>
+                <div></div>
+                <div>15-Day Return Policy </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt="">
+              </div>
+              <div>
+                <div>100% Authentic</div>
+                <div></div>
+                <div>Products Sourced Directly</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt="">
+              </div>
+              <div>
+                <div>2400+ Brands</div>
+                <div></div>
+                <div>1.9 Lakh+ Products</div>
+              </div>
+            </div>
+            
+            <div>
+              <div><span>show us some love ❤ on social media</span></div>
+              <div>
+                <div><img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt=""><a href="#"></a></div>
+                <div>
+                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                <div>
+                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                <div>
+
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" alt=""><a href="#"></a>
+                </div>
+                <div>
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                
+              </div>
+            </div>
           </div>
         </div>
         <div id="pinkNav">
           <div id="pinkNavIn">
             <div>
               <!-- four flex  -->
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <div>
+                <a href="#"> Terms & Conditions </a>
+              </div>
+              <div><a href="#"> Shipping Policy </a></div>
+              <div><a href="#"> Cancellation Policy </a></div>
+              <div>
+                <a href="#"> Privacy Policy </a>
+              </div>
             </div>
-            <div></div>
+            <div><a href="#">&#169 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</a></div>
           </div>
         </div>
         <div id="endBlack"></div>
@@ -398,3 +552,18 @@
 <script src="../productPage/steallerDeal.js"></script>
 <script src="../productPage/houseOfNykaa.js"></script>
 <script src="../productPage/shopBeyondBeauti.js"></script>
+
+<!-- nav bottom script  -->
+<script src="./navDownGrey.js"></script>
+<!-- <script src="../homePage/megaDropDownData.js"></script> -->
+<!-- // topSlider  -->
+<script src="../productPage/topSlider.js"></script>
+<script src="../productPage/bankSlider.js"></script>
+<script src="../productPage/luxeSlider.js"></script>
+<script src="../productPage/influencerSlider.js"></script>
+<script src="../productPage/onlyAtNykaaSlider.js"></script>
+<script src="../productPage/newAtNykaa.js"></script>
+<script src="../productPage/topBottomSlider.js"></script>
+<script src="../productPage/amazingDiscount.js"></script>
+
+<script src="./megaDropDownData.js"></script>

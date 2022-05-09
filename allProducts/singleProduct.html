@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #container {
+        width: 1150px;
+        height: 900px;
+        margin: auto;
+      }
+      #topBox {
+        height: 490px;
+        width: 100%;
+        display: flex;
+      }
+      #divOne {
+        width: 430px;
+        height: 100%;
+    }
+    #divOneIn {
+        height: 97.4%;
+        width: auto;
+        border: 1px solid rgb(227, 227, 227);
+    }
+    /* // fav icon */
+    #favIcon {
+        width: 100%;
+        height: 10%;
+        /* background-color: bisque; */
+        text-align: right;
+      }
+      #favIconImg > img {
+        width: 30px;
+        cursor: pointer;
+      }
+      #favIconImg {
+        margin-right: 10px;
+        margin-top: 2px;
+        border: 10px solid white;
+      }
+
+      #divOneSecondBox {
+        display: flex;
+        justify-content: space-around;
+      }
+      #thumnailBox {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 10px solid red;
+        grid-gap: 5px;
+      }
+      .thumbNail {
+        background-color: aqua;
+        height: 50px;
+        width: 50px;
+      }
+      #productImage {
+        width: 300px;
+        height: 300px;
+        border: 5px solid red;
+        margin-top: 10px;
+      }
+     #divOneSecondBox img {
+         width: 100%;
+     } 
+    #productImage{
+        cursor: crosshair;
+    }
+    #zoomLayout{
+        height: 500px;
+        width: 500px;
+        /* background-color: bisque; */
+        background-size: cover;
+        position: absolute;
+        top:20px;
+        right:350px;
+        z-index: 111;
+    }
+
+      /* // description  */
+      #divTwo {
+        width: 720px;
+        height: 478px;
+        border: 1px solid rgb(227, 227, 227);
+        border-left: none;
+        position: relative;
+
+      }
+      #divTwoOne {
+        height: 52%;
+        width: 100%;
+        border: 10px solid white;
+        border-bottom: 0px;
+        
+      }
+      #divTowOneIn{
+          border-left: 10px solid white;
+      }
+      #pieceCount{
+          display: block;
+          margin-top: 4px;
+          font-size: 1.1rem;
+      }
+      #ratingAndAll{
+          display: block;
+          margin-top: 20px;
+          font-size: 1rem;
+      }
+      #ratingAndAll>:nth-child(n){
+          margin-right: 5px;
+      }
+
+      #productName{
+        font-size: 1.35rem;
+      }
+      #priceDetail{
+          margin-top: 15px;
+          font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 1.05rem;
+          font-weight: 600;
+      }
+      #priceDetail:nth-child(n)
+      {
+          margin-right: 4px;
+      }
+      #MRP{
+          color: rgb(103, 102, 102);
+      }
+      #actualPrice{
+        color: rgb(103, 102, 102);
+        text-decoration: line-through;
+      }
+      #offerPrice{
+          font-size: 1.22rem;
+          margin-right: 4px;
+      }
+      #discountPercentage{
+          color: green;
+      }
+      /* // tax infor */
+      #taxText{
+          color: rgb(115, 114, 114);
+      }
+/* // list  */
+    #additionalInfo{
+        /* height: auto; */
+        width: 90%;
+        color: rgb(55, 55, 55);
+        background-color: rgb(227, 227, 227);
+        border-radius: 5px;
+        border: 10px solid rgb(227, 227, 227);
+        border-top: 0px;
+        margin: 0%;
+        padding: 0%;
+        padding: 2px;
+       font-size: .9rem;
+
+    }
+   #viewMore{
+       padding-left: 35px;
+       padding-bottom: 5px;
+       color:#fc2779;
+       cursor: pointer;
+       font-weight: bold;
+       margin-top: -10px;
+   }
+      /* // add to cart  */
+      #divTwoTwo {
+        height: 31%;
+        width: 80%;
+        border: 10px solid white;
+        border-right: 0px;
+        border-top: 0px;
+      }
+      #divTwoTwoIn {
+        height: 99%;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
+      }
+      #addToCart {
+        background-color: #fc2779;
+        padding: 15px 70px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: white;
+        
+      }
+      #verticalLine {
+        border: 1px solid rgb(227, 227, 227);
+        height: 70%;
+      }
+      #deliverCheck {
+        margin-right: 20px;
+        width: 40%;
+        /* border: 30px solid white; */
+      }
+      #deliverCheck>div>span>img{
+          height: 17px;
+          opacity: .8;
+      }
+      #deliverCheck>div>span+span{
+          font-stretch: semi-expanded;
+          color: rgb(84, 83, 83);
+          font-size: 1.05rem;
+      }
+      #deliverCheck>div{
+          margin-bottom: 4px;
+      }
+      /* //pincode */
+      #pincodeBox{
+          border: 1px solid rgb(194, 194, 194);
+          width: 280px;
+         padding: 8px 12px;
+          display: flex;
+          justify-content: space-between;
+      }
+      #enterPincode{
+          border: none;
+          font-size: 1.01rem;
+          outline: none;
+      }
+     
+      #check{
+          color: #fc2779;
+          width: auto;
+          font-weight: bold;
+          font-size: .9rem;
+      }
+      /* // bottom three */
+      #bottomDivTwo {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+        display: flex;
+        background-color: rgb(231, 228, 228);
+        height: 10%;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid rgb(227, 227, 227);
+      }
+      #bottomDivTwo > div {
+        border: 8px solid rgb(231, 228, 228);
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #bottomDivTwo > div > span {
+        display: block;
+        color: rgb(78, 78, 78);
+        margin-left: 4px;
+      }
+      #bottomDivTwo > div > span + span {
+        color: black;
+      }
+      #bottomDivTwo > div > img {
+        background-color: rgb(231, 228, 228);
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main">
+        <div id="topBox">
+          <div id="divOne">
+            <div id="divOneIn">
+              <div id="favIcon">
+                <div id="favIconImg">
+                  <img src="./icons/like.png" alt="" class="emptyHeart" />
+                </div>
+              </div>
+              <div id="divOneSecondBox">
+                <!-- // flex will apply here -->
+
+                <div id="thumnailBox">
+                  <!-- //grid will apply here -->
+                  <!-- class apply through js only -->
+                  <!-- productImage will change onClick below -->
+
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div id="upDownButton">
+                    <!-- visible only when image thumbnail more than 5  -->
+                    <div id="UpBtn"></div>
+                    <div id="DownBtn"></div>
+                  </div>
+                </div>
+                <div id="productImage">
+                  <!-- big image here -->
+                  <img id="productImageImg" src="https://images-static.nykaa.com/media/catalog/product/2/1/219f5edBELAB00000106-E.jpg?tr=w-344,h-344,cm-pad_resize" alt="">
+                  <div id="zoomLayout"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- for description side image  -->
+          <div id="divTwo">
+            <div id="divTwoOne">
+              <div id="divTowOneIn">
+                <span id="productName">
+                  <!-- js input  -->
+                  Bella Vita Organic Exfoliate Coffee Face and Body Scrub - Pack of 2
+                </span>
+                <span id="pieceCount">
+                  <!-- js input  -->
+                  (2 Pcs)
+                </span>
+                <div id="ratingAndAll">
+                  <!-- anchor will go here  -->
+                  <span id="rating">
+                    <span>******</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span id="ratingString">4.6/5</span>
+                  <span id="ratingAndReview">653 ratings & 2 reviews</span>
+                  <span> Q&As </span>
+                </div>
+                <div id="priceDetail">
+                  <span id="MRP">MRP: </span>
+                  <span id="actualPrice">550</span>
+                  <span id="offerPrice">385</span>
+                  <span id="discountPercentage">30% Off</span>
+                </div>
+                <p id="taxText">inclusive of all taxes</p>
+                <div id="additionalInfo">
+                  <div>
+                    <ul id="offerList">
+                      <li>Additional 10% on purchase of Rs 549 and above</li>
+                      <!-- <li></li> -->
+                    </ul>
+                  </div>
+                  <div id="viewMore">
+                    <span>View More Offers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="divTwoTwo">
+              <!-- // add bag and delivery check  -->
+              <div id="divTwoTwoIn">
+                <div id="addToCart">
+                  <span>ADD TO BAG</span>
+                </div>
+                <div id="verticalLine"></div>
+                <div id="deliverCheck">
+                  <div>
+                    <span><img src="./icons/location.png" alt=""></span>
+                    <span>Delivery Options</span>
+                  </div>
+                  <div>
+                    <div id="pincodeBox">
+                      <input
+                        type="text"
+                        maxlength="6"
+                        minlength="6"
+                        id="enterPincode"
+                        placeholder="Enter pincode"
+                      />
+                      <div id="check">Check</div id="check"> 
+                        <!-- js will apply here  -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="bottomDivTwo">
+              <!-- flex will apply here -->
+              <div>
+                <img src="./icons/singleProductReturn.png" alt="" />
+                <span>100% Genuine Products</span>
+              </div>
+              <div>
+                <img src="./icons/return.png" alt="" />
+                <span>Easy Return Policy</span>
+              </div>
+              <div>
+                <span>Sold by :</span>
+                <span>NYKAA E RETA...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottomBox"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  // favIcon color change
+  var favIconImg = document.querySelector("#favIconImg>:nth-child(1)");
+  
+  favIconImg.addEventListener("click", function (e) {
+    var val_check_class = e.target.className;
+    if (val_check_class == "emptyHeart") {
+      e.target.setAttribute("class", "fullHeart");
+      e.target.setAttribute("src", "./icons/likeFull.png");
+    } else {
+      e.target.setAttribute("class", "emptyHeart");
+      e.target.setAttribute("src", "./icons/like.png");
+    }
+  });
+  //zoom product image=================>
+  var zoomDiv = document.querySelector("#zoomLayout");
+  document.querySelector("#productImageImg").addEventListener("mouseover", function(el)
+  {
+    // code
+    imSrc = el.target.src;
+    var imgZoom  =document.createElement("img");
+    imgZoom.setAttribute("id", "tempImageZoom");
+    imgZoom.setAttribute("src", imSrc);
+    imgZoom.style.width = "100%";
+    zoomDiv.append(imgZoom);
+  })
+  document.querySelector("#productImageImg").addEventListener("mouseout", function(el)
+  {
+      var imgzoon = document.querySelector("#tempImageZoom");
+    zoomDiv.removeChild(imgzoon);
+  })
+  //zoom product image=================>
+
+</script>

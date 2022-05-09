@@ -18,6 +18,7 @@ for (var i = 0; i < imgs.length; i++) {
   var box = document.createElement("div"); //big box
   var boxIn = document.createElement("div"); //insode box
   boxIn.setAttribute("class", "bigGridBox");
+  boxIn.style.textAlign="center";
   var image = document.createElement("img"); // produc image
   image.setAttribute("src", imgs[i]);
   var spanBold = document.createElement("span"); // first text
