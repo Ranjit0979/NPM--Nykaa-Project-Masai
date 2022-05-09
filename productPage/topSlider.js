@@ -1,4 +1,4 @@
-let imas = [
+let timas = [
   "https://images-static.nykaa.com/uploads/7f12e789-83ce-4a44-8a0b-ac778582f2c1.png?tr=w-150,cm-pad_resize",
   "https://images-static.nykaa.com/uploads/f116a424-27b3-4812-a9eb-2f198fb42d0a.png?tr=w-150,cm-pad_resize",
   "https://images-static.nykaa.com/uploads/a2212275-11a6-4497-a56d-34c48f722cfd.png?tr=w-150,cm-pad_resize",
@@ -34,13 +34,13 @@ let btn2 = document.querySelector("#topSliderBtn2");
 let left = 0;
 let lengthOfImage = 9;
 let right = lengthOfImage - 1;
-function slider(imas, ul_master, lengthOfImage) {
+function slider(timas, ul_master, lengthOfImage) {
   mainDiv.innerHTML = "";
   for (let i = left; i < right; i++) {
     let div_main = document.createElement("div");
     div_main.setAttribute("class", "imageBoxSlider");
     let imageInsideSlider = document.createElement("img");
-    imageInsideSlider.setAttribute("src", imas[i]);
+    imageInsideSlider.setAttribute("src", timas[i]);
     imageInsideSlider.setAttribute("class", "imageInsideSlider");
     let desciption = document.createElement("span");
     desciption.setAttribute("class", "sliderDescription");
@@ -49,7 +49,7 @@ function slider(imas, ul_master, lengthOfImage) {
     mainDiv.append(div_main);
   }
 }
-slider(imas, ul_master, lengthOfImage);
+slider(timas, ul_master, lengthOfImage);
 btn2.addEventListener("click", function () {
   //increment
   addIncrement();
@@ -62,8 +62,8 @@ btn1.addEventListener("click", function () {
 function addIncrement() {
   left++;
   right++;
-  if (right < imas.length) {
-    slider(imas, ul_master, lengthOfImage);
+  if (right < timas.length) {
+    slider(timas, ul_master, lengthOfImage);
   } else {
     left--;
     right--;
@@ -73,7 +73,7 @@ function addDecrement() {
   left--;
   right--;
   if (left >= 0) {
-    slider(imas, ul_master, lengthOfImage);
+    slider(timas, ul_master, lengthOfImage);
   } else {
     left++;
     right++;

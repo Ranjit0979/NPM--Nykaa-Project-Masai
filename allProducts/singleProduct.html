@@ -5,270 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Product</title>
+    <link rel="stylesheet" href="singleProduct.css">
+    <link rel="stylesheet" href="allProduct.css" />
+    <link rel="stylesheet" href="../homePage/navbarTop.css" />
+    <link rel="stylesheet" href="../homePage/navBottom.css" />
+    <link rel="stylesheet" href="primeContainer.css" />
+    <link rel="stylesheet" href="../homePage/megaDropDown.css" />
+    <link rel="stylesheet" href="../homePage/navDownGrey.js" />
+    <link rel="stylesheet" href="./slider.css" />
     <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      #container {
-        width: 1150px;
-        height: 900px;
-        margin: auto;
-      }
-      #topBox {
-        height: 490px;
-        width: 100%;
-        display: flex;
-      }
-      #divOne {
-        width: 430px;
-        height: 100%;
-    }
-    #divOneIn {
-        height: 97.4%;
-        width: auto;
-        border: 1px solid rgb(227, 227, 227);
-    }
-    /* // fav icon */
-    #favIcon {
-        width: 100%;
-        height: 10%;
-        /* background-color: bisque; */
-        text-align: right;
-      }
-      #favIconImg > img {
-        width: 30px;
-        cursor: pointer;
-      }
-      #favIconImg {
-        margin-right: 10px;
-        margin-top: 2px;
-        border: 10px solid white;
-      }
-
-      #divOneSecondBox {
-        display: flex;
-        justify-content: space-around;
-      }
-      #thumnailBox {
-        display: grid;
-        grid-template-columns: 1fr;
-        border: 10px solid red;
-        grid-gap: 5px;
-      }
-      .thumbNail {
-        background-color: aqua;
-        height: 50px;
-        width: 50px;
-      }
-      #productImage {
-        width: 300px;
-        height: 300px;
-        border: 5px solid red;
-        margin-top: 10px;
-      }
-     #divOneSecondBox img {
-         width: 100%;
-     } 
-    #productImage{
-        cursor: crosshair;
-    }
-    #zoomLayout{
-        height: 500px;
-        width: 500px;
-        /* background-color: bisque; */
-        background-size: cover;
-        position: absolute;
-        top:20px;
-        right:350px;
-        z-index: 111;
-    }
-
-      /* // description  */
-      #divTwo {
-        width: 720px;
-        height: 478px;
-        border: 1px solid rgb(227, 227, 227);
-        border-left: none;
-        position: relative;
-
-      }
-      #divTwoOne {
-        height: 52%;
-        width: 100%;
-        border: 10px solid white;
-        border-bottom: 0px;
-        
-      }
-      #divTowOneIn{
-          border-left: 10px solid white;
-      }
-      #pieceCount{
-          display: block;
-          margin-top: 4px;
-          font-size: 1.1rem;
-      }
-      #ratingAndAll{
-          display: block;
-          margin-top: 20px;
-          font-size: 1rem;
-      }
-      #ratingAndAll>:nth-child(n){
-          margin-right: 5px;
-      }
-
-      #productName{
-        font-size: 1.35rem;
-      }
-      #priceDetail{
-          margin-top: 15px;
-          font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          font-size: 1.05rem;
-          font-weight: 600;
-      }
-      #priceDetail:nth-child(n)
-      {
-          margin-right: 4px;
-      }
-      #MRP{
-          color: rgb(103, 102, 102);
-      }
-      #actualPrice{
-        color: rgb(103, 102, 102);
-        text-decoration: line-through;
-      }
-      #offerPrice{
-          font-size: 1.22rem;
-          margin-right: 4px;
-      }
-      #discountPercentage{
-          color: green;
-      }
-      /* // tax infor */
-      #taxText{
-          color: rgb(115, 114, 114);
-      }
-/* // list  */
-    #additionalInfo{
-        /* height: auto; */
-        width: 90%;
-        color: rgb(55, 55, 55);
-        background-color: rgb(227, 227, 227);
-        border-radius: 5px;
-        border: 10px solid rgb(227, 227, 227);
-        border-top: 0px;
-        margin: 0%;
-        padding: 0%;
-        padding: 2px;
-       font-size: .9rem;
-
-    }
-   #viewMore{
-       padding-left: 35px;
-       padding-bottom: 5px;
-       color:#fc2779;
-       cursor: pointer;
-       font-weight: bold;
-       margin-top: -10px;
-   }
-      /* // add to cart  */
-      #divTwoTwo {
-        height: 31%;
-        width: 80%;
-        border: 10px solid white;
-        border-right: 0px;
-        border-top: 0px;
-      }
-      #divTwoTwoIn {
-        height: 99%;
-        display: flex;
-        margin: auto;
-        align-items: center;
-        justify-content: space-around;
-      }
-      #addToCart {
-        background-color: #fc2779;
-        padding: 15px 70px;
-        font-size: 1.1rem;
-        font-weight: 500;
-        color: white;
-        
-      }
-      #verticalLine {
-        border: 1px solid rgb(227, 227, 227);
-        height: 70%;
-      }
-      #deliverCheck {
-        margin-right: 20px;
-        width: 40%;
-        /* border: 30px solid white; */
-      }
-      #deliverCheck>div>span>img{
-          height: 17px;
-          opacity: .8;
-      }
-      #deliverCheck>div>span+span{
-          font-stretch: semi-expanded;
-          color: rgb(84, 83, 83);
-          font-size: 1.05rem;
-      }
-      #deliverCheck>div{
-          margin-bottom: 4px;
-      }
-      /* //pincode */
-      #pincodeBox{
-          border: 1px solid rgb(194, 194, 194);
-          width: 280px;
-         padding: 8px 12px;
-          display: flex;
-          justify-content: space-between;
-      }
-      #enterPincode{
-          border: none;
-          font-size: 1.01rem;
-          outline: none;
-      }
-     
-      #check{
-          color: #fc2779;
-          width: auto;
-          font-weight: bold;
-          font-size: .9rem;
-      }
-      /* // bottom three */
-      #bottomDivTwo {
-          position: absolute;
-          bottom: 0px;
-          left: 0px;
-          right: 0px;
-        display: flex;
-        background-color: rgb(231, 228, 228);
-        height: 10%;
-        align-items: center;
-        justify-content: space-around;
-        border: 1px solid rgb(227, 227, 227);
-      }
-      #bottomDivTwo > div {
-        border: 8px solid rgb(231, 228, 228);
-        display: flex;
-        align-items: center;
-        font-size: 1.1rem;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-      #bottomDivTwo > div > span {
-        display: block;
-        color: rgb(78, 78, 78);
-        margin-left: 4px;
-      }
-      #bottomDivTwo > div > span + span {
-        color: black;
-      }
-      #bottomDivTwo > div > img {
-        background-color: rgb(231, 228, 228);
-        height: 30px;
-      }
+      
     </style>
   </head>
+  <!-- navbar------------------------>
+  <header>
+    <div id="navbarHome">
+      <div id="navOne">
+        <div id="navOneIn">
+          <div id="navOneTopUpdate">
+            <a href="#">
+              Nykaa's Summer Super Saver Day Are Live - Shop Now!
+            </a>
+          </div>
+          <div id="navTwoTopUpdate">
+            <div id="getApp">
+              <!-- <img src="./image/smartphone.png" alt="smartphone" /> -->
+              <a href="#">Get App</a>
+            </div>
+            <div>|</div>
+            <div id="StoreAndEvent">
+              <a href="#">Store&Events</a>
+            </div>
+            <div>|</div>
+            <div>
+              <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
+              <a href="#">Gift Card</a>
+            </div>
+            <div>|</div> 
+            <div>
+              <!-- <img src="../allProducts/icons/question.png" alt="" /> -->
+              <a href="#">Help</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="navTwo">
+        <div id="navTwoIn">
+          <div id="NykaaLogo"></div>
+          <div><a href="#">Catagories</a></div>
+          <div><a href="#">Brands</a></div>
+          <div><a href="#">Nykaa Fashion</a></div>
+          <div><a href="#">Beauty Advice</a></div>
+          <div><a href="#">Nykaa Network</a></div>
+          <div id="searchEngineNav">
+            <img
+              src="/NPM--Nykaa-Project-Masai/allProducts/icons/search.png"
+              alt=""
+            />
+            <input type="text" name="" placeholder="Search on Nykaa" />
+          </div>
+          <div id="userAccount">
+            <img src="../allProducts/icons/user.png" alt="" />
+            <a href="/NPM--Nykaa-Project-Masai/signin/signin_page.html" id="userLink">Account</a>
+          </div>
+          <div id="shoppingCart">
+            <a href="#">
+              <img src="../allProducts/icons/shopping-bag.png" alt="" />
+            </a>
+            <sup id="cartCount">4</sup>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- third nav  -->
+    <div id="navThreeHide">
+      <div id="navThreeHideIn">
+        <nav id="regularNavThree">
+          <!-- <ul id="mainUlInDropDownNav">
+          js script here  -->
+
+          <!-- </ul> -->
+        </nav>
+        <div id="saleNavThree"></div>
+      </div>
+    </div>
+  </header>
   <body>
     <div id="container">
       <div id="main">
@@ -313,7 +134,7 @@
           <div id="divTwo">
             <div id="divTwoOne">
               <div id="divTowOneIn">
-                <span id="productName">
+                <span id="productName" class="productName">
                   <!-- js input  -->
                   Bella Vita Organic Exfoliate Coffee Face and Body Scrub - Pack of 2
                 </span>
@@ -399,9 +220,163 @@
             </div>
           </div>
         </div>
-        <div id="bottomBox"></div>
+        <div id="bottomBox">
+          <div id="singleProductDescriptiontitle">
+            <h2>
+              Product Description
+            </h2>
+          </div>
+          <div id="bottomContainer">
+            <div id="leftContainer">
+              <div>
+                <div> // 2 button</div>
+                <div>Description</div>
+                <div>read more</div>
+              </div>
+              <div>
+                <h2>
+                  Customers also Viewed
+                </h2>
+              </div>
+              <div>
+                <!-- slider here  -->
+              </div>
+              <div>
+                <h2>
+                  Product Details
+                </h2>
+              </div>
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div id="rightContainer">
+              <div id="smallBoxAddtoCart">
+                <div><img src="" alt=""></div>
+                <div class="productName"><span></span></div>
+                <div><span>MRP: </span>
+                <span>$799</span></div>
+                <div id="addtoCartMini">ADD TO BAG</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <footer>
+      <div id="navEnd">
+        <div id="blackNav">
+          <!-- grid template used  -->
+          <div id="blackNavIn">
+              <div class="imageDiv"><img src="../allProducts/icons/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
+              <div class="imageDiv"><img src="../allProducts/icons/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
+              <div class="imageDiv"><img src="../allProducts/icons/phone.png" alt="">
+                <span>FOR ANY HELP YOU MAY CALL US AT
+                1800-267-4444</span>
+              </div>
+              <div><input type="email" placeholder="Your Email"><button>SEND</button></div>
+              <div class="imageDiv"><img src="../allProducts/icons/heart.png" alt=""></div>
+              <div><span>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</span></div>
+          </div>
+          <!-- grid template used  -->
+        </div>
+        <div id="greyNav">
+          <div id="greyNavIn">
+            <!-- js script navDownGrey here  -->
+          </div>
+        </div>
+        <div id="whiteNav">
+          <div id="whiteNavIn">
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt="">
+              </div>
+              <div>
+                <div>FREE SHIPPING</div>
+                <div></div>
+                <div>On Orders Above ₹499</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt="">
+              </div>
+              <div>
+                <div>Easy Returns</div>
+                <div></div>
+                <div>15-Day Return Policy </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt="">
+              </div>
+              <div>
+                <div>100% Authentic</div>
+                <div></div>
+                <div>Products Sourced Directly</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt="">
+              </div>
+              <div>
+                <div>2400+ Brands</div>
+                <div></div>
+                <div>1.9 Lakh+ Products</div>
+              </div>
+            </div>
+            
+            <div>
+              <div><span>show us some love ❤ on social media</span></div>
+              <div>
+                <div><img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt=""><a href="#"></a></div>
+                <div>
+                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                <div>
+                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                <div>
+
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" alt=""><a href="#"></a>
+                </div>
+                <div>
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pinkNav">
+          <div id="pinkNavIn">
+            <div>
+              <!-- four flex  -->
+              <div>
+                <a href="#"> Terms & Conditions </a>
+              </div>
+              <div><a href="#"> Shipping Policy </a></div>
+              <div><a href="#"> Cancellation Policy </a></div>
+              <div>
+                <a href="#"> Privacy Policy </a>
+              </div>
+            </div>
+            <div><a href="#">&#169 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</a></div>
+          </div>
+        </div>
+        <div id="endBlack"></div>
+      </div>
+    </footer>
+    <!-- nav bottom end here  -->
   </body>
 </html>
 <script>
@@ -438,3 +413,5 @@
   //zoom product image=================>
 
 </script>
+<script src="../homePage/megaDropDownData.js"></script>
+<script src="../homePage/navDownGrey.js"></script>

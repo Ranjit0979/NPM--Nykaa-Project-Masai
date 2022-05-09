@@ -44,7 +44,7 @@ body {
   font-weight: bold;
 }
 #navTwoTopUpdate {
-  width: 10%;
+  width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,10 +63,10 @@ body {
   height: 50%;
 }
 #navTwoTopUpdate a  {
-  display: block;
+  /* display: block; */
   /* width: 50%; */
   color: black;
-  height: 50%;
+  /* height: 50%; */
   text-decoration: none;
 }
 #navTwoTopUpdate >:nth-child(n) {

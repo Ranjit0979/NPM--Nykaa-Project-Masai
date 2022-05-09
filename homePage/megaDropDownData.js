@@ -1140,3 +1140,13 @@ anchorOffer.style.color = "white";
 anchorOffer.setAttribute("src", "#");
 offerDiv.append(anchorOffer);
 document.querySelector("#saleNavThree").append(offerDiv);
+
+var accountName = document.querySelector("#userAcountA");
+
+var accountGet = JSON.parse(localStorage.getItem("loginData"));
+if(accountGet.email!="" || accountGet.email!=null)
+{
+    accountName.innerText = accountGet.email;
+    accountName.setAttribute("href", "../signin/profile.html");
+}
+
