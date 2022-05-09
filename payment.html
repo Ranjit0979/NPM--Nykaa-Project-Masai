@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="icon"
+    href="https://images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png"
+    type="image/x-icon"
+  />
+    <link rel="stylesheet" href="./css/payment.css">
+ 
+</head>
+
+<body>
+    
+    <div id="navbar">
+        <div id="image_div">
+            <div id="redirectLogoToHome">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Nykaa_New_Logo.svg/250px-Nykaa_New_Logo.svg.png"
+                    alt="" id="redirectAnchorToHome">
+            </div>
+        </div>
+        <div id="sections">
+            <div>
+                <a href="./giftcard.html">1 - Choose design</a>
+                <p id="heading"></p>
+            </div>
+            <div> <a href="./sendgiftcard.html">2 - Enter Details</a> </div>
+            <div> <a href="">3 - Payment</a> </div>
+        </div>
+    </div>
+    <!-- navbar ends  -->
+    <div id="payment-method">
+        <button id="credit">Credit/Debit Card</button>
+        <button id="google">UPI</button>
+        <button id="netBanking">Net Banking</button>
+        <!-- <button id="mobileWallets">Mobile Wallets</button>
+    <button id="cod">Cash on Delievery</button>
+    <button id="gift">Gift Card</button> -->
+    </div>
+    <div id="container">
+
+        <div id="cardDetails">
+            <!-- In this div we will get the card details from user -->
+            <h3>Credit/Debit Card</h3>
+            <input id="cardNumber" placeholder="Card Number" type="number" />
+            <div id="main">
+                <div>
+                    <p>expiry</p>
+                    <div id="expiry">
+                        <input id="month" placeholder="MM" /><span>/</span> <input id="year" placeholder="YY" />
+                        <input id="cvv" placeholder="CVV" />
+                    </div>
+
+                </div>
+
+                <div id="note">
+                    <img src="https://www.nykaa.com/assets/desktop/images/checkout/bank-card-back-side.png" />
+                    <p>last 3 digits at the back of the card</p>
+                </div>
+
+            </div>
+
+            <div>
+                <input type="checkbox" id="default"></input>
+                <p>save this card for future</p>
+            </div>
+
+            <button id="pay" onclick="payamount()">Pay<span id="paying"></span>Now  ></button>
+
+
+        </div>
+        <div id="right">    <!--right section-->
+            <div id="right_top">Preview</div>
+            <div id="right_bottom">
+                <div id="inside_right_bottom">
+                    <div id="imagediv"></div>
+                    <div id="imagelowerdiv">
+                        <div>
+                           <div id="datadiv">
+                               <div id="receiverdiv">
+                                   <span>Hi</span>
+                                   <span id="Receiver">Receiver's Name</span>
+                               </div>
+                               <div id="fromdiv">
+                                   <span>You have received a gift card from</span>
+                                   <span id="Sender">Sender's Name</span>
+                               </div>
+                               <div id="quotediv">
+                                   <p id="quote"></p>
+                               </div>
+                               <div id="pindiv">
+                                   <div id="paisa">
+                                       <span>₹</span><span id="paisafilling"></span>
+                                   </div>
+                                   <p>Gift Card Id: **** **** **** ****</p>
+                                   <span>Pin: ****** Expires on:</span>
+                                   <span id="expirydate"></span>
+                               </div>
+                           </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
+<script src="./js/payment.js"></script>
+<script>
+  document.querySelector("#redirectLogoToHome").addEventListener("click", function(){
+    window.location.href="./index.html";
+  })
+</script>

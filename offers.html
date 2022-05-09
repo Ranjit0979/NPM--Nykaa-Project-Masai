@@ -13,12 +13,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/NPM--Nykaa-Project-Masai/homePage/navbarTop.css">
-    <link rel="stylesheet" href="/NPM--Nykaa-Project-Masai/homePage/navBottom.css">
-    <link rel="stylesheet" href="/NPM--Nykaa-Project-Masai/homePage/megaDropDown.css">
+    <link rel="stylesheet" href="./css/navbarTop.css">
+    <link rel="stylesheet" href="./css/navBottom.css">
+    <link rel="stylesheet" href="./css/megaDropDown.css">
     <script src="https://kit.fontawesome.com/fc34c79b95.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="offers.css">
+    <link rel="stylesheet" href="./css/offers.css">
+    <style>
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    </style>
 
 
 
@@ -45,7 +51,7 @@
                 <div>|</div>
                 <div>
                   <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
-                  <a href="#">Gift Card</a>
+                  <a href="./giftcard.html">Gift Card</a>
                 </div>
                 <div>|</div> 
                 <div>
@@ -71,14 +77,14 @@
                 <input type="text" name="" placeholder="Search on Nykaa" />
               </div>
               <div id="userAccount">
-                <img src="../allProducts/icons/user.png" alt="" />
-                <a href="../signin/signin_page.html" id="userAcountA">Account</a>
+                <img src="./images/user.png" alt="" />
+                <a href="./images/signin_page.html" id="userAcountA">Account</a>
               </div>
               <div id="shoppingCart">
-                <a href="#">
-                  <img src="../allProducts/icons/shopping-bag.png" alt="" />
+                <a href="./cart.html">
+                  <img src="./images/shopping-bag.png" alt="" />
                 </a>
-                <sup id="cartCount">4</sup>
+                <sup id="cartCount"></sup>
               </div>
             </div>
           </div>
@@ -528,14 +534,14 @@
           <div id="blackNav">
             <!-- grid template used  -->
             <div id="blackNavIn">
-                <div class="imageDiv"><img src="../allProducts/icons/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
-                <div class="imageDiv"><img src="../allProducts/icons/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
-                <div class="imageDiv"><img src="../allProducts/icons/phone.png" alt="">
+                <div class="imageDiv"><img src="./images/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
+                <div class="imageDiv"><img src="./images/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
+                <div class="imageDiv"><img src="./images/phone.png" alt="">
                   <span>FOR ANY HELP YOU MAY CALL US AT
                   1800-267-4444</span>
                 </div>
                 <div><input type="email" placeholder="Your Email"><button>SEND</button></div>
-                <div class="imageDiv"><img src="../allProducts/icons/heart.png" alt=""></div>
+                <div class="imageDiv"><img src="./images/heart.png" alt=""></div>
                 <div><span>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</span></div>
             </div>
             <!-- grid template used  -->
@@ -744,6 +750,17 @@
    
 </script>
 
-<script src="/NPM--Nykaa-Project-Masai/homePage/megaDropDownData.js">
+<script src="./js/megaDropDownData.js">
 
+</script>
+
+<script>
+  document.querySelector("#Skin").setAttribute("href","./skin.html");
+  document.querySelector("#Hair").setAttribute("href","./nykaa_hair.html");
+  document.querySelector("#Makeup").setAttribute("href", "./nykaa_makeUp.html");
+
+  document.querySelector("#offerDiv").addEventListener("click", function()
+  {
+    window.location.href="./offers.html";
+  })
 </script>

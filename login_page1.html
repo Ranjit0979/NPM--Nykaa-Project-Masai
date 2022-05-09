@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-    rel="icon"
-    href="https://images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png"
-    type="image/x-icon"
-  />
-    <link rel="stylesheet" href="payment.css">
-    <link rel="stylesheet" href="/NPM--Nykaa-Project-Masai/homePage/navbarTop.css">
-    <link rel="stylesheet" href="/NPM--Nykaa-Project-Masai/homePage/navBottom.css">
-    <link rel="stylesheet" href="/NPM--Nykaa-Project-Masai/homePage/megaDropDown.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/login_page1.css" />
+    <link rel="stylesheet" href="./css/megaDropDown.css">
+    <link rel="stylesheet" href="./css/navbarTop.css">
+    <link rel="stylesheet" href="./css/navBottom.css">
+  </head>
+  <body>
     <header>
         <div id="navbarHome">
           <div id="navOne">
@@ -38,7 +32,7 @@
                 <div>|</div>
                 <div>
                   <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
-                  <a href="#">Gift Card</a>
+                  <a href="./giftcard.html">Gift Card</a>
                 </div>
                 <div>|</div> 
                 <div>
@@ -58,20 +52,20 @@
               <div><a href="#">Nykaa Network</a></div>
               <div id="searchEngineNav">
                 <img
-                  src="/NPM--Nykaa-Project-Masai/allProducts/icons/search.png"
+                  src="./images/search.png"
                   alt=""
                 />
                 <input type="text" name="" placeholder="Search on Nykaa" />
               </div>
               <div id="userAccount">
-                <img src="../allProducts/icons/user.png" alt="" />
-                <a href="../signin/signin_page.html" id="userAcountA">Account</a>
+                <img src="./images/user.png" alt="" />
+                <a href="./signin_page.html" id="userAcountA">Account</a>
               </div>
               <div id="shoppingCart">
-                <a href="#">
-                  <img src="../allProducts/icons/shopping-bag.png" alt="" />
+                <a href="./cart.html">
+                  <img src="./images/shopping-bag.png" alt="" />
                 </a>
-                <sup id="cartCount">4</sup>
+                <sup id="cartCount"></sup>
               </div>
             </div>
           </div>
@@ -90,113 +84,44 @@
         </div>
       </header>
       <!-- nav end here -->
-    <!-- navbar starts  -->
-    <div id="navbar">
-        <div id="image_div">
-            <div>
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Nykaa_New_Logo.svg/250px-Nykaa_New_Logo.svg.png"
-                    alt="">
-            </div>
+    <form id="outer_box">
+      <div id="innerBox">
+        <button type="button" id="close_page">x</button>
+
+        <div>
+          <h3 id="heading">LOGIN / REGISTER</h3>
         </div>
-        <div id="sections">
-            <div>
-                <a href="giftcard.html">1 - Choose design</a>
-                <p id="heading"></p>
-            </div>
-            <div> <a href="sendgiftcard.html">2 - Enter Details</a> </div>
-            <div> <a href="">3 - Payment</a> </div>
+        <div id="checkout">
+          <div id="email_box">
+            <input
+              id="email"
+              type="text"
+              placeholder="Enter Email ID or Phone Number" 
+            />
+          </div>
+          <span>REQUIRED</span>
+          </div>
+          <div id="btn">
+            <button id="button">
+             PROCEED
+            </button>
+          </div>
         </div>
-    </div>
-    <!-- navbar ends  -->
-    <div id="payment-method">
-        <button id="credit">Credit/Debit Card</button>
-        <button id="google">UPI</button>
-        <button id="netBanking">Net Banking</button>
-        <!-- <button id="mobileWallets">Mobile Wallets</button>
-    <button id="cod">Cash on Delievery</button>
-    <button id="gift">Gift Card</button> -->
-    </div>
-    <div id="container">
-
-        <div id="cardDetails">
-            <!-- In this div we will get the card details from user -->
-            <h3>Credit/Debit Card</h3>
-            <input id="cardNumber" placeholder="Card Number" type="number" />
-            <div id="main">
-                <div>
-                    <p>expiry</p>
-                    <div id="expiry">
-                        <input id="month" placeholder="MM" /><span>/</span> <input id="year" placeholder="YY" />
-                        <input id="cvv" placeholder="CVV" />
-                    </div>
-
-                </div>
-
-                <div id="note">
-                    <img src="https://www.nykaa.com/assets/desktop/images/checkout/bank-card-back-side.png" />
-                    <p>last 3 digits at the back of the card</p>
-                </div>
-
-            </div>
-
-            <div>
-                <input type="checkbox" id="default"></input>
-                <p>save this card for future</p>
-            </div>
-
-            <button id="pay" onclick="payamount()">Pay<span id="paying"></span>Now  ></button>
-
-
-        </div>
-        <div id="right">    <!--right section-->
-            <div id="right_top">Preview</div>
-            <div id="right_bottom">
-                <div id="inside_right_bottom">
-                    <div id="imagediv"></div>
-                    <div id="imagelowerdiv">
-                        <div>
-                           <div id="datadiv">
-                               <div id="receiverdiv">
-                                   <span>Hi</span>
-                                   <span id="Receiver">Receiver's Name</span>
-                               </div>
-                               <div id="fromdiv">
-                                   <span>You have received a gift card from</span>
-                                   <span id="Sender">Sender's Name</span>
-                               </div>
-                               <div id="quotediv">
-                                   <p id="quote"></p>
-                               </div>
-                               <div id="pindiv">
-                                   <div id="paisa">
-                                       <span>₹</span><span id="paisafilling"></span>
-                                   </div>
-                                   <p>Gift Card Id: **** **** **** ****</p>
-                                   <span>Pin: ****** Expires on:</span>
-                                   <span id="expirydate"></span>
-                               </div>
-                           </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      </form>
     </div>
     <footer>
         <div id="navEnd">
           <div id="blackNav">
             <!-- grid template used  -->
             <div id="blackNavIn">
-                <div class="imageDiv"><img src="../allProducts/icons/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
-                <div class="imageDiv"><img src="../allProducts/icons/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
-                <div class="imageDiv"><img src="../allProducts/icons/phone.png" alt="">
+                <div class="imageDiv"><img src="./images/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
+                <div class="imageDiv"><img src="./images/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
+                <div class="imageDiv"><img src="./images/phone.png" alt="">
                   <span>FOR ANY HELP YOU MAY CALL US AT
                   1800-267-4444</span>
                 </div>
                 <div><input type="email" placeholder="Your Email"><button>SEND</button></div>
-                <div class="imageDiv"><img src="../allProducts/icons/heart.png" alt=""></div>
+                <div class="imageDiv"><img src="./images/heart.png" alt=""></div>
                 <div><span>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</span></div>
             </div>
             <!-- grid template used  -->
@@ -294,8 +219,32 @@
         </div>
       </footer>
       <!-- nav bottom end here  -->
-</body>
-
+  </body>
 </html>
-<script src="payment.js"></script>
-<script src="/NPM--Nykaa-Project-Masai/homePage/megaDropDownData.js"></script>
+
+<!-- <script>
+  var btn = document.querySelector("#email").value;
+  console.log(btn);
+</script> -->
+
+<!-- // sign in  -->
+<script>
+    document.querySelector("#close_page").addEventListener("click", function()
+    {
+        window.location.href= "./signin_page.html";
+    })
+</script>
+
+<script>
+   
+    //submit------------------------------->
+    document.querySelector("form").addEventListener("submit", myFunction);
+    function myFunction() {
+      event.preventDefault();
+      loginLocalData = {
+          email:document.querySelector("#email").value
+        };
+      localStorage.setItem("loginData", JSON.stringify(loginLocalData));
+      window.location.href = "./login_page2.html";
+    }
+  </script>

@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Product</title>
-    <link rel="stylesheet" href="singleProduct.css">
-    <link rel="stylesheet" href="allProduct.css" />
-    <link rel="stylesheet" href="../homePage/navbarTop.css" />
-    <link rel="stylesheet" href="../homePage/navBottom.css" />
-    <link rel="stylesheet" href="primeContainer.css" />
-    <link rel="stylesheet" href="../homePage/megaDropDown.css" />
-    <link rel="stylesheet" href="../homePage/navDownGrey.js" />
-    <link rel="stylesheet" href="./slider.css" />
+    <link rel="stylesheet" href="./css/singleProduct.css">
+    <link rel="stylesheet" href="./css/allProduct.css" />
+    <link rel="stylesheet" href="./css/navbarTop.css" />
+    <link rel="stylesheet" href="./css/navBottom.css" />
+    <link rel="stylesheet" href="./css/primeContainer.css" />
+    <link rel="stylesheet" href="./css/megaDropDown.css" />
+    <link rel="stylesheet" href="./css/navDownGrey.js" />
+    <link rel="stylesheet" href="./css/slider.css" />
     <style>
       
     </style>
@@ -39,7 +39,7 @@
             <div>|</div>
             <div>
               <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
-              <a href="#">Gift Card</a>
+              <a href="./giftcard.html">Gift Card</a>
             </div>
             <div>|</div> 
             <div>
@@ -59,20 +59,20 @@
           <div><a href="#">Nykaa Network</a></div>
           <div id="searchEngineNav">
             <img
-              src="/NPM--Nykaa-Project-Masai/allProducts/icons/search.png"
+              src="./images/search.png"
               alt=""
             />
             <input type="text" name="" placeholder="Search on Nykaa" />
           </div>
           <div id="userAccount">
-            <img src="../allProducts/icons/user.png" alt="" />
-            <a href="/NPM--Nykaa-Project-Masai/signin/signin_page.html" id="userLink">Account</a>
+            <img src="./images/user.png" alt="" />
+            <a href="./signin_page.html" id="userLink">Account</a>
           </div>
           <div id="shoppingCart">
-            <a href="#">
-              <img src="../allProducts/icons/shopping-bag.png" alt="" />
+            <a href="./cart.html">
+              <img src="./images/shopping-bag.png" alt="" />
             </a>
-            <sup id="cartCount">4</sup>
+            <sup id="cartCount"></sup>
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@
             <div id="divOneIn">
               <div id="favIcon">
                 <div id="favIconImg">
-                  <img src="./icons/like.png" alt="" class="emptyHeart" />
+                  <img src="./images/like.png" alt="" class="emptyHeart" />
                 </div>
               </div>
               <div id="divOneSecondBox">
@@ -184,7 +184,7 @@
                 <div id="verticalLine"></div>
                 <div id="deliverCheck">
                   <div>
-                    <span><img src="./icons/location.png" alt=""></span>
+                    <span><img src="./images/location.png" alt=""></span>
                     <span>Delivery Options</span>
                   </div>
                   <div>
@@ -206,11 +206,11 @@
             <div id="bottomDivTwo">
               <!-- flex will apply here -->
               <div>
-                <img src="./icons/singleProductReturn.png" alt="" />
+                <img src="./images/singleProductReturn.png" alt="" />
                 <span>100% Genuine Products</span>
               </div>
               <div>
-                <img src="./icons/return.png" alt="" />
+                <img src="./images/return.png" alt="" />
                 <span>Easy Return Policy</span>
               </div>
               <div>
@@ -272,14 +272,14 @@
         <div id="blackNav">
           <!-- grid template used  -->
           <div id="blackNavIn">
-              <div class="imageDiv"><img src="../allProducts/icons/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
-              <div class="imageDiv"><img src="../allProducts/icons/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
-              <div class="imageDiv"><img src="../allProducts/icons/phone.png" alt="">
+              <div class="imageDiv"><img src="./images/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
+              <div class="imageDiv"><img src="./images/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
+              <div class="imageDiv"><img src="./images/phone.png" alt="">
                 <span>FOR ANY HELP YOU MAY CALL US AT
                 1800-267-4444</span>
               </div>
               <div><input type="email" placeholder="Your Email"><button>SEND</button></div>
-              <div class="imageDiv"><img src="../allProducts/icons/heart.png" alt=""></div>
+              <div class="imageDiv"><img src="./images/heart.png" alt=""></div>
               <div><span>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</span></div>
           </div>
           <!-- grid template used  -->
@@ -387,10 +387,10 @@
     var val_check_class = e.target.className;
     if (val_check_class == "emptyHeart") {
       e.target.setAttribute("class", "fullHeart");
-      e.target.setAttribute("src", "./icons/likeFull.png");
+      e.target.setAttribute("src", "./images/likeFull.png");
     } else {
       e.target.setAttribute("class", "emptyHeart");
-      e.target.setAttribute("src", "./icons/like.png");
+      e.target.setAttribute("src", "./images/like.png");
     }
   });
   //zoom product image=================>
@@ -413,5 +413,5 @@
   //zoom product image=================>
 
 </script>
-<script src="../homePage/megaDropDownData.js"></script>
-<script src="../homePage/navDownGrey.js"></script>
+<script src="./js/megaDropDownData.js"></script>
+<script src="./js/navDownGrey.js"></script>

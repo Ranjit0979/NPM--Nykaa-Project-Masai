@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
     <!-- <link rel="stylesheet" href="login_page2.css" /> -->
-    <link rel="stylesheet" href="login_page1.css" />
-    <link rel="stylesheet" href="../homePage/megaDropDown.css">
-    <link rel="stylesheet" href="../homePage/navbarTop.css">
-    <link rel="stylesheet" href="../homePage/navBottom.css">
+    <link rel="stylesheet" href="./css/login_page1.css" />
+    <link rel="stylesheet" href="./css/megaDropDown.css">
+    <link rel="stylesheet" href="./css/navbarTop.css">
+    <link rel="stylesheet" href="./css/navBottom.css">
     <style>
       #email_box {
         border-color: rgb(191, 190, 190);
@@ -38,7 +38,7 @@
                 <div>|</div>
                 <div>
                   <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
-                  <a href="#">Gift Card</a>
+                  <a href="./giftcard.html">Gift Card</a>
                 </div>
                 <div>|</div> 
                 <div>
@@ -64,14 +64,14 @@
                 <input type="text" name="" placeholder="Search on Nykaa" />
               </div>
               <div id="userAccount">
-                <img src="../allProducts/icons/user.png" alt="" />
-                <a href="../signin/signin_page.html" id="userAcountA">Account</a>
+                <img src="./images/user.png" alt="" />
+                <a href="./signin_page.html" id="userAcountA">Account</a>
               </div>
               <div id="shoppingCart">
                 <a href="#">
-                  <img src="../allProducts/icons/shopping-bag.png" alt="" />
+                  <img src="./images/shopping-bag.png" alt="" />
                 </a>
-                <sup id="cartCount">4</sup>
+                <sup id="cartCount"></sup>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@
 
 <script>
   document.querySelector("#close_page").addEventListener("click", function () {
-    window.location.href = "login_page1.html";
+    window.location.href = "./login_page1.html";
   });
 </script>
 <script>
@@ -161,7 +161,7 @@
       localStorage.setItem("masterData", JSON.stringify(masterAccountData));
     }
     localStorage.setItem("activeUser", emailData.email);
-    window.location.href = "../homePage/index.html";
+    window.location.href = "./index.html";
   });
 
   function existAccountCheck(email) {

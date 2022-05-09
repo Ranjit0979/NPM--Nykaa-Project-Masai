@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="allProduct.css" />
-    <link rel="stylesheet" href="../homePage/navbarTop.css" />
-    <link rel="stylesheet" href="../homePage/navBottom.css" />
-    <link rel="stylesheet" href="primeContainer.css" />
-    <link rel="stylesheet" href="../homePage/megaDropDown.css" />
-    <link rel="stylesheet" href="../homePage/navDownGrey.js" />
-    <link rel="stylesheet" href="./slider.css" />
+    <link
+      rel="icon"
+      href="https://images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/allProduct.css" />
+    <link rel="stylesheet" href="./css/navbarTop.css" />
+    <link rel="stylesheet" href="./css/navBottom.css" />
+    <link rel="stylesheet" href="./css/primeContainer.css" />
+    <link rel="stylesheet" href="./css/megaDropDown.css" />
+    <link rel="stylesheet" href="./css/navDownGrey.js" />
+    <link rel="stylesheet" href="./css/slider.css" />
     <style></style>
   </head>
   <body>
@@ -37,7 +42,7 @@
                   <div>|</div>
                   <div>
                     <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
-                    <a href="#">Gift Card</a>
+                    <a href="./giftcard.html">Gift Card</a>
                   </div>
                   <div>|</div> 
                   <div>
@@ -57,18 +62,18 @@
                 <div><a href="#">Nykaa Network</a></div>
                 <div id="searchEngineNav">
                   <img
-                    src="/NPM--Nykaa-Project-Masai/allProducts/icons/search.png"
+                    src="./images/search.png"
                     alt=""
                   />
                   <input type="text" name="" placeholder="Search on Nykaa" />
                 </div>
                 <div id="userAccount">
-                  <img src="../allProducts/icons/user.png" alt="" />
-                  <a href="/NPM--Nykaa-Project-Masai/signin/signin_page.html" id="userLink">Account</a>
+                  <img src="./images/user.png" alt="" />
+                  <a href="./signin_page.html" id="userLink">Account</a>
                 </div>
                 <div id="shoppingCart">
-                  <a href="#">
-                    <img src="../allProducts/icons/shopping-bag.png" alt="" />
+                  <a href="./cart.html">
+                    <img src="./images/shopping-bag.png" alt="" />
                   </a>
                   <sup id="cartCount">4</sup>
                 </div>
@@ -120,14 +125,14 @@
         <div id="blackNav">
           <!-- grid template used  -->
           <div id="blackNavIn">
-              <div class="imageDiv"><img src="../allProducts/icons/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
-              <div class="imageDiv"><img src="../allProducts/icons/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
-              <div class="imageDiv"><img src="../allProducts/icons/phone.png" alt="">
+              <div class="imageDiv"><img src="./images/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
+              <div class="imageDiv"><img src="./images/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
+              <div class="imageDiv"><img src="./images/phone.png" alt="">
                 <span>FOR ANY HELP YOU MAY CALL US AT
                 1800-267-4444</span>
               </div>
               <div><input type="email" placeholder="Your Email"><button>SEND</button></div>
-              <div class="imageDiv"><img src="../allProducts/icons/heart.png" alt=""></div>
+              <div class="imageDiv"><img src="./images/heart.png" alt=""></div>
               <div><span>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</span></div>
           </div>
           <!-- grid template used  -->
@@ -258,7 +263,7 @@
     var span2 = document.createElement("span");
     var image2 = document.createElement("img");
     span2.style.textAlign = "right";
-    image2.setAttribute("src", "./icons/arrow-down-sign-to-navigate.png");
+    image2.setAttribute("src", "./images/arrow-down-sign-to-navigate.png");
     image2.style.height = "10px";
     span2.append(image2);
     main.append(span, span2);
@@ -509,7 +514,7 @@
     //like button
     var div1 = document.createElement("div");
     var favSign = document.createElement("img");
-    favSign.setAttribute("src", "./icons/like.png");
+    favSign.setAttribute("src", "./images/like.png");
     favSign.setAttribute("class", "emptyHeart");
     favSign.style.color = "red";
     div1.append(favSign);
@@ -517,10 +522,10 @@
       let classSelect = e.target.className;
       if (classSelect == "emptyHeart") {
         e.target.setAttribute("class", "fullHeart");
-        e.target.setAttribute("src", "./icons/likeFull.png");
+        e.target.setAttribute("src", "./images/likeFull.png");
       } else {
         e.target.setAttribute("class", "emptyHeart");
-        e.target.setAttribute("src", "./icons/like.png");
+        e.target.setAttribute("src", "./images/like.png");
       }
     });
     var div2 = document.createElement("div");
@@ -603,5 +608,5 @@ if(acitveUser==null)
 
 
 </script>
-<script src="../homePage/megaDropDownData.js"></script>
-<script src="../homePage/navDownGrey.js"></script>
+<script src="./js/megaDropDownData.js"></script>
+<script src="./js/navDownGrey.js"></script>
