@@ -71,6 +71,28 @@ a{
     margin: auto;
     margin-top: 30px;
 }
+@media all and (min-width:451px) and (max-width:750px)
+{
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(11,auto); */
+        gap: 50px 80px;
+        width: 100%;
+        
+    }
+}
+@media all and (min-width:200px) and (max-width:450px)
+{
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* grid-template-rows: repeat(11,auto); */
+        gap: 50px 80px;
+        width: 100%;
+        
+    }
+}
 #imagebox>img{
     width: 100%;
     height: 100%;
