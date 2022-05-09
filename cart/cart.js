@@ -24,9 +24,10 @@ displayAddressButtons();
 //this for showing saved address
 if (savedAddress.length == 0) {
   inputForm();
-  document.querySelector("#form").addEventListener("submit", addAddress);
+  localStorage.setItem("finalAddress","");
 }
- else {
+else
+{
   showAddress();
   document.querySelector("#selectedAdd").innerText=savedAddress[savedAddress.length-1].address+savedAddress[savedAddress.length-1].country||"";
 }
@@ -126,6 +127,7 @@ function inputForm() {
 }
 
 
+//bug @archiesmandas
 //this is for default button to store address as default
 // document.querySelector("#checkbox").addEventListener("click",greenBox);
 // function greenBox(){

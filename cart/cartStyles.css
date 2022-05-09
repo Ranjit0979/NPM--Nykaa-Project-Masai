@@ -392,6 +392,8 @@ form {
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
 
+ 
+
   #container {
     display: grid;
     width: 95%;
@@ -471,6 +473,8 @@ form {
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
 
+ 
+
   #container {
     display: grid;
     width: 95%;
@@ -481,6 +485,8 @@ form {
     margin-top: 20px;
     justify-content: space-around;
   }
+
+  
 
   #ads {
     border: 1px red solid;
@@ -498,3 +504,5 @@ form {
 
 
 }
+
+
