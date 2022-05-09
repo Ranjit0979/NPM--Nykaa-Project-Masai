@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login_page1.css">
+</head>
+<body>
+    <div id="outer_box">
+        <div>
+            <h3 id="heading">LOGIN/REGISTER</h3>
+        </div>
+        <div id="checkout">
+            <div id="email_box">
+                <input id="email" type="text" placeholder="Enter Email ID or Phone Number">
+            </div>
+            <p>Required</p>
+            <div id="btn">
+                <button id="button" type="button"><a href="login_page2.html">PROCEED</a></button>
+            </div>
+        </div>       
+    </div>
+</body>
+</html>
+
+<script>
+    var btn = document.querySelector("#email").value;
+    console.log(btn)
+</script>
