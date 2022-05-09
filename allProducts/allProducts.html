@@ -5,137 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body {
-        background-color: rgb(232, 228, 228);
-        font-family: Arial, Helvetica, sans-serif;
-        position: relative;
-      }
-      #container {
-        width: 100%;
-        margin: auto;
-      }
-      #topImage {
-        height: 220px;
-        margin: auto;
-      }
-      #topImage > img {
-        width: 100%;
-      }
-      #outLine {
-        height: 3800px;
-        width: 1200px;
-        margin: auto;
-      }
-      #ProductHeading {
-        text-align: center;
-      }
-      #bottom {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-      #right {
-        width: 900px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-      }
-      .mainProductBox {
-        border: 20px solid white;
-        height: 400px;
-        background-color: white;
-        position: relative;
-        border-radius: 6px;
-      }
-      .productNameInBox {
-        border: 5px solid white;
-        font-size: 21px;
-        text-align: center;
-      }
-
-      .productPriceInsideBox {
-        border: 5px solid white;
-        font-size: 18px;
-        text-align: center;
-      }
-      .productPriceInsideBox > :nth-child(n) {
-        margin: 5px;
-        color: grey;
-      }
-      .productPriceInsideBox > :nth-child(2) {
-        text-decoration: line-through;
-      }
-      .productPriceInsideBox > :nth-child(3) {
-        font-weight: bold;
-        color: black;
-      }
-      .productPriceInsideBox > :nth-child(4) {
-        font-weight: bold;
-        color: green;
-      }
-
-      #left {
-        width: auto;
-        height: auto;
-        position: sticky;
-        top: 20px;
-        height: 900px;
-      }
-      #bottomIn {
-        border-radius: 20px;
-        background-color: #fc2779;
-        width: 270px;
-      }
-      .sideButton {
-        font-size: 22px;
-        border: 1px solid rgb(230, 226, 226);
-        padding: 20px 8px 20px 8px;
-        display: flex;
-        background-color: white;
-      }
-      /* // button  */
-      .addToCartBox {
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-      }
-      .addToCartBox > div > img {
-        height: 26px;
-        display: block;
-        align-items: center;
-        margin-top: 10px;
-      }
-      .addToCartBox > div {
-        margin: auto;
-        cursor: pointer;
-        height: 50px;
-      }
-      .addToCartButton {
-        background-color: #fc2779;
-        width: 200px;
-        text-align: center;
-        align-items: center;
-        font-size: 20px;
-        color: white;
-        font-weight: bold;
-      }
-      .addToCartButton > span {
-        display: block;
-        margin-top: 10px;
-      }
-      #pagination {
-        height: 40px;
-        background-color: black;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="allProduct.css" />
+    <link rel="stylesheet" href="../homePage/navbarTop.css" />
+    <link rel="stylesheet" href="../homePage/navBottom.css" />
+    <link rel="stylesheet" href="primeContainer.css" />
+    <link rel="stylesheet" href="../homePage/megaDropDown.css" />
+    <link rel="stylesheet" href="../homePage/navDownGrey.js" />
+    <link rel="stylesheet" href="./slider.css" />
+    <style></style>
   </head>
   <body>
+        <!-- navbar------------------------>
+        <header>
+          <div id="navbarHome">
+            <div id="navOne">
+              <div id="navOneIn">
+                <div id="navOneTopUpdate">
+                  <a href="#">
+                    Nykaa's Summer Super Saver Day Are Live - Shop Now!
+                  </a>
+                </div>
+                <div id="navTwoTopUpdate">
+                  <div id="getApp">
+                    <!-- <img src="./image/smartphone.png" alt="smartphone" /> -->
+                    <a href="#">Get App</a>
+                  </div>
+                  <div>|</div>
+                  <div id="StoreAndEvent">
+                    <a href="#">Store&Events</a>
+                  </div>
+                  <div>|</div>
+                  <div>
+                    <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
+                    <a href="#">Gift Card</a>
+                  </div>
+                  <div>|</div> 
+                  <div>
+                    <!-- <img src="../allProducts/icons/question.png" alt="" /> -->
+                    <a href="#">Help</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="navTwo">
+              <div id="navTwoIn">
+                <div id="NykaaLogo"></div>
+                <div><a href="#">Catagories</a></div>
+                <div><a href="#">Brands</a></div>
+                <div><a href="#">Nykaa Fashion</a></div>
+                <div><a href="#">Beauty Advice</a></div>
+                <div><a href="#">Nykaa Network</a></div>
+                <div id="searchEngineNav">
+                  <img
+                    src="/NPM--Nykaa-Project-Masai/allProducts/icons/search.png"
+                    alt=""
+                  />
+                  <input type="text" name="" placeholder="Search on Nykaa" />
+                </div>
+                <div id="userAccount">
+                  <img src="../allProducts/icons/user.png" alt="" />
+                  <a href="/NPM--Nykaa-Project-Masai/signin/signin_page.html" id="userLink">Account</a>
+                </div>
+                <div id="shoppingCart">
+                  <a href="#">
+                    <img src="../allProducts/icons/shopping-bag.png" alt="" />
+                  </a>
+                  <sup id="cartCount">4</sup>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- third nav  -->
+          <div id="navThreeHide">
+            <div id="navThreeHideIn">
+              <nav id="regularNavThree">
+                <!-- <ul id="mainUlInDropDownNav">
+                js script here  -->
+    
+                <!-- </ul> -->
+              </nav>
+              <div id="saleNavThree"></div>
+            </div>
+          </div>
+        </header>
     <div id="container">
       <div id="main">
         <div>link>Bestof Combos</div>
@@ -161,6 +113,118 @@
         </div>
       </div>
     </div>
+    
+    <!-- nav bottom s tart here  -->
+    <footer>
+      <div id="navEnd">
+        <div id="blackNav">
+          <!-- grid template used  -->
+          <div id="blackNavIn">
+              <div class="imageDiv"><img src="../allProducts/icons/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
+              <div class="imageDiv"><img src="../allProducts/icons/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
+              <div class="imageDiv"><img src="../allProducts/icons/phone.png" alt="">
+                <span>FOR ANY HELP YOU MAY CALL US AT
+                1800-267-4444</span>
+              </div>
+              <div><input type="email" placeholder="Your Email"><button>SEND</button></div>
+              <div class="imageDiv"><img src="../allProducts/icons/heart.png" alt=""></div>
+              <div><span>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</span></div>
+          </div>
+          <!-- grid template used  -->
+        </div>
+        <div id="greyNav">
+          <div id="greyNavIn">
+            <!-- js script navDownGrey here  -->
+          </div>
+        </div>
+        <div id="whiteNav">
+          <div id="whiteNavIn">
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt="">
+              </div>
+              <div>
+                <div>FREE SHIPPING</div>
+                <div></div>
+                <div>On Orders Above ₹499</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt="">
+              </div>
+              <div>
+                <div>Easy Returns</div>
+                <div></div>
+                <div>15-Day Return Policy </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt="">
+              </div>
+              <div>
+                <div>100% Authentic</div>
+                <div></div>
+                <div>Products Sourced Directly</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt="">
+              </div>
+              <div>
+                <div>2400+ Brands</div>
+                <div></div>
+                <div>1.9 Lakh+ Products</div>
+              </div>
+            </div>
+            
+            <div>
+              <div><span>show us some love ❤ on social media</span></div>
+              <div>
+                <div><img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt=""><a href="#"></a></div>
+                <div>
+                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                <div>
+                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                <div>
+
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" alt=""><a href="#"></a>
+                </div>
+                <div>
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pinkNav">
+          <div id="pinkNavIn">
+            <div>
+              <!-- four flex  -->
+              <div>
+                <a href="#"> Terms & Conditions </a>
+              </div>
+              <div><a href="#"> Shipping Policy </a></div>
+              <div><a href="#"> Cancellation Policy </a></div>
+              <div>
+                <a href="#"> Privacy Policy </a>
+              </div>
+            </div>
+            <div><a href="#">&#169 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</a></div>
+          </div>
+        </div>
+        <div id="endBlack"></div>
+      </div>
+    </footer>
+    <!-- nav bottom end here  -->
   </body>
 </html>
 
@@ -201,22 +265,24 @@
     document.querySelector("#bottomIn").append(main);
   });
 
+  var idFindCart = JSON.parse(localStorage.getItem("idCartData")) || {};
+
   var singleProduct = [
     {
-      productId: 1234, // for cart======================>
-      //    productImage: [1, 2, 3, 4, 5, 6],
+      id: 123411, // for cart======================>
+      //    image_url: [1, 2, 3, 4, 5, 6],
 
-      productImage:
+      image_url:
         "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/4/44c9789NYNYKBC001389.jpg",
       productName: "Nykaa Fashion Top",
       productCatagory: "Makeup",
-      brandName: "xyz",
+      brand: "xyz",
       productQuantity: 2, // for cart======================>
       rating: 4,
       ratingCountTotal: 200,
       reviewTotal: 10,
-      MRP: 200, //  for cart ======================>
-      OfferPrice: 150, // for cart======================>
+      price: 200, //  for cart ======================>
+      strikedoffprice: 150, // for cart======================>
       discount: 45, // for cart %======================>
       taxInfo: "Inclusive of all taxes",
       featured: true,
@@ -224,20 +290,20 @@
       new: true,
     },
     {
-      productId: 1234, // for cart======================>
-      //    productImage: [1, 2, 3, 4, 5, 6],
+      id: 1234, // for cart======================>
+      //    image_url: [1, 2, 3, 4, 5, 6],
 
-      productImage:
+      image_url:
         "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/4/44c9789NYNYKBC001389.jpg",
       productName: "Nykaa Fashion Top",
       productCatagory: "Makeup",
-      brandName: "xyz",
+      brand: "xyz",
       productQuantity: 2, // for cart======================>
       rating: 4,
       ratingCountTotal: 200,
       reviewTotal: 10,
-      MRP: 200, //  for cart ======================>
-      OfferPrice: 150, // for cart======================>
+      price: 200, //  for cart ======================>
+      strikedoffprice: 150, // for cart======================>
       discount: 45, // for cart %======================>
       taxInfo: "Inclusive of all taxes",
       featured: true,
@@ -245,20 +311,20 @@
       new: true,
     },
     {
-      productId: 1234, // for cart======================>
-      //    productImage: [1, 2, 3, 4, 5, 6],
+      id: 7216, // for cart======================>
+      //    image_url: [1, 2, 3, 4, 5, 6],
 
-      productImage:
+      image_url:
         "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/4/44c9789NYNYKBC001389.jpg",
-      productName: "Nykaa Fashion Top",
+      productName: "Nykaaon Top",
       productCatagory: "Makeup",
-      brandName: "xyz",
+      brand: "xyz",
       productQuantity: 2, // for cart======================>
       rating: 4,
       ratingCountTotal: 200,
       reviewTotal: 10,
-      MRP: 200, //  for cart ======================>
-      OfferPrice: 150, // for cart======================>
+      price: 200, //  for cart ======================>
+      strikedoffprice: 150, // for cart======================>
       discount: 45, // for cart %======================>
       taxInfo: "Inclusive of all taxes",
       featured: true,
@@ -266,20 +332,20 @@
       new: true,
     },
     {
-      productId: 1234, // for cart======================>
-      //    productImage: [1, 2, 3, 4, 5, 6],
+      id: 1234, // for cart======================>
+      //    image_url: [1, 2, 3, 4, 5, 6],
 
-      productImage:
+      image_url:
         "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/4/44c9789NYNYKBC001389.jpg",
       productName: "Nykaa Fashion Top",
       productCatagory: "Makeup",
-      brandName: "xyz",
+      brand: "xyz",
       productQuantity: 2, // for cart======================>
       rating: 4,
       ratingCountTotal: 200,
       reviewTotal: 10,
-      MRP: 200, //  for cart ======================>
-      OfferPrice: 150, // for cart======================>
+      price: 200, //  for cart ======================>
+      strikedoffprice: 150, // for cart======================>
       discount: 45, // for cart %======================>
       taxInfo: "Inclusive of all taxes",
       featured: true,
@@ -287,20 +353,20 @@
       new: true,
     },
     {
-      productId: 1234, // for cart======================>
-      //    productImage: [1, 2, 3, 4, 5, 6],
+      id: 1234, // for cart======================>
+      //    image_url: [1, 2, 3, 4, 5, 6],
 
-      productImage:
+      image_url:
         "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/4/44c9789NYNYKBC001389.jpg",
       productName: "Nykaa Fashion Top",
       productCatagory: "Makeup",
-      brandName: "xyz",
+      brand: "xyz",
       productQuantity: 2, // for cart======================>
       rating: 4,
       ratingCountTotal: 200,
       reviewTotal: 10,
-      MRP: 200, //  for cart ======================>
-      OfferPrice: 150, // for cart======================>
+      price: 200, //  for cart ======================>
+      strikedoffprice: 150, // for cart======================>
       discount: 45, // for cart %======================>
       taxInfo: "Inclusive of all taxes",
       featured: true,
@@ -308,20 +374,20 @@
       new: true,
     },
     {
-      productId: 1234, // for cart======================>
-      //    productImage: [1, 2, 3, 4, 5, 6],
+      id: 1234, // for cart======================>
+      //    image_url: [1, 2, 3, 4, 5, 6],
 
-      productImage:
+      image_url:
         "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/4/44c9789NYNYKBC001389.jpg",
       productName: "Nykaa Fashion Top",
       productCatagory: "Makeup",
-      brandName: "xyz",
+      brand: "xyz",
       productQuantity: 2, // for cart======================>
       rating: 4,
       ratingCountTotal: 200,
       reviewTotal: 10,
-      MRP: 200, //  for cart ======================>
-      OfferPrice: 150, // for cart======================>
+      price: 200, //  for cart ======================>
+      strikedoffprice: 150, // for cart======================>
       discount: 45, // for cart %======================>
       taxInfo: "Inclusive of all taxes",
       featured: true,
@@ -329,20 +395,20 @@
       new: true,
     },
     {
-      productId: 1234, // for cart======================>
-      //    productImage: [1, 2, 3, 4, 5, 6],
+      id: 1234, // for cart======================>
+      //    image_url: [1, 2, 3, 4, 5, 6],
 
-      productImage:
+      image_url:
         "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/4/44c9789NYNYKBC001389.jpg",
       productName: "Nykaa Fashion Top",
       productCatagory: "Makeup",
-      brandName: "xyz",
+      brand: "xyz",
       productQuantity: 2, // for cart======================>
       rating: 4,
       ratingCountTotal: 200,
       reviewTotal: 10,
-      MRP: 200, //  for cart ======================>
-      OfferPrice: 150, // for cart======================>
+      price: 200, //  for cart ======================>
+      strikedoffprice: 150, // for cart======================>
       discount: 45, // for cart %======================>
       taxInfo: "Inclusive of all taxes",
       featured: true,
@@ -350,20 +416,20 @@
       new: true,
     },
     {
-      productId: 1234, // for cart======================>
-      //    productImage: [1, 2, 3, 4, 5, 6],
+      id: 1234, // for cart======================>
+      //    image_url: [1, 2, 3, 4, 5, 6],
 
-      productImage:
+      image_url:
         "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/4/44c9789NYNYKBC001389.jpg",
       productName: "Nykaa Fashion Top",
       productCatagory: "Makeup",
-      brandName: "xyz",
+      brand: "xyz",
       productQuantity: 2, // for cart======================>
       rating: 4,
       ratingCountTotal: 200,
       reviewTotal: 10,
-      MRP: 200, //  for cart ======================>
-      OfferPrice: 150, // for cart======================>
+      price: 200, //  for cart ======================>
+      strikedoffprice: 150, // for cart======================>
       discount: 45, // for cart %======================>
       taxInfo: "Inclusive of all taxes",
       featured: true,
@@ -387,8 +453,8 @@
     var imagebox = document.createElement("div");
     var image = document.createElement("img");
     image.style.width = "100%";
-    image.setAttribute("src", el.productImage);
-    image.setAttribute("class", "productImage");
+    image.setAttribute("src", el.image_url);
+    image.setAttribute("class", "image_url");
     imagebox.append(image);
 
     //product name
@@ -401,15 +467,15 @@
     //product price
     var priceBox = document.createElement("div");
     priceBox.setAttribute("class", "productPriceInsideBox");
-    var mrp = document.createElement("span");
-    mrp.innerText = "MRP: ";
+    var price = document.createElement("span");
+    price.innerText = "MRP: ";
     var actualPrice = document.createElement("span");
-    actualPrice.innerText = "₹" + el.MRP;
-    var offerPrice = document.createElement("span");
-    offerPrice.innerText = "₹" + el.OfferPrice;
+    actualPrice.innerText = "₹" + el.price;
+    var strikedoffprice = document.createElement("span");
+    strikedoffprice.innerText = "₹" + el.strikedoffprice;
     var discount = document.createElement("span");
     discount.innerText = el.discount + "%";
-    priceBox.append(mrp, actualPrice, offerPrice, discount);
+    priceBox.append(price, actualPrice, strikedoffprice, discount);
 
     //rating
     var ratingBox = document.createElement("div");
@@ -431,6 +497,14 @@
     /// add to cart
     var button_down = document.createElement("div");
     button_down.setAttribute("class", "addToCartBox");
+    button_down.addEventListener("click", function () {
+      console.log(el);
+      if (idFindCart[el.id] == undefined) {
+        addToCart(el);
+      } else {
+        addQuantity(el);
+      }
+    });
 
     //like button
     var div1 = document.createElement("div");
@@ -467,4 +541,67 @@
     box.append(boxIn);
     document.querySelector("#right").append(box);
   });
+
+  //add to cart ------------------>
+  function checkCartMsgExits(idFindCart, e, checkAddcart) {
+    if (idFindCart[e.id]) {
+      checkAddcart.style.display = "block";
+    }
+  }
+
+  var cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // existing update-------------->
+  function addQuantity(e) {
+    cart.forEach(function (cartArray) {
+      if (cartArray.id == e.id) {
+        cartArray.productQuantity++;
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+    });
+    window.location.reload();
+  }
+  //new add to cart------------------>
+  function addToCart(e) {
+    let obj = {
+      image_url: e.image_url,
+      productName: e.productName,
+      productPrice: e.price,
+      productOriginalPrice: e.strikedoffprice,
+      id: e.id,
+      productQuantity: 1,
+      discount: e.discount,
+      
+    };
+    cart.push(obj);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    idFindCart[e.id] = true;
+    localStorage.setItem("idCartData", JSON.stringify(idFindCart));
+    window.location.reload();
+  }
+  var totalQuantityNav = cart.reduce(function (a, b) {
+    return a + b.productQuantity;
+  }, 0);
+  var totalPriceNav = cart.reduce(function (a, b) {
+    return a + b.productQuantity * b.productPrice;
+  }, 0);
+
+  document.querySelector("#cartCount").innerText = totalQuantityNav;
+  // document.querySelector("#amountV").innerText = totalPriceNav;
+
+  var cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+//profile-------------->
+var acitveUser = JSON.parse(localStorage.getItem("activeUser"));
+if(acitveUser==null)
+{
+// document.querySelector("#userLink").setAttribute("href", "#");
+
+}else{
+  document.querySelector("#userAccountA").innerText = acitveUser;
+}
+
+
 </script>
+<script src="../homePage/megaDropDownData.js"></script>
+<script src="../homePage/navDownGrey.js"></script>

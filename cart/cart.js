@@ -1,6 +1,6 @@
 
 //this is for navbar section
-var loginMail="ranjitlagad111@gmail.com";
+var loginMail= JSON.parse(localStorage.getItem("loginData")).email || "Guest";
 
 localStorage.setItem("login",loginMail);
 var loginData=localStorage.getItem("login")||null;
@@ -375,33 +375,8 @@ function getAddress(ele){
 
 
 //this is temperory data which is used for showing cart items in products
-var cartBag = [
-  {
-    img:
-      "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/6/5/65107430000_1.jpg",
-    name: "Calvin Klein CK one for Women & Men Eau De Toilette",
-    size: "200ml",
-    quantity: 1,
-    strikedOffPrice: 4750,
-    price: 4513,
-  },
-  {
-    img:
-      "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/6/5/65107430000_1.jpg",
-    name: "Calvin Klein CK one for Women & Men Eau De Toilette",
-    size: "200ml",
-    quantity: 1,
-    strikedOffPrice: 4750,
-    price: 4513,
-  },
- 
-];
+var cartProducts = JSON.parse(localStorage.getItem("cart")) || [];
 
-
-localStorage.setItem("myCartData", JSON.stringify(cartBag));
-
-// this cartProducts array get the data of products which are added in cart from localStorage "mycartData"
-var cartProducts = JSON.parse(localStorage.getItem("myCartData")) || [];
 
 document.querySelector("#totalProducts>p").innerText =
   cartProducts.length + "Items in your Bag";
@@ -417,7 +392,7 @@ function display(productsData) {
     card.setAttribute("class", "card");
 
     var image = document.createElement("img");
-    image.setAttribute("src", ele.img);
+    image.setAttribute("src", ele.image_url);
 
     var details = document.createElement("div");
     details.setAttribute("class", "details");
@@ -433,7 +408,7 @@ function display(productsData) {
 
 
     var name = document.createElement("p");
-    name.innerText = ele.name;
+    name.innerText = ele.productName;
 
     var size = document.createElement("p");
     size.innerText = ele.size;
@@ -445,24 +420,24 @@ function display(productsData) {
     quant_prices.setAttribute("class", "quant_prices");
 
     var quant = document.createElement("p");
-    quant.innerText = "Qty:" + ele.quantity;
+    quant.innerText = "Qty:" + ele.productQuantity;
 
     var prices = document.createElement("div");
     prices.setAttribute("class", "prices");
 
     var strikedPrice = document.createElement("h5");
-    strikedPrice.innerText = "₹" + ele.strikedOffPrice;
+    strikedPrice.innerText = "₹" + ele.productPrice;
     strikedPrice.style.textDecoration = "line-through";
     strikedPrice.style.color = "grey";
 
     var price = document.createElement("h3");
-    price.innerText = "₹" + ele.price;
+    price.innerText = "₹" + ele.productOriginalPrice;
 
     prices.append(strikedPrice, price);
 
     quant_prices.append(quant, prices);
 
-    details.append(name, size, line, quant_prices);
+    details.append(name, line, quant_prices);
 
     card.append(image, details,btn);
 
@@ -481,9 +456,9 @@ function deleteProduct(ele,index)
 
 //this subTotal function will give the total price of cart items
 var subTotal = cartProducts.reduce(function (acc, ele) {
-  return acc + ele.price * ele.quantity;
+  return acc + ele.productOriginalPrice * ele.productQuantity;
 }, 0);
-
+console.log(subTotal)
 localStorage.setItem("subTotal",subTotal);
 
 document.querySelector("#subTotal").innerText = "₹" + subTotal;

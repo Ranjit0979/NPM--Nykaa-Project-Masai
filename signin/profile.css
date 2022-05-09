@@ -1,9 +1,14 @@
+#container{
+    display: flex;
+}
 #main_button{
     height: 300px;
     width: 20%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(6,auto);
+    position: sticky;
+    top :50px;
     /* border: 1px solid red; */
 }
 #button_design{

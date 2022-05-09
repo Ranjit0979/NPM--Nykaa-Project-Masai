@@ -18,7 +18,12 @@
     <link rel="stylesheet" href="./navDowngray.css" />
     <link rel="stylesheet" href="./slider.css" />
     <link rel="stylesheet" href="./megaDropDown.css" />
+  
     <style>
+      a{
+        text-decoration: none;
+        color: black;
+      }
       /* * {
         margin: 0;
         padding: 0;
@@ -59,14 +64,14 @@
               </div>
               <div>|</div>
               <div id="StoreAndEvent">
-                <a href="#">Store & Events</a>
+                <a href="#">Store&Events</a>
               </div>
               <div>|</div>
               <div>
                 <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
                 <a href="#">Gift Card</a>
               </div>
-              <div>|</div>
+              <div>|</div> 
               <div>
                 <!-- <img src="../allProducts/icons/question.png" alt="" /> -->
                 <a href="#">Help</a>
@@ -91,7 +96,7 @@
             </div>
             <div id="userAccount">
               <img src="../allProducts/icons/user.png" alt="" />
-              <a href="#">Account</a>
+              <a href="../signin/signin_page.html" id="userAcountA">Account</a>
             </div>
             <div id="shoppingCart">
               <a href="#">
@@ -567,3 +572,14 @@
 <script src="../productPage/amazingDiscount.js"></script>
 
 <script src="./megaDropDownData.js"></script>
+
+
+<script>
+  document.querySelector("#Skin").setAttribute("href","../skin.html");
+  document.querySelector("#Hair").setAttribute("href","../Nykaa_hair/nykaa_hair.html");
+  document.querySelector("#Makeup").setAttribute("href", "../Nykaa_makeup/nykaa_makeUp.html");
+  document.querySelector("#offerDiv").addEventListener("click", function()
+  {
+    window.location.href="../offers.html";
+  })
+</script>
