@@ -1147,6 +1147,6 @@ var accountGet = JSON.parse(localStorage.getItem("loginData"));
 if(accountGet.email!="" || accountGet.email!=null)
 {
     accountName.innerText = accountGet.email;
-    accountName.setAttribute("href", "../profile.html");
+    accountName.setAttribute("href", "./profile.html");
 }
 

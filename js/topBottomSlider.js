@@ -53,14 +53,14 @@ let bottomImas = [
   slider(bottomImas, bottomUl_master, bottomLengthOfImage);
   bottomBtn2.addEventListener("click", function () {
     //increment
-    addIncrement();
+    addIncrementBot();
   });
   bottomBtn1.addEventListener("click", function () {
     //increment
-    addDecrement();
+    addDecrementBot();
   });
   
-  function addIncrement() {
+  function addIncrementBot() {
     bottomLeft++;
     bottomRight++;
     if (bottomRight < bottomImas.length) {
@@ -70,7 +70,7 @@ let bottomImas = [
       bottomRight--;
     }
   }
-  function addDecrement() {
+  function addDecrementBot() {
     bottomLeft--;
     bottomRight--;
     if (bottomLeft >= 0) {

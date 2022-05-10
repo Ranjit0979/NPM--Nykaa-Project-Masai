@@ -449,7 +449,9 @@ function display(productsData) {
 function deleteProduct(ele,index)
 {
     cartProducts.splice(index,1);
-    localStorage.setItem("cartList",JSON.stringify(cartProducts));
+    localStorage.setItem("cart",JSON.stringify(cartProducts));
+
+    window.location.reload();
     display(cartProducts);
     
 }
@@ -468,9 +470,12 @@ var shippingCharge = 0;
 if (subTotal > 499) {
   document.querySelector("#shipCharge").innerText = "free";
   shippingCharge = 0;
-} else {
+} else if(subTotal>0){
   document.querySelector("#shipCharge").innerText = 50;
   shippingCharge = 50;
+}else{
+  document.querySelector("#shipCharge").innerText = 0;
+  shippingCharge = 0;
 }
 
 localStorage.setItem("shippingCharge",shippingCharge);

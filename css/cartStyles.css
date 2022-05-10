@@ -320,7 +320,7 @@ form {
 }
 
 #ads {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 70%;
   height: 100px;
   display: grid;
@@ -333,11 +333,11 @@ form {
 #ads > div > img {
   display: block;
   height: 100%;
-  border: 1px brown solid;
+  /* border: 1px brown solid; */
 }
 
 #ads > div {
-  border: 1px green solid;
+  /* border: 1px green solid; */
   display: flex;
 }
 

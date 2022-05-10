@@ -5,26 +5,31 @@ div{
 
 /* black nav  */
 #blackNav{
-  background-color: black;
+  /* background-color: black; */
 }
 #blackNav img{
   height: 30px;
 }
 .imageDiv img{
   background-color: white;
-  border-radius: 102%;
+  /* border-radius: 102%; */
 }
-#blackNavIn span{
+#blackNavIn>span{
   color:white;
-  background-color: black;
+  color: black;
+  /* background-color: black; */
 }
 #blackNavIn{
   /* background-color: black; */
+  border: 10px solid white; 
+  padding-top: 10px;
+
   width: 70%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+
 }
 #blackNavIn>div{
   display: flex;
@@ -33,11 +38,12 @@ div{
 /* // grey ---------------------- */
 #greyNav {
   background-color: #8c8d94;
-  border: 10px solid #8c8d94;
+  border: 10px solid white;
 }
 
 #blackNavIn div{
-  border: 10px solid black;
+  /* border: 10px solid black; */
+  border: 10px solid white; 
 }
 
 /* #blackNavIn>div>div{
