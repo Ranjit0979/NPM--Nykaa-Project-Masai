@@ -226,3 +226,18 @@
 </html>
 <script src="./js/giftcard.js"></script>
 <script src="./js/megaDropDownData.js"></script>
+<!-- drop down nav hided  -->
+<script src="./js/navDownGrey.js"></script>
+
+
+<script>
+  var accountName = document.querySelector("#userAcountA");
+
+var accountGet = JSON.parse(localStorage.getItem("loginData"));
+if(accountGet.email!="" || accountGet.email!=null)
+{
+    accountName.innerText = accountGet.email;
+    accountName.setAttribute("href", "../profile.html");
+}
+
+</script>

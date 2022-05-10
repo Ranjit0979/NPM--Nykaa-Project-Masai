@@ -1,4 +1,4 @@
-let timas = [
+let topSliderJstimas = [
   "https://images-static.nykaa.com/uploads/7f12e789-83ce-4a44-8a0b-ac778582f2c1.png?tr=w-150,cm-pad_resize",
   "https://images-static.nykaa.com/uploads/f116a424-27b3-4812-a9eb-2f198fb42d0a.png?tr=w-150,cm-pad_resize",
   "https://images-static.nykaa.com/uploads/a2212275-11a6-4497-a56d-34c48f722cfd.png?tr=w-150,cm-pad_resize",
@@ -24,58 +24,63 @@ let ul_master = [
   "Men's",
 ];
 
-let url = {};
+// let url = {};
 
-let mainDiv = document.querySelector("#imageWindowTopSlider");
+let topSlidemainDiv = document.querySelector("#imageWindowTopSlider");
 
 let btn1 = document.querySelector("#topSliderBtn1");
 let btn2 = document.querySelector("#topSliderBtn2");
 
-let left = 0;
-let lengthOfImage = 9;
-let right = lengthOfImage - 1;
-function slider(timas, ul_master, lengthOfImage) {
-  mainDiv.innerHTML = "";
-  for (let i = left; i < right; i++) {
+let leftTopSlider = 0;
+let lengthOfImagetopSlider = 9;
+let rightTopSlider = lengthOfImagetopSlider - 1;
+function sliderTop(topSliderJstimas, ul_master, lengthOfImagetopSlider) {
+  topSlidemainDiv.innerHTML = "";
+  for (let i = leftTopSlider; i < rightTopSlider; i++) {
     let div_main = document.createElement("div");
     div_main.setAttribute("class", "imageBoxSlider");
+    div_main.style.cursor="pointer";
+    div_main.addEventListener("click", function(){
+      // temp route to product page 
+      window.location.href="./allProducts.html";
+    })
     let imageInsideSlider = document.createElement("img");
-    imageInsideSlider.setAttribute("src", timas[i]);
+    imageInsideSlider.setAttribute("src", topSliderJstimas[i]);
     imageInsideSlider.setAttribute("class", "imageInsideSlider");
     let desciption = document.createElement("span");
     desciption.setAttribute("class", "sliderDescription");
     desciption.innerText = ul_master[i];
     div_main.append(imageInsideSlider, desciption);
-    mainDiv.append(div_main);
+    topSlidemainDiv.append(div_main);
   }
 }
-slider(timas, ul_master, lengthOfImage);
+sliderTop(topSliderJstimas, ul_master, lengthOfImagetopSlider);
 btn2.addEventListener("click", function () {
   //increment
-  addIncrement();
+  addIncrementTop();
 });
 btn1.addEventListener("click", function () {
   //increment
-  addDecrement();
+  addDecrementTop();
 });
 
-function addIncrement() {
-  left++;
-  right++;
-  if (right < timas.length) {
-    slider(timas, ul_master, lengthOfImage);
+function addIncrementTop() {
+  leftTopSlider++;
+  rightTopSlider++;
+  if (rightTopSlider < topSliderJstimas.length) {
+    sliderTop(topSliderJstimas, ul_master, lengthOfImagetopSlider);
   } else {
-    left--;
-    right--;
+    leftTopSlider--;
+    rightTopSlider--;
   }
 }
-function addDecrement() {
-  left--;
-  right--;
-  if (left >= 0) {
-    slider(timas, ul_master, lengthOfImage);
+function addDecrementTop() {
+  leftTopSlider--;
+  rightTopSlider--;
+  if (leftTopSlider >= 0) {
+    sliderTop(topSliderJstimas, ul_master, lengthOfImagetopSlider);
   } else {
-    left++;
-    right++;
+    leftTopSlider++;
+    rightTopSlider++;
   }
 }
