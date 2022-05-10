@@ -370,7 +370,7 @@ function getAddress(ele){
  var finalAddress=[];
  finalAddress.push(ele);
  localStorage.setItem("finalAddress",JSON.stringify(finalAddress));
- window.location.href="payment.html";
+ window.location.href="./payment-page.html";
 }
 
 
