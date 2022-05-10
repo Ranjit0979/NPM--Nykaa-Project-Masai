@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <!-- <link rel="stylesheet" href="login_page2.css" /> -->
+    <link rel="stylesheet" href="./css/login_page1.css" />
+    <link rel="stylesheet" href="./css/megaDropDown.css">
+    <link rel="stylesheet" href="./css/navbarTop.css">
+    <link rel="stylesheet" href="./css/navBottom.css">
+    <style>
+      #email_box {
+        border-color: rgb(191, 190, 190);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div id="navbarHome">
+          <div id="navOne">
+            <div id="navOneIn">
+              <div id="navOneTopUpdate">
+                <a href="#">
+                  Nykaa's Summer Super Saver Day Are Live - Shop Now!
+                </a>
+              </div>
+              <div id="navTwoTopUpdate">
+                <div id="getApp">
+                  <!-- <img src="./image/smartphone.png" alt="smartphone" /> -->
+                  <a href="#">Get App</a>
+                </div>
+                <div>|</div>
+                <div id="StoreAndEvent">
+                  <a href="#">Store&Events</a>
+                </div>
+                <div>|</div>
+                <div>
+                  <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
+                  <a href="./giftcard.html">Gift Card</a>
+                </div>
+                <div>|</div> 
+                <div>
+                  <!-- <img src="../allProducts/icons/question.png" alt="" /> -->
+                  <a href="#">Help</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="navTwo">
+            <div id="navTwoIn">
+              <div id="NykaaLogo"></div>
+              <div><a href="#">Catagories</a></div>
+              <div><a href="#">Brands</a></div>
+              <div><a href="#">Nykaa Fashion</a></div>
+              <div><a href="#">Beauty Advice</a></div>
+              <div><a href="#">Nykaa Network</a></div>
+              <div id="searchEngineNav">
+                <img
+                  src="/NPM--Nykaa-Project-Masai/allProducts/icons/search.png"
+                  alt=""
+                />
+                <input type="text" name="" placeholder="Search on Nykaa" />
+              </div>
+              <div id="userAccount">
+                <img src="./images/user.png" alt="" />
+                <a href="./signin_page.html" id="userAcountA">Account</a>
+              </div>
+              <div id="shoppingCart">
+                <a href="#">
+                  <img src="./images/shopping-bag.png" alt="" />
+                </a>
+                <sup id="cartCount"></sup>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- third nav  -->
+        <div id="navThreeHide">
+          <div id="navThreeHideIn">
+            <nav id="regularNavThree">
+              <!-- <ul id="mainUlInDropDownNav">
+              js script here  -->
+  
+              <!-- </ul> -->
+            </nav>
+            <div id="saleNavThree"></div>
+          </div>
+        </div>
+      </header>
+      <!-- nav end here -->
+    <form id="outer_box">
+      <div id="innerBox">
+        <div>
+          <!-- create a cross in this button tag -->
+          <button type="button" id="close_page">x</button>
+
+          <h3 id="heading">LOGIN</h3>
+        </div>
+        <hr />
+        <div id="checkout">
+          <div id="email_box">
+            <input id="email" type="text" />
+          </div>
+          <div id="welcomeMsg">
+            <span id="welcomeMsgDisplay">You have not registered yet</span>
+            <span id="welcomeMsgDisplay2">
+              Please enter your password to register
+            </span>
+          </div>
+          <div id="password_box">
+            <!-- increase the length of this input -->
+            <input id="password" type="text" placeholder="password" />
+          </div>
+          <div id="btn">
+            <button id="button">LOGIN</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("#close_page").addEventListener("click", function () {
+    window.location.href = "./login_page1.html";
+  });
+</script>
+<script>
+  var masterAccountData = JSON.parse(localStorage.getItem("masterData")) || [];
+  var emailData = JSON.parse(localStorage.getItem("loginData"));
+  document.querySelector("#email").value = emailData.email;
+
+  let email = document.querySelector("#email").value;
+  existAccountCheck(email);
+  let password = document.querySelector("#password");
+  var checkAccountExistStatus = -1;
+  var checkAccountExistStatusPassword = 0;
+  password.addEventListener("focusout", function (p) {
+    checkPassword(p.target.value);
+  });
+
+  if (checkAccountExistStatus > 0) {
+    document.querySelector("#welcomeMsgDisplay").innerText = "Welcome Back!";
+    document.querySelector("#welcomeMsgDisplay2").innerText =
+      "Please enter your password";
+    document.querySelector("button").value = "REGISTER";
+  }
+
+  let button = document.querySelector("button");
+  //   button.disabled = "true";
+  document.querySelector("form").addEventListener("submit", function (elem) {
+    event.preventDefault();
+    if (checkAccountExistStatus == -1) {
+      let accountInfo = {
+        email: document.querySelector("#email").value,
+        password: document.querySelector("#password").value,
+      };
+      masterAccountData.push(accountInfo);
+      localStorage.setItem("masterData", JSON.stringify(masterAccountData));
+    }
+    localStorage.setItem("activeUser", emailData.email);
+    window.location.href = "./index.html";
+  });
+
+  function existAccountCheck(email) {
+    for (var i = 0; i < masterAccountData.length; i++) {
+      if (masterAccountData[i].email == email) {
+        checkAccountExistStatus = i;
+      }
+    }
+  }
+  function checkPassword(password) {
+    if (checkAccountExistStatus > -1) {
+      if (masterAccountData[checkAccountExistStatus].password == password) {
+        checkAccountExistStatusPassword = 1;
+        // return;
+      } else {
+        alert("Wrong password");
+      }
+    }
+  }
+</script>

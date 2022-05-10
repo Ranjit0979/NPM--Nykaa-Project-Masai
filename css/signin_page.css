@@ -1,0 +1,105 @@
+#outer_box {
+  /* height: 550px; */
+  width: 400px;
+  /* border: 1px solid red; */
+  margin: auto;
+  /* margin-top: 50px; */
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-top: 5%;
+}
+span{
+    display: block;
+    padding: 2%;
+    font-size: 1.2rem;
+    color: rgb(68, 67, 67);
+}
+#title{
+    font-size: 2.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+#First_box {
+  /* border: 1px solid red; */
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#blankLine{
+    width: 100%;
+    border: .5px solid rgb(176, 176, 176);
+}
+#gift {
+  height: 150px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid black;
+}
+/* #email_box{
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+} */
+#email {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  background-color: #fc2779;
+  border-radius: 5px;
+  padding: 2% 3%;
+}
+a {
+  text-decoration: none;
+}
+#para {
+  font-size: 20px;
+}
+#policy span {
+  /* margin-top: 5px; */
+  color: grey;
+  font-size: 1.2rem;
+  font-stretch: expanded;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#close_page {
+  background-color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#innerBox {
+  border: 30px solid white;
+}
+#google_login > img {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+#google_login {
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  padding: 2% 2% 2% 2%;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+#google_login span {
+  display: block;
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-left: 3%;
+  color: grey;
+}
+
+#policy a {
+  color: grey;
+  text-decoration: underline;
+}

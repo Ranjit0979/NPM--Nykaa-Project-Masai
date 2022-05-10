@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product</title>
+    <link rel="stylesheet" href="./css/singleProduct.css">
+    <link rel="stylesheet" href="./css/allProduct.css" />
+    <link rel="stylesheet" href="./css/navbarTop.css" />
+    <link rel="stylesheet" href="./css/navBottom.css" />
+    <link rel="stylesheet" href="./css/primeContainer.css" />
+    <link rel="stylesheet" href="./css/megaDropDown.css" />
+    <link rel="stylesheet" href="./css/navDownGrey.js" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <style>
+      
+    </style>
+  </head>
+  <!-- navbar------------------------>
+  <header>
+    <div id="navbarHome">
+      <div id="navOne">
+        <div id="navOneIn">
+          <div id="navOneTopUpdate">
+            <a href="#">
+              Nykaa's Summer Super Saver Day Are Live - Shop Now!
+            </a>
+          </div>
+          <div id="navTwoTopUpdate">
+            <div id="getApp">
+              <!-- <img src="./image/smartphone.png" alt="smartphone" /> -->
+              <a href="#">Get App</a>
+            </div>
+            <div>|</div>
+            <div id="StoreAndEvent">
+              <a href="#">Store&Events</a>
+            </div>
+            <div>|</div>
+            <div>
+              <!-- <img src="../allProducts/icons/gift-card.png" alt="" /> -->
+              <a href="./giftcard.html">Gift Card</a>
+            </div>
+            <div>|</div> 
+            <div>
+              <!-- <img src="../allProducts/icons/question.png" alt="" /> -->
+              <a href="#">Help</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="navTwo">
+        <div id="navTwoIn">
+          <div id="NykaaLogo"></div>
+          <div><a href="#">Catagories</a></div>
+          <div><a href="#">Brands</a></div>
+          <div><a href="#">Nykaa Fashion</a></div>
+          <div><a href="#">Beauty Advice</a></div>
+          <div><a href="#">Nykaa Network</a></div>
+          <div id="searchEngineNav">
+            <img
+              src="./images/search.png"
+              alt=""
+            />
+            <input type="text" name="" placeholder="Search on Nykaa" />
+          </div>
+          <div id="userAccount">
+            <img src="./images/user.png" alt="" />
+            <a href="./signin_page.html" id="userLink">Account</a>
+          </div>
+          <div id="shoppingCart">
+            <a href="./cart.html">
+              <img src="./images/shopping-bag.png" alt="" />
+            </a>
+            <sup id="cartCount"></sup>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- third nav  -->
+    <div id="navThreeHide">
+      <div id="navThreeHideIn">
+        <nav id="regularNavThree">
+          <!-- <ul id="mainUlInDropDownNav">
+          js script here  -->
+
+          <!-- </ul> -->
+        </nav>
+        <div id="saleNavThree"></div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div id="container">
+      <div id="main">
+        <div id="topBox">
+          <div id="divOne">
+            <div id="divOneIn">
+              <div id="favIcon">
+                <div id="favIconImg">
+                  <img src="./images/like.png" alt="" class="emptyHeart" />
+                </div>
+              </div>
+              <div id="divOneSecondBox">
+                <!-- // flex will apply here -->
+
+                <div id="thumnailBox">
+                  <!-- //grid will apply here -->
+                  <!-- class apply through js only -->
+                  <!-- productImage will change onClick below -->
+
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div class="thumbNail"></div>
+                  <div id="upDownButton">
+                    <!-- visible only when image thumbnail more than 5  -->
+                    <div id="UpBtn"></div>
+                    <div id="DownBtn"></div>
+                  </div>
+                </div>
+                <div id="productImage">
+                  <!-- big image here -->
+                  <img id="productImageImg" src="https://images-static.nykaa.com/media/catalog/product/2/1/219f5edBELAB00000106-E.jpg?tr=w-344,h-344,cm-pad_resize" alt="">
+                  <div id="zoomLayout"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- for description side image  -->
+          <div id="divTwo">
+            <div id="divTwoOne">
+              <div id="divTowOneIn">
+                <span id="productName" class="productName">
+                  <!-- js input  -->
+                  Bella Vita Organic Exfoliate Coffee Face and Body Scrub - Pack of 2
+                </span>
+                <span id="pieceCount">
+                  <!-- js input  -->
+                  (2 Pcs)
+                </span>
+                <div id="ratingAndAll">
+                  <!-- anchor will go here  -->
+                  <span id="rating">
+                    <span>******</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span id="ratingString">4.6/5</span>
+                  <span id="ratingAndReview">653 ratings & 2 reviews</span>
+                  <span> Q&As </span>
+                </div>
+                <div id="priceDetail">
+                  <span id="MRP">MRP: </span>
+                  <span id="actualPrice">550</span>
+                  <span id="offerPrice">385</span>
+                  <span id="discountPercentage">30% Off</span>
+                </div>
+                <p id="taxText">inclusive of all taxes</p>
+                <div id="additionalInfo">
+                  <div>
+                    <ul id="offerList">
+                      <li>Additional 10% on purchase of Rs 549 and above</li>
+                      <!-- <li></li> -->
+                    </ul>
+                  </div>
+                  <div id="viewMore">
+                    <span>View More Offers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="divTwoTwo">
+              <!-- // add bag and delivery check  -->
+              <div id="divTwoTwoIn">
+                <div id="addToCart">
+                  <span>ADD TO BAG</span>
+                </div>
+                <div id="verticalLine"></div>
+                <div id="deliverCheck">
+                  <div>
+                    <span><img src="./images/location.png" alt=""></span>
+                    <span>Delivery Options</span>
+                  </div>
+                  <div>
+                    <div id="pincodeBox">
+                      <input
+                        type="text"
+                        maxlength="6"
+                        minlength="6"
+                        id="enterPincode"
+                        placeholder="Enter pincode"
+                      />
+                      <div id="check">Check</div id="check"> 
+                        <!-- js will apply here  -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="bottomDivTwo">
+              <!-- flex will apply here -->
+              <div>
+                <img src="./images/singleProductReturn.png" alt="" />
+                <span>100% Genuine Products</span>
+              </div>
+              <div>
+                <img src="./images/return.png" alt="" />
+                <span>Easy Return Policy</span>
+              </div>
+              <div>
+                <span>Sold by :</span>
+                <span>NYKAA E RETA...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottomBox">
+          <div id="singleProductDescriptiontitle">
+            <h2>
+              Product Description
+            </h2>
+          </div>
+          <div id="bottomContainer">
+            <div id="leftContainer">
+              <div>
+                <div> // 2 button</div>
+                <div>Description</div>
+                <div>read more</div>
+              </div>
+              <div>
+                <h2>
+                  Customers also Viewed
+                </h2>
+              </div>
+              <div>
+                <!-- slider here  -->
+              </div>
+              <div>
+                <h2>
+                  Product Details
+                </h2>
+              </div>
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div id="rightContainer">
+              <div id="smallBoxAddtoCart">
+                <div><img src="" alt=""></div>
+                <div class="productName"><span></span></div>
+                <div><span>MRP: </span>
+                <span>$799</span></div>
+                <div id="addtoCartMini">ADD TO BAG</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="navEnd">
+        <div id="blackNav">
+          <!-- grid template used  -->
+          <div id="blackNavIn">
+              <div class="imageDiv"><img src="./images/email (1).png" alt=""><span>Get special discount on your inbox</span></div>
+              <div class="imageDiv"><img src="./images/smartphone-iphone.png" alt=""><span>EXPERIENCE THE NYKAA MOBILE APP</span></div>
+              <div class="imageDiv"><img src="./images/phone.png" alt="">
+                <span>FOR ANY HELP YOU MAY CALL US AT
+                1800-267-4444</span>
+              </div>
+              <div><input type="email" placeholder="Your Email"><button>SEND</button></div>
+              <div class="imageDiv"><img src="./images/heart.png" alt=""></div>
+              <div><span>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</span></div>
+          </div>
+          <!-- grid template used  -->
+        </div>
+        <div id="greyNav">
+          <div id="greyNavIn">
+            <!-- js script navDownGrey here  -->
+          </div>
+        </div>
+        <div id="whiteNav">
+          <div id="whiteNavIn">
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt="">
+              </div>
+              <div>
+                <div>FREE SHIPPING</div>
+                <div></div>
+                <div>On Orders Above ₹499</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt="">
+              </div>
+              <div>
+                <div>Easy Returns</div>
+                <div></div>
+                <div>15-Day Return Policy </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt="">
+              </div>
+              <div>
+                <div>100% Authentic</div>
+                <div></div>
+                <div>Products Sourced Directly</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt="">
+              </div>
+              <div>
+                <div>2400+ Brands</div>
+                <div></div>
+                <div>1.9 Lakh+ Products</div>
+              </div>
+            </div>
+            
+            <div>
+              <div><span>show us some love ❤ on social media</span></div>
+              <div>
+                <div><img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt=""><a href="#"></a></div>
+                <div>
+                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                <div>
+                <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                <div>
+
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" alt=""><a href="#"></a>
+                </div>
+                <div>
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt=""><a href="#"></a>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pinkNav">
+          <div id="pinkNavIn">
+            <div>
+              <!-- four flex  -->
+              <div>
+                <a href="#"> Terms & Conditions </a>
+              </div>
+              <div><a href="#"> Shipping Policy </a></div>
+              <div><a href="#"> Cancellation Policy </a></div>
+              <div>
+                <a href="#"> Privacy Policy </a>
+              </div>
+            </div>
+            <div><a href="#">&#169 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</a></div>
+          </div>
+        </div>
+        <div id="endBlack"></div>
+      </div>
+    </footer>
+    <!-- nav bottom end here  -->
+  </body>
+</html>
+<script>
+  // favIcon color change
+  var favIconImg = document.querySelector("#favIconImg>:nth-child(1)");
+  
+  favIconImg.addEventListener("click", function (e) {
+    var val_check_class = e.target.className;
+    if (val_check_class == "emptyHeart") {
+      e.target.setAttribute("class", "fullHeart");
+      e.target.setAttribute("src", "./images/likeFull.png");
+    } else {
+      e.target.setAttribute("class", "emptyHeart");
+      e.target.setAttribute("src", "./images/like.png");
+    }
+  });
+  //zoom product image=================>
+  var zoomDiv = document.querySelector("#zoomLayout");
+  document.querySelector("#productImageImg").addEventListener("mouseover", function(el)
+  {
+    // code
+    imSrc = el.target.src;
+    var imgZoom  =document.createElement("img");
+    imgZoom.setAttribute("id", "tempImageZoom");
+    imgZoom.setAttribute("src", imSrc);
+    imgZoom.style.width = "100%";
+    zoomDiv.append(imgZoom);
+  })
+  document.querySelector("#productImageImg").addEventListener("mouseout", function(el)
+  {
+      var imgzoon = document.querySelector("#tempImageZoom");
+    zoomDiv.removeChild(imgzoon);
+  })
+  //zoom product image=================>
+
+</script>
+<script src="./js/megaDropDownData.js"></script>
+<script src="./js/navDownGrey.js"></script>

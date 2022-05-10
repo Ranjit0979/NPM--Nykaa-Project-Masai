@@ -1,0 +1,86 @@
+.bigGridIn{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: center; */
+    cursor: pointer;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto; */
+    /* place-items: end center; */
+}
+@media all and (min-width:600px) and (max-width:900px){
+    #bigBrandGridIn{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+#bigBrandGridIn>div{
+    cursor: pointer;
+}
+.bigGridBox{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 10px solid white;
+}
+.bigGridBox>img{
+    width: 100%;
+}
+
+.five{
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.four{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+#shopBeyondBeautiBottomIn>:nth-child(6){
+    grid-area: 2/2/3/3;
+}
+#shopBeyondBeautiBottomIn>:nth-child(7){
+    grid-area: 2/3/3/4;
+}
+#shopBeyondBeautiBottomIn>:nth-child(8){
+    grid-area: 2/4/3/5;
+}
+
+/* // house of nykaa background  */
+#houseOfNykaaBottomIn div{
+    background-color: #fbcccc;
+    border-color: #fbcccc;
+}
+#houseOfNykaaBottomIn div>span{
+    font-size: 1.2rem;
+
+}
+#houseOfNykaaBottomIn div>span+span{
+    font-size: 1rem;
+
+}
+
+#stellerGrid div{
+    background-color: white;
+}
+#stellerGrid{
+    background-color: white;
+}
+#amagingDiscountGridIn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 0px;
+}
+#amagingDiscountGrid{
+    background-color: #AADEE9;
+}
+#seasonDealGrid{
+    background-color: white;
+}
+#seasonDealGrid div{
+    background-color: white;
+}#bigBrandGrid{
+    background-color: white;
+}
+#bigBrandGrid div{
+    background-color: white;
+}

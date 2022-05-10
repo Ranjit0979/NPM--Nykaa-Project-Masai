@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send gift card</title>
+    <link rel="stylesheet" href="./css/sendgiftcard.css">
+
+</head>
+<body>
+   
+    <!-- navbar starts -->
+    <div id="navbar">
+        <div id="image_div">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Nykaa_New_Logo.svg/250px-Nykaa_New_Logo.svg.png" alt="">
+            </div>  
+        </div>
+        <div id="sections">
+            <div>
+                <a href="./giftcard.html">1 - Choose design</a>
+                <p id="heading"></p>
+            </div>
+            <div> <a href="./sendgiftcard.html">2 - Enter Details</a> </div>
+            <div> <a href="">3 - Payment</a> </div>
+        </div>
+    </div>
+    <!-- navbar ends -->
+
+
+    <div id="container"> <!--All three sections are inside this container-->
+         <div id="left">           <!--left section-->
+             <p>Gift Card Details</p>
+         </div>
+         <div id="middle">           <!--middle section-->
+            <div id="insidemiddle">
+                <form>
+                    <div class="middledivs bade_akshar_div">
+                        <p>Who is this for?</p>
+                    </div>
+                    <div class="middledivs">
+                     <input type="text" placeholder="To"  id="To" required="required">
+                    </div>
+                    <div class="middledivs">
+                     <input type="text" placeholder="Recepient's Phone Or Email" required="required">
+                    </div>
+                    <div id="msgboxdiv">
+                        <textarea id="msgbox" cols="30" rows="4" maxlength="500" placeholder="Message" required="required"></textarea>
+                    </div>
+                    <div class="bade_akshar_div">
+                        <p>How much do you like to gift?</p>
+                    </div>
+                    <div class="middledivs" id="paisainputdiv">
+                        <div>
+                            <span>₹</span>
+                        </div>
+                        <input id="moneyfilling" type="number" placeholder="Enter Amount(Max.10000)" required="required" min="250" max="10000">
+                    </div>
+                    <div id="paisadiv">
+                        <div id="insidepaisadiv1"><span>₹</span><span id="money1">250</span></div>
+                        <div id="insidepaisadiv2"><span>₹</span><span id="money2">500</span></div>
+                        <div id="insidepaisadiv3"><span>₹</span><span id="money3">1000</span></div>
+                        <div id="insidepaisadiv4"><span>₹</span><span id="money4">2000</span></div>
+                    </div>
+                    <div class="middledivs">
+                        <input type="text" placeholder="From" id="From" required="required">
+                    </div>
+                    <div class="middledivs">
+                        <input type="text" placeholder="Your Phone Or Email ID" required="required">
+                    </div>
+                    <div class="chote_akshar_div" id="confirmationdiv">
+                        <p>We will be sending you the confirmation over here</p>
+                    </div>
+                    <div id="btndiv">
+                        <button type="submit">PROCEED TO PAY</button>
+                    </div>
+                  </form>
+            </div>
+             
+        </div>            
+         <div id="right">    <!--right section-->
+             <div id="right_top">Preview</div>
+             <div id="right_bottom">
+                 <div id="inside_right_bottom">
+                     <div id="imagediv"></div>
+                     <div id="imagelowerdiv">
+                         <div>
+                            <div id="datadiv">
+                                <div id="receiverdiv">
+                                    <span>Hi</span>
+                                    <span id="Receiver">Receiver's Name</span>
+                                </div>
+                                <div id="fromdiv">
+                                    <span>You have received a gift card from</span>
+                                    <span id="Sender">Sender's Name</span>
+                                </div>
+                                <div id="quotediv">
+                                    <p id="quote"></p>
+                                </div>
+                                <div id="pindiv">
+                                    <div id="paisa">
+                                        <span>₹</span><span id="paisafilling"></span>
+                                    </div>
+                                    <p>Gift Card Id: **** **** **** ****</p>
+                                    <span>Pin: ****** Expires on:</span><!--date should be added here (archie)-->
+                                    <span id="expirydate"></span>
+                                </div>
+                            </div>
+                         </div>
+                         
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <div id="TandC" class="chote_akshar_div">      <!--below container section-->
+        <p>Please Note:</p>
+        <p>1.Gift Card can't be can't be cancelled once after issued.</p>
+        <p>2.Recipient Email can't be modified as the GC is immediately sent after the payment</p>
+    </div>
+    
+</body>
+</html>
+<script src="./js/sendgiftcard.js"></script>
+<script>
+  document.querySelector("#image_div").addEventListener("click", function(){
+    window.location.href="./index.html";
+  })
+</script>

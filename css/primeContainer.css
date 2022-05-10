@@ -1,0 +1,308 @@
+#PrimeContainer {
+  width: 100%;
+  background-color: rgb(248, 241, 241);
+}
+/* =============  */
+
+#billBoardImageIn {
+  width: 80%;
+  /* background-color: yellow; */
+  height: 100%;
+  margin: auto;
+}
+#billBoardImageIn > img {
+  width: 100%;
+}
+/* =============  */
+/* media quaries  */
+.topSlider {
+  background-color: white;
+}
+
+/* =============  */
+#bigBrandOfferHead {
+  background-color: white;
+}
+#bigBrandOfferHeadIn {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+}
+#bigBrandOfferHeadIn > img {
+  /* height: 100%; */
+  width: 100%;
+}
+/* =============  */
+.biggrid {
+  background-color: antiquewhite;
+}
+.bigGridIn {
+  width: 80%;
+  height: 100%;
+  background-color: aquamarine;
+  margin: auto;
+}
+/* =============  */
+#bankOfferSlider {
+  background-color: white;
+}
+#bankOfferSliderIn {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+}
+/* =============  */
+#seasonDealHead {
+  background-color: white;
+}
+#seasonDealHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+}
+#seasonDealHeadIn > img {
+  width: 100%;
+}
+/* =============  */
+/* =============  */
+.luxKitsHead {
+  background-color: white;
+}
+.luxKitsHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: #aadee9;
+  margin: auto;
+}
+#luxKitsHeadIn > img {
+  width: 100%;
+}
+#luxKitsBottomIn > img {
+  width: 100%;
+}
+.luxKitsSlider {
+  background-color: #aadee9;
+}
+.luxKitsSliderIn {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  /* background-color: #09869f; */
+}
+.luxKitsBottom {
+  background-color: #aadee9;
+}
+.luxKitsBottomIn {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+/* =============  */
+#amagingDiscountHead {
+  background-color: white;
+}
+#amagingDiscountHeadIn {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+#amagingDiscountHeadIn > img {
+  width: 100%;
+}
+#superSavingsHeadIn > img {
+  width: 100%;
+}
+#bestOfferHeadOneIn > img {
+  width: 100%;
+}
+#bestOfferHeadOne div {
+  background-color: white;
+}
+#bestOfferHeadTwoIn {
+  border-color: white;
+  background-color: white;
+
+}
+#bestOfferGrid{
+  background-color: white;
+}
+#bestOfferGrid div{
+  background-color: white;
+  text-align: center;
+}
+#bestOfferGrid span{
+  font-size: 1.2rem;
+}
+
+#bestOfferHeadTwoIn > img {
+  width: 100%;
+}
+#influencerFavHeadIn {
+  background-color: #ff9a33;
+  /* margin: auto; */
+}
+#influencerFavHeadIn img{
+  width: 100%;
+}
+#onlyAtNykaaIn > img {
+  width: 100%;
+}
+#storeAvalBottomIn > img {
+  width: 100%;
+}
+#storeAvalBottomIn {
+  background-color: wheat;
+}
+#exclusiveCouponHeadIn > img {
+  width: 100%;
+}
+#exclusiveCouponHeadIn {
+  background-color: white;
+}
+#onlyAtNykaaIn {
+  background-color: white;
+}
+
+#superSavingBottomIn{
+  width: 80%;
+  margin: auto;
+}
+/* ================  */
+
+
+#influencerBottom {
+  background-color: #ff9a33;
+}
+#influencerBottomIn {
+  background-color: #ff9a33;
+}
+
+#onlyAtNykaaSlider {
+  background-color: white;
+}
+#stellerStealDealHead {
+  background-color: white;
+}
+#stellerStealDealHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+}
+#stellerStealDealHeadIn > img {
+  width: 100%;
+}
+#newAtNykaaHeadIn > img {
+  width: 100%;
+}
+#newAtNykaaHeadIn {
+  background-color: #ffffcc;
+}
+#storeAvaiableHeadIn > img {
+  width: 100%;
+}
+#storeAvaiableHeadIn {
+  background-color: white;
+}
+#storeAvaiableHead {
+  background-color: white;
+}
+#storeAvalBottom {
+  background-color: white;
+}
+#storeAvalBottomIn {
+  border: white;
+  background-color: white;
+}
+#newAtNykaaSlider {
+  background-color: #ffffcc;
+}
+#houseOfNykaaHead {
+  background-color: white;
+}
+#houseOfNykaaHeadIn > img {
+  width: 100%;
+}
+#houseOfNykaaHeadIn {
+  background-color: #fbcccc;
+}
+#houseOfNykaaBottom {
+  background-color: #fbcccc;
+}
+#houseOfNykaaBottomIn {
+  width: 60%;
+  border: 10px solid #fbcccc;
+}
+#houseOfNykaaBottomIn > .bigGridBox {
+  background-color: #fbcccc;
+  border: 10px solid #fbcccc;
+}
+#houseOfNykaaBottomIn > img {
+  width: 100%;
+}
+#sopBeyondBeautyHead {
+  background-color: white;
+}
+#sopBeyondBeautyHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+}
+#sopBeyondBeautyHeadIn > img {
+  width: 100%;
+}
+/* #shopBeyoundbeautiEnd{
+    
+/* } */
+#shopBeyondBeautiBottom div {
+  background-color: white;
+}
+#shopBeyondBeautiBottom {
+  background-color: white;
+}
+#shopBeyondBeautiBottomIn {
+  text-align: center;
+}
+#shopBeyoundbeautiEnd {
+  background-color: white;
+}
+#shopBeyoundbeautiEndIn {
+  width: 80%;
+  margin: auto;
+}
+#shopBeyoundbeautiEndIn > img {
+  width: 100%;
+}
+#crazyDealsHead {
+  background-color: white;
+}
+#crazyDealsHeadIn {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+}
+#crazyDealsHeadIn > img {
+  width: 100%;
+}
+
+#bottomBillBoardImageIn {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+}
+#bottomBillBoardImageIn > img {
+  width: 100%;
+  border: 25px solid #f3f3f3;
+}
+#bottomBillBoardImage {
+  background-color: #f3f3f3;
+  /* height: 390px; */
+}

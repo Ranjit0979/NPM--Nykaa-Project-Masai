@@ -1,0 +1,226 @@
+#container{
+    display: flex;
+}
+#main_button{
+    height: 300px;
+    width: 20%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,auto);
+    position: sticky;
+    top :50px;
+    /* border: 1px solid red; */
+}
+#button_design{
+    background-color: white;
+    text-align: left;
+    border-color: white;
+}
+#outerbox1{
+    height: 600px;
+    width: 65%;
+    border: 1px solid red;        
+    margin-left: 400px;
+}
+#first{
+    height: 45%;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+#middlebox{
+    height: 70%;
+    width: 55%;
+    border: 1px solid blue;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+}
+#image{
+    height: 100%;
+    width: 35%;
+    border: 1px solid black;
+}
+#userdetails{
+    height: 100%;
+    width: 75%;
+    border: 1px solid red;
+}
+#second{
+    height: 40%;
+    width: 100%;
+    /* border: 1px solid brown; */
+    margin-top: 85px;
+}
+#addressbar{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+#address{
+    /* border: 1px solid green; */
+    height: 160px;
+    width: 40%;
+    margin-left: 40px;
+    margin-top: 5px;
+    font-size: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 5px 20px;
+}
+#outerbox2{
+    height: 600px;
+    width: 65%;
+    border: 1px solid black;        
+    margin-left: 400px;
+}
+#wallet{
+    height: 15%;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+}
+#balance{
+    height: 30%;
+    width: 40%;
+    margin-left: 40px;
+    /* border: 1px solid green; */
+    margin-top: 10px;
+}
+#walletbalance{
+    height: 30%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+#benefits{
+    height: 45%;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+}
+#benefits>img{
+    height: 100%;
+    width: 100%;
+}
+#cash{
+    display: flex;
+    justify-content: space-between;
+}
+#outerbox3{
+    height: 400px;
+    width: 65%;
+    /* border: 1px solid red;         */
+    margin-left: 400px;
+}
+#orderdiv1{
+    height: 10%;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    border: 1px solid green;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#orderdiv1>div{
+    /* padding: 0px 10px 50px 10px; */
+    border: 5px solid white;
+}
+#orderdiv2{
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    margin-top: 15px;
+    /* border: 1px solid blue; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#innerorder1{
+    height: 65%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+#innerorder2>h4{
+    text-align: center;
+    font-size: 18px;
+}
+#innerorder3>h4{
+    text-align: center;
+    color: #fc2779;
+    font-size: 18px;
+}
+#outerbox4{
+    height: 500px;
+    width: 65%;
+    /* border: 1px solid black;         */
+    margin-left: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#wishlist{
+    height: 400px;
+    width: 75%;
+    margin: auto;
+    margin-top: 70px;
+    /* border: 1px solid blue; */
+}
+#wishlist>img{
+    padding: 30px 220px ;
+}
+#innerwishlist{
+    height: 150px;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid green; */
+}
+#innerwishlist>h4{
+    text-align: center;
+    color: #3f414d;
+}
+#innerwishlist>p{
+    text-align: center;
+    color: #3f414d;
+}
+.wishlistbtn{
+    color: #fc2779;
+    font-size: 20px;
+    margin-left: 220px;
+    border-color: #fc2779;
+}
+#outerbox5{
+    height: 500px;
+    width: 65%;
+    /* border: 1px solid red;         */
+    margin-left: 400px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+#payment1{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid green; */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+#payment1>h3{
+    padding: 15px 10px;
+    font-size: 25px;
+    color: #3f414d;
+}
+#payment2{
+    height: 70%;
+    width: 100%;
+    margin-top: 10px;
+    /* border: 1px solid blue; */
+}
+#payone{
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+#paytwo{
+    height: 25%;
+    width: 100%;
+    /* border: 1px solid green; */
+    text-align: center;
+    font-size: 20px;
+    color: #3f414d;
+}

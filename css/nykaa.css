@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.full_width {
+    border: 1px solid transparent;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.flex{
+    border: 1px solid transparent;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    }
+#brand{
+    height: 370px;
+    justify-content: space-around;
+}
+#brand>div{
+    border: 1px solid gray;
+    width: 23%;
+    border-radius: 10px;
+}
+h1,p{
+    text-align: center;
+    font-family: sans-serif;
+}
+.category{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: space-evenly;
+}
+p{
+    font-size: large;
+    font-weight: 550;
+    color: rgb(26, 24, 24);
+}
+.banner{
+    text-align: center;
+    /* border: 1px solid green; */
+}
+img{
+    width: 100%;
+}
+.brands{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    grid-row-gap: 40px;
+}
+.brands>div>p:nth-child(2){
+   
+    position: absolute;
+    bottom: 25px;
+    color: rgb(219, 58, 85);
+    font-size: 20px;
+}
+.brands>div>p:nth-child(3){
+    text-align: left;
+    font-size: 20px;
+    color: gray;
+}
+
+.brands>div{
+position: relative;
+}
+.lipstick_banner{
+    width: 100%;
+}
+.lipstick_banner>img{
+   width: 100%;
+}
+#super_savings{
+   background-color: #a9dee7;
+   margin-top: -4px;
+}
+#super_savings>div{
+    display: flex;
+}
+#super_savings>div>img{
+    width:50%;
+}
+.seasons_hottest_boxes{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    grid-row-gap: 40px;
+}
+.seasons_hottest_boxes>div>p:nth-child(2){
+   
+    position: absolute;
+    bottom: 35px;
+    color: rgb(219, 58, 85);
+    font-size: 20px;
+    left: 10px;
+}
+.seasons_hottest_boxes>div>p:nth-child(3){
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+    color: gray;
+}
+
+.seasons_hottest_boxes>div{
+position: relative;
+}
+.blockbuster{
+    width: 90%;
+    margin: auto;
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   grid-row-gap: 35px;
+}
+.blockbuster>div{
+    margin-left: 25px;
+    
+}
+.blockbuster>div>p:nth-last-child(1){
+   color: gray;
+   font-size: 16px;
+}
+.priceDrop{
+    margin: 30px 1px;
+}
+#amazingDiscounts{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+#amazingDiscounts>div{
+    margin-bottom: 20px;
+    position: relative;
+}
+#amazingDiscounts>div>p:nth-last-child(1){
+text-align: left;
+color: gray;
+}
+#amazingDiscounts>div>p:nth-last-child(2){
+position: absolute;
+    bottom: 30px;
+    color: rgb(190, 19, 47);
+}
+#allOfferBoxes{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+    row-gap: 10px;
+}
+#allOfferBoxes>div>img{
+    border: 1px solid gray;
+}
+#allOfferBoxes>div>p{
+    font-size: 15px;
+}
+#allOfferBoxes>div>p:nth-last-child(1){
+    color: gray;
+}
+#scroll{
+    overflow-x: scroll;
+    display: flex;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    border: 1px solid rgb(232, 214, 214);
+    white-space: nowrap;
+    margin-top: 30px;
+}
+#scroll>div {
+    padding: 1px 20px;
+    margin-right: 20px;
+    border: 1px solid rgb(228, 210, 210);
+}
+#scroll>div>p{
+   
+    overflow:visible;
+}
+#scroll>div>p{
+  font-size: 14px;
+  font-weight: 500;
+}
+#scroll>div>img{
+    height: 180px;
+}
+
+#scroll>div>p:nth-child(4){
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #scroll>div>button{
+    color: rgb(193, 35, 35);
+    margin-left: 35px;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 3px solid pink;
+}#scroll>div>button:hover{
+    cursor: pointer;
+    background-color: pink;
+}
+  .btn{
+      position: sticky;
+      top: 660px;
+      margin-left: 1450px;
+      border-radius: 40%;
+      /* border-bottom-left-radius: 80%; */
+      width: 4.5%;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      
+  }
+  .btn>img{
+      border-radius: 50%;
+  }
+  .btn:hover{
+      cursor: pointer;
+      background-color: gray;
+  }
+  
+
+
+   @media all and (min-width:451px) and (max-width:750px){
+
+      .full_width {
+       width: 100%;
+       margin-bottom: 5px;
+   }
+    .category{
+       justify-content: space-around;
+   }
+   .category>div>p{
+       font-size: 14px;
+   }
+   .brands{
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    grid-row-gap: 10px;
+}
+.brands>div>p:nth-child(2) {
+    font-size: 16px;
+}
+.seasons_hottest_boxes{
+     width: 100%;
+     grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    grid-row-gap: 10px;
+}
+.seasons_hottest_boxes>div>p:nth-child(2){
+   bottom: 28px;
+   font-size: 16px; 
+}
+.seasons_hottest_boxes>div>p:nth-child(3){
+    font-size: 16px;
+}
+.blockbuster{
+    width: 100%;
+    
+  
+   grid-template-columns: repeat(3,1fr);
+   grid-row-gap: 10px;
+}
+.blockbuster>div{
+    margin-left: 10px;
+    
+}
+.blockbuster>div>p:nth-last-child(1){
+   font-size: 13px;
+}
+#amazingDiscounts{
+    width: 100%;
+   display: grid;
+   gap: 5px;
+   grid-template-columns: repeat(2,1fr);
+    margin-top: 10px;
+}
+#amazingDiscounts>div{
+    margin-bottom: 10px;
+   }
+
+#amazingDiscounts>div>p:nth-last-child(2){
+    bottom: 17px;
+    font-size: 15px;
+    }
+   
+    #allOfferBoxes{
+        width: 100%;
+        grid-template-columns: repeat(5,1fr);
+        gap: 10px;
+        row-gap: 8px;
+    }
+    #allOfferBoxes>div>p{
+        font-size: 12px;
+    }
+    .btn{
+        display: none;  
+    }
+    
+}
+
+
+
+
+@media all and (min-width:100px) and (max-width:450px){
+  
+    .full_width {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+     
+    .category>div>p{
+        font-size: 10px;
+    }
+    .brands{
+     width: 100%;
+     grid-template-columns: repeat(1,1fr);
+     grid-row-gap: 5px;
+ }
+ .brands>div>p:nth-child(2) {
+     font-size: 13px;
+ }
+ .seasons_hottest_boxes{
+      width: 100%;
+      grid-template-columns: repeat(1,1fr);
+      grid-row-gap: 5px;
+ }
+ .seasons_hottest_boxes>div>p:nth-child(2){
+    bottom: 28px;
+    font-size: 14px; 
+ }
+ .seasons_hottest_boxes>div>p:nth-child(3){
+     font-size: 14px;
+     padding-left: 2px;
+ }
+ .blockbuster{
+     width: 100%;
+     grid-template-columns: repeat(2,1fr);
+    }
+
+
+ #amazingDiscounts>div>p:nth-last-child(2){
+     bottom: 16.5px;
+     font-size: 14px;
+     }
+    
+     #allOfferBoxes{
+         width: 100%;
+         grid-template-columns: repeat(4,1fr);
+         gap: 5px;
+         row-gap: 5px;
+     }
+     #allOfferBoxes>div>p{
+         font-size: 10px;
+     }
+     .btn{
+        display: none; 
+    }
+   
+}
