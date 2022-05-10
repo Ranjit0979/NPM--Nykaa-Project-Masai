@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payments page</title>
+    <link
+    rel="icon"
+    href="https://images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png"
+    type="image/x-icon"
+  />
+    <link rel="stylesheet" href="./css/cartStyles.css" />
+    <link rel="stylesheet" href="./css/payment-styles.css">
+
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Nykaa_New_Logo.svg/250px-Nykaa_New_Logo.svg.png" />
+
+        <div id="user_details">
+          <div>
+            <h4>1-LOGIN</h4>
+            <p id="login"></p>
+          </div>
+
+          <div>
+            <h4>2-ADDRESS</h4>
+            <p id="selectedAdd"></p>
+          </div>
+
+          <div>
+              <h4>3-PAYMENT</h4>
+          </div>
+          </div>
+      </div>
+    </div>
+    
+    <div id="payment-method">
+      <button id="credit">Credit/Debit Card</button>
+      <button id="google">GooglePay</button>
+      <button id="netBanking">Net Banking</button>
+      <button id="mobileWallets">Mobile Wallets</button>
+      <button id="cod">Cash on Delievery</button>
+      <button id="gift">Gift Card</button>
+    </div>
+
+    <div id="container">
+       <div id="cardDetails">
+           <!-- here we can enter the card details and all -->
+       </div>
+
+      <div id="orderInfo">
+         
+           <div id="totalProducts">
+            <p>
+              <!-- in this we can see the total of items present in cart -->
+            </p>
+            <span><button>Edit</button><button>^</button></span>
+            </div>
+
+            <div id="finalPrice">
+            <div>
+                <p>Sub Total</p>
+                <p id="subTotal">
+                  <!-- Total price of cart items -->
+                </p>
+            </div>
+
+            <div>
+                <p>Shipping Charge</p>
+                <p id="shipCharge">free</p>
+            </div>
+
+            <div>
+                <p>Discount</p>
+                <p id="discount">-₹0</p>
+            </div>
+  
+            <div>
+                <p>use rewards points(2000)</p>
+                <button onclick="discountPrices()">APPLY</button>
+            </div>
+            <div class="gray-line"></div>
+            <div>
+                <p>Grand Total</p>
+                   <div>
+                    <p id="grandTotal">
+                      <!-- here we get the final grand price -->
+                    </p>
+                    <button>^</button>
+                    </div>
+            </div>
+        </div>
+        
+
+        <div id="finalAddress">
+          <h4>SHIPPING ADDRESS</h4>
+
+          <P id="userName"></P>
+          <p id="completeAddress"></p>
+          <h4></h4>
+        </div>
+
+    </div>
+  
+    </div>
+
+
+    
+    <div id="ads">
+        <div>
+            <!-- @archismandas please fill the images src in ads section at the bottom of page -->
+            <img src="#"/>
+            <div>
+                <h4>GENUINE PRODUCTS</h4>
+                <p>Sourced Directly From Brands</p>
+            </div>
+        </div>
+
+
+        <div>
+          <img src="#"/>
+          <div>
+              <h4>FREE SHIPPING</h4>
+              <p>For Orders Above Rs.499</p>
+          </div>
+      </div>
+
+      <div>
+          <img src="#"/>
+          <div>
+              <h4>SECURE PAYMENTS</h4>
+              <p>Using 128-bit SSL Encryption</p>
+          </div>
+      </div>
+    </div>
+     
+  </body>
+</html>
+
+<script src="./js/payment-page.js">  </script>
