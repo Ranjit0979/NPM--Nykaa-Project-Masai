@@ -151,9 +151,13 @@ body {
 #shoppingCart {
   display: flex;
   align-items: center;
+  position: relative;
 }
 #shoppingCart img {
-  width: 20px;
+  width: 30px;
+}
+#shoppingCart>a{
+  
 }
 #cartCount {
   position: absolute;
@@ -162,7 +166,7 @@ body {
   font-size: 1rem;
   background-color: red;
   color: white;
-  padding: 1% 12%;
+  padding: 2px 5px;
   border-radius: 100%;
 }
 
@@ -245,5 +249,18 @@ body {
   }
   #regularNavThree{
     width: 100%;
+  }
+  #shoppingCart img {
+    width: 21px;
+  }
+  #cartCount {
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    font-size: .7rem;
+    background-color: red;
+    color: white;
+    padding: 1px 3px;
+    border-radius: 100%;
   }
 }

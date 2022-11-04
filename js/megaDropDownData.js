@@ -1143,8 +1143,8 @@ document.querySelector("#saleNavThree").append(offerDiv);
 
 var accountName = document.querySelector("#userAcountA");
 
-var accountGet = JSON.parse(localStorage.getItem("loginData"));
-if(accountGet.email!="" || accountGet.email!=null)
+var accountGet = JSON.parse(localStorage.getItem("loginData")) || null;
+if(accountGet!=null && accountGet.email!="" && accountGet.email!=null)
 {
     accountName.innerText = accountGet.email;
     accountName.setAttribute("href", "./profile.html");
