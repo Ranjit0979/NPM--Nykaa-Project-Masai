@@ -7,8 +7,8 @@ User can sign up, search and add product to the cart and buy.
 ![Landing Page](nykaa.png)
 
 
-# code live at
-# [https://adorable-cobbler-b9755b.netlify.app/index.html](https://starving-array.github.io/NPM--Nykaa-Project-Masai/)
+### code live at
+### [https://adorable-cobbler-b9755b.netlify.app/index.html](https://starving-array.github.io/NPM--Nykaa-Project-Masai/)
 
 ## Tech Stacks Used
 
