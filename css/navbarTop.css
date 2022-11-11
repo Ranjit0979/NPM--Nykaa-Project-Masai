@@ -321,6 +321,7 @@ body {
     width: 95%;
     border: 2px solid white;
     padding: 4px;
+    display: none;
   }
   #regularNavThree {
     width: 100%;
@@ -378,6 +379,9 @@ body {
     background-color: rgb(253, 244, 255);
     box-shadow: 1px 1px 7px .1px pink;
   }
+ 
+  
+  
   
 }
 

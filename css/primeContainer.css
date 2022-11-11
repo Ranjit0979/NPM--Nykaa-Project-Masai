@@ -127,16 +127,15 @@
 #bestOfferHeadTwoIn {
   border-color: white;
   background-color: white;
-
 }
-#bestOfferGrid{
+#bestOfferGrid {
   background-color: white;
 }
-#bestOfferGrid div{
+#bestOfferGrid div {
   background-color: white;
   text-align: center;
 }
-#bestOfferGrid span{
+#bestOfferGrid span {
   font-size: 1.2rem;
 }
 
@@ -147,7 +146,7 @@
   background-color: #ff9a33;
   /* margin: auto; */
 }
-#influencerFavHeadIn img{
+#influencerFavHeadIn img {
   width: 100%;
 }
 #onlyAtNykaaIn > img {
@@ -169,12 +168,11 @@
   background-color: white;
 }
 
-#superSavingBottomIn{
+#superSavingBottomIn {
   width: 80%;
   margin: auto;
 }
 /* ================  */
-
 
 #influencerBottom {
   background-color: #ff9a33;
@@ -319,8 +317,8 @@
     font-size: 1rem;
     padding-top: 5px;
   }
-  #houseOfNykaaBottomIn> span{
-    font-size: .5rem;
+  #houseOfNykaaBottomIn > span {
+    font-size: 0.5rem;
   }
 }
 @media all and (min-width: 200px) and (max-width: 500px) {
@@ -339,9 +337,7 @@
     font-size: 1rem;
     padding: 3px 8px;
     background-color: rgb(253, 244, 255);
-    box-shadow: 1px 1px 7px .1px pink;
+    box-shadow: 1px 1px 7px 0.1px pink;
   }
-  #houseOfNykaaBottomIn> span{
-    font-size: .5rem;
-  }
+
 }
