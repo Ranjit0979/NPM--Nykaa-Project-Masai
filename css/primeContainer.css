@@ -306,3 +306,42 @@
   background-color: #f3f3f3;
   /* height: 390px; */
 }
+
+@media all and (min-width: 501px) and (max-width: 1080px) {
+  .topSliderIn {
+    width: 90%;
+  }
+  .imageInsideSlider {
+    height: 100px;
+    width: 100px;
+  }
+  .sliderDescription {
+    font-size: 1rem;
+    padding-top: 5px;
+  }
+  #houseOfNykaaBottomIn> span{
+    font-size: .5rem;
+  }
+}
+@media all and (min-width: 200px) and (max-width: 500px) {
+  .topSliderIn {
+    width: 80%;
+  }
+  .imageInsideSlider {
+    height: 50px;
+    width: 50px;
+  }
+  .sliderDescription {
+    font-size: 0.4rem;
+    padding-top: 5px;
+  }
+  .button1Slider {
+    font-size: 1rem;
+    padding: 3px 8px;
+    background-color: rgb(253, 244, 255);
+    box-shadow: 1px 1px 7px .1px pink;
+  }
+  #houseOfNykaaBottomIn> span{
+    font-size: .5rem;
+  }
+}

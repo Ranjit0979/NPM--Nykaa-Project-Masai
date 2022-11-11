@@ -1,27 +1,26 @@
-
-div{
+div {
   font-style: normal;
 }
 
 /* black nav  */
-#blackNav{
+#blackNav {
   /* background-color: black; */
 }
-#blackNav img{
+#blackNav img {
   height: 30px;
 }
-.imageDiv img{
+.imageDiv img {
   background-color: white;
   /* border-radius: 102%; */
 }
-#blackNavIn>span{
-  color:white;
+#blackNavIn > span {
+  color: white;
   color: black;
   /* background-color: black; */
 }
-#blackNavIn{
+#blackNavIn {
   /* background-color: black; */
-  border: 10px solid white; 
+  border: 10px solid white;
   padding-top: 10px;
 
   width: 70%;
@@ -29,9 +28,11 @@ div{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-
 }
-#blackNavIn>div{
+#blackNavIn > :nth-child(5 + n) {
+  display: none;
+}
+#blackNavIn > div {
   display: flex;
   align-items: center;
 }
@@ -41,9 +42,9 @@ div{
   border: 10px solid white;
 }
 
-#blackNavIn div{
+#blackNavIn div {
   /* border: 10px solid black; */
-  border: 10px solid white; 
+  border: 10px solid white;
 }
 
 /* #blackNavIn>div>div{
@@ -93,7 +94,7 @@ div{
   height: 90%;
   padding: 1%;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   /* background-color: bisque; */
 }
 #whiteNavIn > :nth-child(n) {
@@ -103,7 +104,7 @@ div{
   justify-content: center;
   cursor: pointer;
 }
-#whiteNavIn>:last-child{
+#whiteNavIn > :last-child {
   flex-direction: column;
 }
 #whiteNavIn img {
@@ -134,7 +135,7 @@ div{
   width: 60%;
   margin-left: 15%;
 }
-#whiteNavIn > :last-child > :last-child> div{
+#whiteNavIn > :last-child > :last-child > div {
   border: none;
 }
 #whiteNavIn > :last-child > :first-child {
@@ -145,7 +146,7 @@ div{
 
 /* pink ------------------------------ */
 #pinkNav {
-  height: 70px;
+  min-height: 70px;
   background-color: #fc2779;
 }
 #pinkNavIn {
@@ -186,4 +187,133 @@ div{
 #endBlack {
   height: 30px;
   background-color: black;
+}
+
+@media all and (min-width: 501px) and (max-width: 1080px) {
+  #blackNavIn span {
+    font-size: 0.8rem;
+    padding-left: 3px;
+  }
+  #blackNavIn {
+    width: 80%;
+    grid-template-columns: repeat(3, 33%);
+  }
+  #blackNavIn input,
+  #blackNavIn button {
+    width: 100px;
+    font-size: 0.7rem;
+  }
+  #blackNavIn button {
+    width: 50px;
+    padding: 1px;
+  }
+  #whiteNavIn {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  #whiteNavIn img {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+  }
+  #whiteNavIn > :nth-child(n) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+  #whiteNavIn > :nth-child(n) div {
+    font-size: 0.7rem;
+  }
+  #pinkNavIn{
+    width: 96%;
+  }
+  #pinkNavIn > :first-child {
+    width: 80%;
+    margin: auto;
+    height: auto;
+  }
+  #greyNavIn {
+    width: 97%;
+  }
+}
+@media all and (min-width: 200px) and (max-width: 500px) {
+  #blackNav img {
+    height: 20px;
+  }
+  #blackNavIn {
+    width: 90%;
+    grid-template-columns: repeat(3, 33%);
+  }
+  #blackNavIn > div {
+    width: 100%;
+    display: flex;
+    width: fit-content;
+  }
+  #blackNavIn input,
+  #blackNavIn button {
+    width: 70px;
+    font-size: 0.5rem;
+  }
+  #blackNavIn button {
+    width: 30px;
+    padding: 1px;
+  }
+  #blackNavIn span {
+    font-size: 0.4rem;
+    padding-left: 3px;
+  }
+  #greyNavIn {
+    width: 97%;
+  }
+  #greyNavIn a {
+    font-size: 0.5rem;
+  }
+  #greyNavIn span {
+    font-size: 0.7rem;
+  }
+  #greyNavIn > :nth-child(1) > :nth-child(1) span {
+    font-size: 0.9rem;
+  }
+  #bottomBillBoardImageIn > img {
+    border: 10px solid transparent;
+  }
+
+  #whiteNavIn {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  #whiteNavIn img {
+    height: 30px;
+    margin-left: 20px;
+    width: 30px;
+  }
+  #whiteNavIn > :nth-child(n) {
+    height: 100%;
+    /* width: 18%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+ 
+  #whiteNavIn > :nth-child(n)> div+div+div {
+    font-size: 0.1rem;
+  }
+  #pinkNavIn{
+    width: 96%;
+  }
+  #pinkNavIn > :first-child {
+    width: 80%;
+    margin: auto;
+    height: auto;
+  }
+  
+  #pinkNavIn > :last-child {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+  }
 }

@@ -81,3 +81,15 @@ let bottomImas = [
     }
   }
   
+
+  // logo
+  const logoDiv = document.getElementById("NykaaLogo");
+  let imLogo = document.createElement("img");
+  imLogo.src = "./images/logo.png";
+  logoDiv.append(imLogo);
+
+  //offer
+  const offerLogoDiv = document.getElementById("offerDiv");
+  let offLogo = document.createElement("img");
+  offLogo.src = "./images/offer.png";
+  offerLogoDiv.append(offLogo);
